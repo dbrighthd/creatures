@@ -7,6 +7,7 @@
 			"invertAxis": "xy",
 			"translate": [0, -9, 3],
 			"boxes": [
+				{"coordinates": [-3, 7, -10, 6, 5, 6], "textureOffset": [40, 32], "sizeAdd": 1.1},
 				{"coordinates": [-4, 5, -11, 8, 8, 8], "textureOffset": [32, 4]}
 			]
 		},
@@ -18,7 +19,6 @@
 			"boxes": [
 				{"coordinates": [-3, 6, -3, 6, 6, 6], "textureOffset": [0, 0]},
 				{"coordinates": [-3, 7, -3, 6, 5, 6], "textureOffset": [0, 32]},
-				{"coordinates": [-3, 7, -10, 6, 5, 6], "textureOffset": [40, 32], "sizeAdd": 1.1},
 				{"coordinates": [-9, 7, -13, 2, 4, 6], "textureOffset": [48, 22]},
 				{"coordinates": [-8, 7, -19, 0, 4, 6], "textureOffset": [0, 14]},
 				{"coordinates": [4, 8, -8, 4, 2, 2], "textureOffset": [24, 33]},
