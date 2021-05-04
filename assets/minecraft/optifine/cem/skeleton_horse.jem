@@ -288,7 +288,7 @@
 			"translate": [1, -10, -8],
 			"boxes": [
 				{
-					"coordinates": [-2, 0, 7, 4, 11, 4],
+					"coordinates": [4, 0, 7, 4, 11, 4],
 					"uvNorth": [52, 25, 56, 36],
 					"uvEast": [48, 25, 52, 36],
 					"uvSouth": [60, 25, 64, 36],
@@ -305,7 +305,7 @@
 			"translate": [-1, -10, -8],
 			"boxes": [
 				{
-					"coordinates": [-2, 0, 7, 4, 11, 4],
+					"coordinates": [-8, 0, 7, 4, 11, 4],
 					"uvNorth": [56, 25, 52, 36],
 					"uvEast": [60, 25, 56, 36],
 					"uvSouth": [64, 25, 60, 36],
@@ -322,7 +322,7 @@
 			"translate": [1, -10, 9.1],
 			"boxes": [
 				{
-					"coordinates": [-2, 0, -11, 4, 11, 4],
+					"coordinates": [4, 0, -11, 4, 11, 4],
 					"uvNorth": [52, 25, 56, 36],
 					"uvEast": [48, 25, 52, 36],
 					"uvSouth": [60, 25, 64, 36],
@@ -339,7 +339,7 @@
 			"translate": [-1, -10, 9.1],
 			"boxes": [
 				{
-					"coordinates": [-2, 0, -11, 4, 11, 4],
+					"coordinates": [-8, 0, -11, 4, 11, 4],
 					"uvNorth": [56, 25, 52, 36],
 					"uvEast": [60, 25, 56, 36],
 					"uvSouth": [64, 25, 60, 36],
