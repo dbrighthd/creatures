@@ -1,0 +1,54 @@
+let
+    random :=
+        if rand(chicken, 1, 10) == 1 then
+            default
+        elseif rand(chicken, 1, 10) == 2 then
+            "minecraft:optifine/mob/chicken2.png"
+        elseif rand(chicken, 1, 10) == 3 then
+            "minecraft:optifine/mob/chicken3.png"
+        elseif rand(chicken, 1, 10) == 4 then
+            "minecraft:optifine/mob/chicken4.png"
+        elseif rand(chicken, 1, 10) == 5 then
+            "minecraft:optifine/mob/chicken5.png"
+        elseif rand(chicken, 1, 10) == 6 then
+            "minecraft:optifine/mob/chicken6.png"
+        elseif rand(chicken, 1, 10) == 7 then
+            "minecraft:optifine/mob/chicken7.png"
+        elseif rand(chicken, 1, 10) == 8 then
+            "minecraft:optifine/mob/chicken8.png"
+        elseif rand(chicken, 1, 10) == 9 then
+            "minecraft:optifine/mob/chicken9.png"
+        else
+            "minecraft:optifine/mob/chicken11.png"
+        end
+in
+    if chicken.has_name then
+        if chicken.name == "1" then
+            default
+        elseif chicken.name == "2" then
+            "minecraft:optifine/mob/chicken2.png"
+        elseif chicken.name == "3" then
+            "minecraft:optifine/mob/chicken3.png"
+        elseif chicken.name == "4" then
+            "minecraft:optifine/mob/chicken4.png"
+        elseif chicken.name == "5" then
+            "minecraft:optifine/mob/chicken5.png"
+        elseif chicken.name == "6" then
+            "minecraft:optifine/mob/chicken6.png"
+        elseif chicken.name == "7" then
+            "minecraft:optifine/mob/chicken7.png"
+        elseif chicken.name == "8" then
+            "minecraft:optifine/mob/chicken8.png"
+        elseif chicken.name == "9" then
+            "minecraft:optifine/mob/chicken9.png"
+        elseif chicken.name == "Cluckshroom" then
+            "minecraft:optifine/mob/chicken10.png"
+        elseif chicken.name == "Fancy" then
+            "minecraft:optifine/mob/chicken11.png"
+        else
+            random
+        end
+    else
+        random
+    end
+end

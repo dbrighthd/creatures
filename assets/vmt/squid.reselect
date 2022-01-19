@@ -1,0 +1,7 @@
+if squid.biome == "minecraft:deep_ocean" then
+    "minecraft:optifine/mob/squid/squid2.png"
+elseif squid.has_name and squid.name == "2" then
+    "minecraft:optifine/mob/squid/squid2.png"
+else
+    default
+end

@@ -1,0 +1,32 @@
+let 
+    random := 
+        if rand(turtle, 1, 5) == 1 then
+            default
+        elseif rand(turtle, 1, 5) == 2 then
+            "minecraft:optifine/mob/turtle/big_sea_turtle2.png"
+        elseif rand(turtle, 1, 5) == 3 then
+            "minecraft:optifine/mob/turtle/big_sea_turtle3.png"
+        elseif rand(turtle, 1, 5) == 4 then
+            "minecraft:optifine/mob/turtle/big_sea_turtle4.png"
+        else
+            "minecraft:optifine/mob/turtle/big_sea_turtle5.png"
+        end
+in
+    if turtle.has_name then
+        if turtle.name == "1" then
+            default
+        elseif turtle.name == "2" then
+            "minecraft:optifine/mob/turtle/big_sea_turtle2.png"
+        elseif turtle.name == "3" then
+            "minecraft:optifine/mob/turtle/big_sea_turtle3.png"
+        elseif turtle.name == "4" then
+            "minecraft:optifine/mob/turtle/big_sea_turtle4.png"
+        elseif turtle.name == "5" then
+            "minecraft:optifine/mob/turtle/big_sea_turtle5.png"
+        else
+            random
+        end
+    else
+        random
+    end
+end

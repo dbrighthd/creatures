@@ -1,0 +1,7 @@
+if skeleton.biome == "minecraft:soul_sand_valley" then
+    "minecraft:optifine/mob/skeleton/skeleton2.png"
+elseif skeleton.has_name and skeleton.name == "2" then
+    "minecraft:optifine/mob/skeleton/skeleton2.png"
+else
+    default
+end

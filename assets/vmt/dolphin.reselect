@@ -1,0 +1,36 @@
+let
+    random :=
+        if rand(dolphin, 1, 6) == 1 then
+            default
+        elseif rand(dolphin, 1, 6) == 2 then
+            "minecraft:optifine/mob/dolphin2.png"
+        elseif rand(dolphin, 1, 6) == 3 then
+            "minecraft:optifine/mob/dolphin3.png"
+        elseif rand(dolphin, 1, 6) == 4 then
+            "minecraft:optifine/mob/dolphin4.png"
+        elseif rand(dolphin, 1, 6) == 5 then
+            "minecraft:optifine/mob/dolphin5.png"
+        else
+            "minecraft:optifine/mob/dolphin6.png"
+        end
+in
+    if dolphin.has_name then
+        if dolphin.name == "1" then
+             default
+        elseif dolphin.name == "2" then
+            "minecraft:optifine/mob/dolphin2.png"
+        elseif dolphin.name == "3" then
+            "minecraft:optifine/mob/dolphin3.png"
+        elseif dolphin.name == "4" then
+            "minecraft:optifine/mob/dolphin4.png"
+        elseif dolphin.name == "5" then
+            "minecraft:optifine/mob/dolphin5.png"
+        elseif dolphin.name == "6" then
+            "minecraft:optifine/mob/dolphin6.png"
+        else
+            random
+        end
+    else
+        random
+    end
+end

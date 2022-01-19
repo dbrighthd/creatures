@@ -1,0 +1,20 @@
+let
+    random :=
+        if rand(spider, 1, 2) == 1 then
+            default
+        else
+            "minecraft:optifine/mob/spider/spider2.png"
+        end
+in
+    if spider.has_name then
+        if spider.name == "1" then
+            default
+        elseif spider.name == "2" then
+            "minecraft:optifine/mob/spider/spider2.png"
+        else
+            random
+        end
+    else
+        random
+    end
+end

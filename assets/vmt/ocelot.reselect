@@ -1,0 +1,20 @@
+let
+    random :=
+        if rand(ocelot, 1, 2) == 1 then
+            default
+        else
+            "minecraft:optifine/mob/cat/ocelot2.png"
+        end
+in
+    if ocelot.has_name then
+        if ocelot.name == "1" then
+            default
+        elseif ocelot.name == "2" then
+            "minecraft:optifine/mob/cat/ocelot2.png"
+        else
+            random
+        end
+    else
+        random
+    end
+end
