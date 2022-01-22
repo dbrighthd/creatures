@@ -1,6 +1,12 @@
 let
     random :=
-        if rand(cow, 1, 9) == 1 then
+        if cow.current_biome == "minecraft:flower_forest" then
+            if rand(cow, 1, 2) == 1 then
+                "minecraft:optifine/mob/cow/cow10.png"
+            else
+                "minecraft:optifine/mob/cow/cow11.png"
+            end
+        elseif rand(cow, 1, 9) == 1 then
             default
         elseif rand(cow, 1, 9) == 2 then
             "minecraft:optifine/mob/cow/cow2.png"

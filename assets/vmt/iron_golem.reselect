@@ -1,1 +1,20 @@
-default
+let
+    random :=
+        if rand(iron_golem, 1, 10) == 1 then
+            "minecraft:optifine/mob/iron_golem/iron_golem2.png"
+        else
+            default
+        end
+in
+    if iron_golem.has_name then
+        if iron_golem.name == "1" then
+            default
+        elseif iron_golem.name == "2" then
+            "minecraft:optifine/mob/iron_golem/iron_golem2.png"
+        else
+            random
+        end
+    else
+        random
+    end
+end

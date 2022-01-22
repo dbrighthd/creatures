@@ -55,7 +55,8 @@
 			"invertAxis": "xy",
 			"translate": [-1.1, -6, -5],
 			"boxes": [
-				{"coordinates": [0.1, 0, 6, 2, 6, 2], "textureOffset": [8, 13]}
+				{"coordinates": [0.1, 0, 6, 2, 6, 2], "textureOffset": [8, 13]},
+				{"coordinates": [0.1, 0, 6, 2, 6, 2], "textureOffset": [56, 24]}
 			]
 		},
 		{

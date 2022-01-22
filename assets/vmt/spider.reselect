@@ -1,9 +1,9 @@
 let
     random :=
-        if rand(spider, 1, 2) == 1 then
-            default
-        else
+        if rand(spider, 1, 10) == 1 then
             "minecraft:optifine/mob/spider/spider2.png"
+        else
+            default
         end
 in
     if spider.has_name then
