@@ -47,7 +47,7 @@ in
             "minecraft:optifine/mob/cow/cow9.png"
         elseif cow.name == "Moobloom" then
             "minecraft:optifine/mob/cow/cow10.png"
-        elseif cow.name == "Pink Moobloom" then
+        elseif cow.name == "Moolip" then
             "minecraft:optifine/mob/cow/cow11.png"
         else
             random
