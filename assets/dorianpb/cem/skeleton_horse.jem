@@ -285,10 +285,10 @@
 			"part": "back_left_leg",
 			"id": "back_left_leg",
 			"invertAxis": "xy",
-			"translate": [1, -10, -8],
+			"translate": [1, -10, -9],
 			"boxes": [
 				{
-					"coordinates": [1, 0, 7, 4, 11, 4],
+					"coordinates": [1, 0, 8, 4, 11, 4],
 					"uvNorth": [52, 25, 56, 36],
 					"uvEast": [48, 25, 52, 36],
 					"uvSouth": [60, 25, 64, 36],
@@ -302,10 +302,10 @@
 			"part": "back_right_leg",
 			"id": "back_right_leg",
 			"invertAxis": "xy",
-			"translate": [-1, -10, -8],
+			"translate": [-1, -10, -9],
 			"boxes": [
 				{
-					"coordinates": [-5, 0, 7, 4, 11, 4],
+					"coordinates": [-5, 0, 8, 4, 11, 4],
 					"uvNorth": [56, 25, 52, 36],
 					"uvEast": [60, 25, 56, 36],
 					"uvSouth": [64, 25, 60, 36],
