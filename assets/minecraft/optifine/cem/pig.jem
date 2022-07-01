@@ -1,5 +1,5 @@
 {
-	"textureSize": [64, 32],
+	"textureSize": [64, 64],
 	"models": [
 		{
 			"part": "body",
@@ -24,6 +24,15 @@
 			"submodels": [
 				{
 					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"boxes": [
+						{"coordinates": [-4, 14, -14, 8, 3, 8], "textureOffset": [0, 32], "sizeAdd": 0.25}
+					]
+				},
+				{
+					"id": "head_sub_0",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
 					"mirrorTexture": "u",
 					"boxes": [
 						{"coordinates": [-3, 16, -13, 4, 1, 4], "textureOffset": [0, 26]},
