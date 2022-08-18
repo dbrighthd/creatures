@@ -140,7 +140,7 @@
 					"id": "body2",
 					"invertAxis": "xy",
 					"translate": [0, 8, 0],
-					"rotate": [90, 0, 0],
+					"rotate": [-90, 0, 0],
 					"boxes": [
 						{"coordinates": [-3, -4, -3, 6, 8, 6], "textureOffset": [0, 9]}
 					]
