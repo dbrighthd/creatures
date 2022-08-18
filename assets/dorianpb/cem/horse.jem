@@ -1,4 +1,5 @@
 {
+	"credit": "Made with Blockbench",
 	"textureSize": [64, 128],
 	"models": [
 		{
@@ -288,7 +289,7 @@
 			"translate": [1, -10, -9],
 			"boxes": [
 				{
-					"coordinates": [1, 0, 8, 4, 11, 4],
+					"coordinates": [1, 0, 7, 4, 11, 4],
 					"uvNorth": [52, 25, 56, 36],
 					"uvEast": [48, 25, 52, 36],
 					"uvSouth": [60, 25, 64, 36],
@@ -305,7 +306,7 @@
 			"translate": [-1, -10, -9],
 			"boxes": [
 				{
-					"coordinates": [-5, 0, 8, 4, 11, 4],
+					"coordinates": [-5, 0, 7, 4, 11, 4],
 					"uvNorth": [56, 25, 52, 36],
 					"uvEast": [60, 25, 56, 36],
 					"uvSouth": [64, 25, 60, 36],
@@ -322,7 +323,7 @@
 			"translate": [1, -10, 9.1],
 			"boxes": [
 				{
-					"coordinates": [1, 0, -11, 4, 11, 4],
+					"coordinates": [1, 0, -10, 4, 11, 4],
 					"uvNorth": [52, 25, 56, 36],
 					"uvEast": [48, 25, 52, 36],
 					"uvSouth": [60, 25, 64, 36],
@@ -339,7 +340,7 @@
 			"translate": [-1, -10, 9.1],
 			"boxes": [
 				{
-					"coordinates": [-5, 0, -11, 4, 11, 4],
+					"coordinates": [-5, 0, -10, 4, 11, 4],
 					"uvNorth": [56, 25, 52, 36],
 					"uvEast": [60, 25, 56, 36],
 					"uvSouth": [64, 25, 60, 36],
@@ -572,7 +573,25 @@
 			"translate": [0, -22, 9],
 			"boxes": [
 				{
+					"coordinates": [-0.5, 17, -4, 1, 16, 4],
+					"uvNorth": [64, 128, 64, 128],
+					"uvEast": [64, 64, 60, 80],
+					"uvSouth": [64, 128, 64, 128],
+					"uvWest": [60, 64, 56, 80],
+					"uvUp": [64, 128, 64, 128],
+					"uvDown": [64, 128, 64, 128]
+				},
+				{
 					"coordinates": [-1, 17, -4, 2, 16, 2],
+					"uvNorth": [58, 38, 60, 54],
+					"uvEast": [56, 38, 58, 54],
+					"uvSouth": [62, 38, 64, 54],
+					"uvWest": [60, 38, 62, 54],
+					"uvUp": [60, 38, 58, 36],
+					"uvDown": [62, 36, 60, 38]
+				},
+				{
+					"coordinates": [-1, 17, -3.75, 2, 16, 0],
 					"uvNorth": [58, 38, 60, 54],
 					"uvEast": [56, 38, 58, 54],
 					"uvSouth": [62, 38, 64, 54],
@@ -623,7 +642,7 @@
 			"translate": [4, -10, 9],
 			"boxes": [
 				{
-					"coordinates": [-5, -4, -11, 4, 15, 4],
+					"coordinates": [-5, -4, -10, 4, 15, 4],
 					"uvNorth": [56, 25, 52, 36],
 					"uvEast": [60, 25, 56, 36],
 					"uvSouth": [64, 25, 60, 36],
@@ -640,7 +659,7 @@
 			"translate": [-4, -10, 9],
 			"boxes": [
 				{
-					"coordinates": [1, -4, -11, 4, 15, 4],
+					"coordinates": [1, -4, -10, 4, 15, 4],
 					"uvNorth": [52, 25, 56, 36],
 					"uvEast": [48, 25, 52, 36],
 					"uvSouth": [60, 25, 64, 36],
