@@ -1,4 +1,5 @@
 {
+	"credit": "Made with Blockbench",
 	"textureSize": [64, 32],
 	"models": [
 		{
@@ -11,8 +12,10 @@
 			],
 			"submodels": [
 				{
+					"id": "head_sub_0",
 					"invertAxis": "xy",
 					"mirrorTexture": "u",
+					"translate": [0, 0, 0],
 					"boxes": [
 						{"coordinates": [-3.5, 15, -4.5, 5, 4, 0], "textureOffset": [18, 9]},
 						{"coordinates": [-1, 15, -7, 0, 4, 5], "textureOffset": [18, 4]}
@@ -30,9 +33,8 @@
 					"id": "rotation",
 					"invertAxis": "xy",
 					"translate": [0, 8, 0],
-					"rotate": [-90, 0, 0],
+					"rotate": [-180, 0, 0],
 					"boxes": [
-						{"coordinates": [-3, -4, -3, 6, 8, 6], "textureOffset": [0, 9]},
 						{"coordinates": [-3, -4, -1, 6, 8, 6], "textureOffset": [40, 14]}
 					],
 					"submodels": [
@@ -52,8 +54,10 @@
 							"rotate": [90, 0, 0],
 							"submodels": [
 								{
+									"id": "body_sub_3",
 									"invertAxis": "xy",
 									"mirrorTexture": "u",
+									"translate": [0, 0, 0],
 									"boxes": [
 										{"coordinates": [1, 3, -9, 0, 5, 5], "textureOffset": [28, 3]},
 										{"coordinates": [-1.5, 3, -6.5, 5, 5, 0], "textureOffset": [28, 8]}
@@ -94,8 +98,10 @@
 									"translate": [1.5, -1, -7],
 									"submodels": [
 										{
+											"id": "body_sub_8",
 											"invertAxis": "xy",
 											"mirrorTexture": "u",
+											"translate": [0, 0, 0],
 											"boxes": [
 												{"coordinates": [-1.5, -7, -3, 3, 7, 3], "textureOffset": [38, 4]}
 											]
@@ -116,8 +122,10 @@
 									"translate": [4, 5, -8],
 									"submodels": [
 										{
+											"id": "body_sub_11",
 											"invertAxis": "xy",
 											"mirrorTexture": "u",
+											"translate": [0, 0, 0],
 											"boxes": [
 												{"coordinates": [-1, -4, -3, 1, 4, 6], "textureOffset": [32, 22]}
 											]
@@ -126,6 +134,15 @@
 								}
 							]
 						}
+					]
+				},
+				{
+					"id": "body2",
+					"invertAxis": "xy",
+					"translate": [0, 8, 0],
+					"rotate": [90, 0, 0],
+					"boxes": [
+						{"coordinates": [-3, -4, -3, 6, 8, 6], "textureOffset": [0, 9]}
 					]
 				}
 			],
