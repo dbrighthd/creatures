@@ -1,0 +1,17 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 32],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"boxes": [
+				{"coordinates": [-4, 0, -4, 8, 8, 8], "textureOffset": [0, 0]},
+				{"coordinates": [-9, 6, -4, 10, 10, 0], "textureOffset": [32, 0]},
+				{"coordinates": [-5, 4, 2, 6, 0, 4], "textureOffset": [48, 0]}
+			]
+		}
+	]
+}
