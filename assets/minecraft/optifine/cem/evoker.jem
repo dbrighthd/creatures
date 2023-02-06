@@ -57,7 +57,8 @@
 			],
 			"animations": [
 				{
-					"cape.rx": "limb_speed"
+					"cape.ry": "-body.ry*1.82",
+					"cape.rx": "limb_speed*0.8-body.ry/2"
 				}
 			]
 		},

@@ -16,7 +16,7 @@
 					"uvSouth": [97, 42, 106, 53],
 					"uvWest": [88, 42, 97, 53],
 					"uvUp": [88, 42, 79, 33],
-					"uvDown": [97, 42, 88, 33]
+					"uvDown": [97, 33, 88, 42]
 				}
 			]
 		},
@@ -57,7 +57,8 @@
 			],
 			"animations": [
 				{
-					"cape.rx": "limb_speed"
+					"cape.ry": "-body.ry*1.82",
+					"cape.rx": "limb_speed*0.8-body.ry/2"
 				}
 			]
 		},
