@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "entity/zombie/zombie",
-		"particle": "entity/zombie/zombie"
+		"0": "zombie.png",
+		"particle": "zombie.png"
 	},
 	"elements": [
 		{
