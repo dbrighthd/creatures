@@ -12,7 +12,16 @@
 				{"coordinates": [-3, 7.5, -9, 6, 6, 4], "textureOffset": [0, 0]},
 				{"coordinates": [-3, 13.5, -7, 2, 2, 1], "textureOffset": [16, 14]},
 				{"coordinates": [1, 13.5, -7, 2, 2, 1], "textureOffset": [16, 14]},
-				{"coordinates": [-1.5, 7.52, -12, 3, 3, 4], "textureOffset": [0, 10]}
+				{"coordinates": [-1.5, 7.52, -12, 3, 3, 4], "textureOffset": [0, 10]},
+				{
+					"coordinates": [-2, 7.52, -10, 4, 3, 2],
+					"uvNorth": [52, 29, 48, 32],
+					"uvEast": [53, 29, 52, 32],
+					"uvSouth": [57, 29, 53, 32],
+					"uvWest": [48, 29, 47, 32],
+					"uvUp": [48, 29, 52, 28],
+					"uvDown": [52, 28, 56, 29]
+				}
 			],
 			"submodels": [
 				{
@@ -116,17 +125,7 @@
 			"mirrorTexture": "u",
 			"translate": [-1, -10, -2],
 			"boxes": [
-				{"coordinates": [-4, 7, -1, 8, 6, 7], "textureOffset": [21, 0]},
-				{
-					"coordinates": [-3, 7, -0.7, 6, 6, 6],
-					"uvNorth": [48, 19, 42, 25],
-					"uvEast": [42, 13, 36, 19],
-					"uvSouth": [54, 25, 48, 31],
-					"uvWest": [48, 25, 42, 31],
-					"uvUp": [42, 19, 48, 13],
-					"uvDown": [48, 13, 54, 19],
-					"sizeAdd": 0.2
-				}
+				{"coordinates": [-4, 7, -1, 8, 6, 7], "textureOffset": [21, 0]}
 			]
 		},
 		{
