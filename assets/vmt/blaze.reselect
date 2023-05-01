@@ -1,7 +1,0 @@
-if blaze.current_biome == "minecraft:soul_sand_valley" then
-    default
-elseif blaze.has_name and blaze.name == "2" then
-    "minecraft:optifine/mob/blaze2.png"
-else
-    default
-end
