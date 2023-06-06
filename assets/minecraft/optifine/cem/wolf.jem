@@ -1,6 +1,5 @@
 {
 	"credit": "Made with Blockbench",
-	"texture": "random/entity/wolf/wolf_collar3.png",
 	"textureSize": [64, 32],
 	"models": [
 		{
