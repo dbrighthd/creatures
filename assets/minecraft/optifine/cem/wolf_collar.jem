@@ -1,0 +1,172 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 32],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [-1, -10.5, 7],
+			"boxes": [
+				{"coordinates": [-3, 7.5, -9, 6, 6, 4], "textureOffset": [0, 0], "sizeAdd": 0.05},
+				{"coordinates": [3.05, 10.5, -9.05, 1, 2, 0], "textureOffset": [0, 18]},
+				{"coordinates": [-4.05, 10.5, -9.05, 1, 2, 0], "textureOffset": [0, 18]},
+				{"coordinates": [-4.05, 10.534, -9.05, 1, 2, 0], "textureOffset": [0, 18]},
+				{"coordinates": [3.05, 10.534, -9.05, 1, 2, 0], "textureOffset": [0, 18]},
+				{"coordinates": [-3, 13.5, -7, 2, 2, 1], "textureOffset": [16, 14]},
+				{"coordinates": [1, 13.5, -7, 2, 2, 1], "textureOffset": [16, 14]}
+			],
+			"submodels": [
+				{
+					"id": "bone3",
+					"invertAxis": "xy",
+					"translate": [3, 13, -8.5],
+					"submodels": [
+						{
+							"id": "bone2",
+							"invertAxis": "xy",
+							"translate": [-6, 0, 0],
+							"rotate": [0, 0, 70],
+							"submodels": [
+								{
+									"id": "head_sub_2",
+									"invertAxis": "xy",
+									"mirrorTexture": "u",
+									"translate": [0, 0, 0]
+								}
+							]
+						},
+						{
+							"id": "bone",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"rotate": [0, 0, -65],
+							"submodels": [
+								{
+									"id": "head_sub_4",
+									"invertAxis": "xy",
+									"mirrorTexture": "u",
+									"translate": [0, 0, 0]
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "bone6",
+					"invertAxis": "xy",
+					"translate": [2.5, 13.1, -8.5],
+					"submodels": [
+						{
+							"id": "bone5",
+							"invertAxis": "xy",
+							"translate": [-5, 0, 0],
+							"rotate": [0, 0, -15],
+							"submodels": [
+								{
+									"id": "head_sub_7",
+									"invertAxis": "xy",
+									"mirrorTexture": "u",
+									"translate": [0, 0, 0]
+								}
+							]
+						},
+						{
+							"id": "bone4",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"rotate": [0, 0, 15],
+							"submodels": [
+								{
+									"id": "head_sub_9",
+									"invertAxis": "xy",
+									"mirrorTexture": "u",
+									"translate": [0, 0, 0]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [0, -10, -2]
+		},
+		{
+			"part": "mane",
+			"id": "mane",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [-1, -10, -2],
+			"boxes": [
+				{"coordinates": [-4, 7, -1, 8, 6, 7], "textureOffset": [21, 0]},
+				{"coordinates": [-4, 7, -1, 8, 6, 7], "textureOffset": [34, 19], "sizeAdd": 0.025}
+			]
+		},
+		{
+			"part": "leg1",
+			"id": "leg1",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [-2.5, -8, -7],
+			"boxes": [
+				{"coordinates": [-2.5, 0, 6, 2, 8, 2], "textureOffset": [0, 18]}
+			]
+		},
+		{
+			"part": "leg2",
+			"id": "leg2",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [0.5, -8, -7],
+			"boxes": [
+				{"coordinates": [0.5, 0, 6, 2, 8, 2], "textureOffset": [0, 18]}
+			]
+		},
+		{
+			"part": "leg3",
+			"id": "leg3",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [-2.5, -8, 4],
+			"boxes": [
+				{"coordinates": [-2.5, 0, -5, 2, 8, 2], "textureOffset": [0, 18]}
+			]
+		},
+		{
+			"part": "leg4",
+			"id": "leg4",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [0.5, -8, 4],
+			"boxes": [
+				{"coordinates": [0.5, 0, -5, 2, 8, 2], "textureOffset": [0, 18]}
+			]
+		},
+		{
+			"part": "tail",
+			"id": "tail",
+			"invertAxis": "xy",
+			"translate": [-1, -12, -10],
+			"boxes": [
+				{"coordinates": [-1, 4, 9, 2, 8, 2], "textureOffset": [9, 18]}
+			],
+			"submodels": [
+				{
+					"id": "tail_sub_0",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [0, 0, 0],
+					"boxes": [
+						{"coordinates": [-1, 10, 11, 2, 2, 2], "textureOffset": [56, 1]}
+					]
+				}
+			]
+		}
+	]
+}
