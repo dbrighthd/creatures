@@ -150,9 +150,17 @@
 					"id": "bone8",
 					"invertAxis": "xy",
 					"translate": [1.5, 8, 7],
-					"rotate": [0, -180, 0],
+					"rotate": [0, 0, -180],
 					"boxes": [
-						{"coordinates": [-1, -8, -1, 2, 8, 2], "textureOffset": [56, 8]}
+						{
+							"coordinates": [-1, 0, -1, 2, 8, 2],
+							"uvNorth": [58, 18, 60, 10],
+							"uvEast": [56, 18, 58, 10],
+							"uvSouth": [62, 18, 64, 10],
+							"uvWest": [60, 18, 62, 10],
+							"uvUp": [62, 10, 60, 8],
+							"uvDown": [60, 8, 58, 10]
+						}
 					]
 				}
 			]
@@ -176,10 +184,18 @@
 				{
 					"id": "bone7",
 					"invertAxis": "xy",
-					"translate": [1.5, 7, -4],
-					"rotate": [0, -180, 0],
+					"translate": [1.5, 8, -4],
+					"rotate": [0, 0, -180],
 					"boxes": [
-						{"coordinates": [-1, -7, -1, 2, 8, 2], "textureOffset": [0, 18]}
+						{
+							"coordinates": [-1, 0, -1, 2, 8, 2],
+							"uvNorth": [2, 28, 4, 20],
+							"uvEast": [0, 28, 2, 20],
+							"uvSouth": [6, 28, 8, 20],
+							"uvWest": [4, 28, 6, 20],
+							"uvUp": [6, 20, 4, 18],
+							"uvDown": [4, 18, 2, 20]
+						}
 					]
 				}
 			]
