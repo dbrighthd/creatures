@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"texture": "sharkwlaser.png",
+	"texture": "random/entity/guardian2.png",
 	"textureSize": [128, 128],
 	"models": [
 		{
@@ -8,6 +8,13 @@
 			"id": "body",
 			"invertAxis": "xy",
 			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-6, -2, 2, 12, 8, 16], "textureOffset": [0, 0]},
+				{"coordinates": [-5, 1, -2, 10, 4, 4], "textureOffset": [40, 0], "sizeAdd": 0.3},
+				{"coordinates": [-1, 6, -2, 2, 2, 4], "textureOffset": [0, 24]},
+				{"coordinates": [-0.5, 6.5, -4, 1, 1, 2], "textureOffset": [10, 12]},
+				{"coordinates": [-1, 5, -1, 2, 1, 2], "textureOffset": [7, 0]}
+			],
 			"submodels": [
 				{
 					"id": "dorsal_fin",
@@ -57,6 +64,10 @@
 					"id": "body_2",
 					"invertAxis": "xy",
 					"translate": [0, 2, 18],
+					"boxes": [
+						{"coordinates": [-4, -3, -1, 8, 6, 12], "textureOffset": [0, 24]},
+						{"coordinates": [0, -5, 6, 0, 11, 5], "textureOffset": [0, 51]}
+					],
 					"submodels": [
 						{
 							"id": "right_back_fin",
@@ -94,10 +105,6 @@
 								}
 							]
 						}
-					],
-					"boxes": [
-						{"coordinates": [-4, -3, -1, 8, 6, 12], "textureOffset": [0, 24]},
-						{"coordinates": [0, -5, 6, 0, 11, 5], "textureOffset": [0, 51]}
 					]
 				},
 				{
@@ -114,13 +121,6 @@
 						}
 					]
 				}
-			],
-			"boxes": [
-				{"coordinates": [-6, -2, 2, 12, 8, 16], "textureOffset": [0, 0]},
-				{"coordinates": [-5, 1, -2, 10, 4, 4], "textureOffset": [40, 0], "sizeAdd": 0.3},
-				{"coordinates": [-1, 6, -2, 2, 2, 4], "textureOffset": [0, 24]},
-				{"coordinates": [-0.5, 6.5, -4, 1, 1, 2], "textureOffset": [10, 12]},
-				{"coordinates": [-1, 5, -1, 2, 1, 2], "textureOffset": [7, 0]}
 			],
 			"animations": [
 				{
