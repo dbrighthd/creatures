@@ -1,0 +1,328 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "lid",
+			"id": "lid",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"texture": "minecraft:textures/block/grass_block_side.png",
+			"textureSize": [16, 16],
+			"submodels": [
+				{
+					"id": "top",
+					"texture": "minecraft:textures/block/moss_block.png",
+					"textureSize": [16, 16],
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"boxes": [
+						{
+							"coordinates": [-8, 15.9, -8, 16, 0.1, 16],
+							"uvNorth": [0, 1, 16, 0],
+							"uvEast": [0, 0, 16, 1],
+							"uvSouth": [0, 0, 16, 1],
+							"uvWest": [0, 0, 16, 1],
+							"uvUp": [16, 16, 0, 0],
+							"uvDown": [16, 0, 0, 16]
+						}
+					]
+				},
+				{
+					"id": "bone",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"rotate": [0, -90, 0],
+					"boxes": [
+						{
+							"coordinates": [7.9, 8, -4, 0.1, 7.9, 8],
+							"uvNorth": [4, 0, 4, 8],
+							"uvEast": [4, 0, 12, 8],
+							"uvSouth": [12, 0, 12, 8],
+							"uvWest": [4, 0, 12, 8],
+							"uvUp": [12, 0, 4, 0],
+							"uvDown": [12, 7, 4, 8]
+						},
+						{
+							"coordinates": [7.9, 4, 4, 0.1, 11.9, 4],
+							"uvNorth": [3, 0, 4, 12],
+							"uvEast": [0, 0, 4, 12],
+							"uvSouth": [15, 0, 16, 12],
+							"uvWest": [0, 0, 4, 12],
+							"uvUp": [16, 0, 12, 0],
+							"uvDown": [4, 11, 0, 12]
+						},
+						{
+							"coordinates": [7.9, 4, -7.9, 0.1, 11.9, 3.9],
+							"uvNorth": [0, 0, 16, 12],
+							"uvEast": [12, 0, 16, 12],
+							"uvSouth": [12, 0, 13, 12],
+							"uvWest": [12, 0, 16, 12],
+							"uvUp": [4, 0, 0, 0],
+							"uvDown": [16, 12, 12, 11]
+						}
+					]
+				},
+				{
+					"id": "bone2",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"rotate": [0, -90, 0],
+					"boxes": [
+						{
+							"coordinates": [-8, 8, -4, 0.1, 7.9, 8],
+							"uvNorth": [4, 0, 4, 8],
+							"uvEast": [4, 0, 12, 8],
+							"uvSouth": [12, 0, 12, 8],
+							"uvWest": [4, 0, 12, 8],
+							"uvUp": [12, 0, 4, 0],
+							"uvDown": [12, 7, 4, 8]
+						},
+						{
+							"coordinates": [-8, 4, 4, 0.1, 11.9, 3.9],
+							"uvNorth": [12, 0, 13, 12],
+							"uvEast": [12, 0, 16, 12],
+							"uvSouth": [0, 0, 16, 12],
+							"uvWest": [12, 0, 16, 12],
+							"uvUp": [16, 0, 12, 0],
+							"uvDown": [16, 12, 12, 11]
+						},
+						{
+							"coordinates": [-8, 4, -8, 0.1, 11.9, 4],
+							"uvNorth": [15, 0, 16, 12],
+							"uvEast": [0, 0, 4, 12],
+							"uvSouth": [3, 0, 4, 12],
+							"uvWest": [0, 0, 4, 12],
+							"uvUp": [4, 0, 0, 0],
+							"uvDown": [4, 12, 0, 11]
+						}
+					]
+				}
+			],
+			"boxes": [
+				{
+					"coordinates": [-8, 4, -8, 0.1, 11.9, 4],
+					"uvNorth": [15, 0, 16, 12],
+					"uvEast": [0, 0, 4, 12],
+					"uvSouth": [3, 0, 4, 12],
+					"uvWest": [0, 0, 4, 12],
+					"uvUp": [4, 0, 0, 0],
+					"uvDown": [4, 12, 0, 11]
+				},
+				{
+					"coordinates": [-8, 4, 4, 0.1, 11.9, 3.9],
+					"uvNorth": [12, 0, 13, 12],
+					"uvEast": [12, 0, 16, 12],
+					"uvSouth": [0, 0, 16, 12],
+					"uvWest": [12, 0, 16, 12],
+					"uvUp": [16, 0, 12, 0],
+					"uvDown": [16, 12, 12, 11]
+				},
+				{
+					"coordinates": [-8, 8, -4, 0.1, 7.9, 8],
+					"uvNorth": [4, 0, 4, 8],
+					"uvEast": [4, 0, 12, 8],
+					"uvSouth": [12, 0, 12, 8],
+					"uvWest": [4, 0, 12, 8],
+					"uvUp": [12, 0, 4, 0],
+					"uvDown": [12, 7, 4, 8]
+				},
+				{
+					"coordinates": [7.9, 8, -4, 0.1, 7.9, 8],
+					"uvNorth": [4, 0, 4, 8],
+					"uvEast": [4, 0, 12, 8],
+					"uvSouth": [12, 0, 12, 8],
+					"uvWest": [4, 0, 12, 8],
+					"uvUp": [12, 0, 4, 0],
+					"uvDown": [12, 7, 4, 8]
+				},
+				{
+					"coordinates": [7.9, 4, 4, 0.1, 11.9, 4],
+					"uvNorth": [3, 0, 4, 12],
+					"uvEast": [0, 0, 4, 12],
+					"uvSouth": [15, 0, 16, 12],
+					"uvWest": [0, 0, 4, 12],
+					"uvUp": [16, 0, 12, 0],
+					"uvDown": [4, 12, 0, 11]
+				},
+				{
+					"coordinates": [7.9, 4, -7.9, 0.1, 11.9, 3.9],
+					"uvNorth": [0, 0, 16, 12],
+					"uvEast": [12, 0, 16, 12],
+					"uvSouth": [12, 0, 13, 12],
+					"uvWest": [12, 0, 16, 12],
+					"uvUp": [4, 0, 0, 0],
+					"uvDown": [16, 12, 12, 11]
+				}
+			]
+		},
+		{
+			"part": "base",
+			"id": "base",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"texture": "minecraft:textures/block/dirt.png",
+			"textureSize": [16, 16],
+			"boxes": [
+				{
+					"coordinates": [-8, 0, -8, 16, 0.1, 16],
+					"uvNorth": [0, 1, 16, 0],
+					"uvEast": [0, 0, 16, 1],
+					"uvSouth": [0, 0, 16, 1],
+					"uvWest": [0, 0, 16, 1],
+					"uvUp": [16, 16, 0, 0],
+					"uvDown": [16, 0, 0, 16]
+				},
+				{
+					"coordinates": [-8, 0.1, -8, 0.1, 3.9, 4],
+					"uvNorth": [0, 12, 1, 16],
+					"uvEast": [0, 12, 4, 16],
+					"uvSouth": [0, 12, 1, 16],
+					"uvWest": [0, 12, 4, 16],
+					"uvUp": [4, 12, 0, 13],
+					"uvDown": [4, 12, 0, 11]
+				},
+				{
+					"coordinates": [-8, 0.1, 4, 0.1, 3.9, 3.9],
+					"uvNorth": [12, 0, 13, 12],
+					"uvEast": [12, 12, 16, 16],
+					"uvSouth": [0, 0, 16, 12],
+					"uvWest": [12, 12, 16, 16],
+					"uvUp": [16, 12, 12, 13],
+					"uvDown": [16, 12, 12, 11]
+				},
+				{
+					"coordinates": [-8, 0.1, -4, 0.1, 7.9, 8],
+					"uvNorth": [4, 8, 5, 16],
+					"uvEast": [4, 8, 12, 16],
+					"uvSouth": [11, 8, 12, 16],
+					"uvWest": [4, 8, 12, 16],
+					"uvUp": [12, 8, 4, 9],
+					"uvDown": [12, 15, 4, 16]
+				},
+				{
+					"coordinates": [7.9, 0.1, -4, 0.1, 7.9, 8],
+					"uvNorth": [12, 8, 11, 16],
+					"uvEast": [4, 8, 12, 16],
+					"uvSouth": [5, 8, 4, 16],
+					"uvWest": [4, 8, 12, 16],
+					"uvUp": [12, 8, 4, 9],
+					"uvDown": [12, 15, 4, 16]
+				},
+				{
+					"coordinates": [7.9, 0.1, 4, 0.1, 3.9, 4],
+					"uvNorth": [3, 0, 4, 12],
+					"uvEast": [0, 12, 4, 16],
+					"uvSouth": [0, 12, 1, 16],
+					"uvWest": [0, 12, 4, 16],
+					"uvUp": [16, 12, 12, 13],
+					"uvDown": [4, 12, 0, 11]
+				},
+				{
+					"coordinates": [7.9, 0.1, -7.9, 0.1, 3.9, 3.9],
+					"uvNorth": [0, 0, 16, 12],
+					"uvEast": [12, 12, 16, 16],
+					"uvSouth": [12, 0, 13, 12],
+					"uvWest": [12, 12, 16, 16],
+					"uvUp": [4, 12, 0, 13],
+					"uvDown": [16, 12, 12, 11]
+				}
+			],
+			"submodels": [
+				{
+					"id": "bone3",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"rotate": [0, 90, 0],
+					"boxes": [
+						{
+							"coordinates": [7.9, 0.1, -7.9, 0.1, 3.9, 3.9],
+							"uvNorth": [0, 0, 16, 12],
+							"uvEast": [12, 12, 16, 16],
+							"uvSouth": [12, 0, 13, 12],
+							"uvWest": [12, 12, 16, 16],
+							"uvUp": [4, 12, 0, 13],
+							"uvDown": [16, 12, 12, 11]
+						},
+						{
+							"coordinates": [7.9, 0.1, 4, 0.1, 3.9, 4],
+							"uvNorth": [3, 0, 4, 12],
+							"uvEast": [0, 12, 4, 16],
+							"uvSouth": [0, 12, 1, 16],
+							"uvWest": [0, 12, 4, 16],
+							"uvUp": [16, 12, 12, 13],
+							"uvDown": [4, 11, 0, 12]
+						},
+						{
+							"coordinates": [7.9, 0.1, -4, 0.1, 7.9, 8],
+							"uvNorth": [4, 8, 5, 16],
+							"uvEast": [4, 8, 12, 16],
+							"uvSouth": [11, 8, 12, 16],
+							"uvWest": [4, 8, 12, 16],
+							"uvUp": [12, 8, 4, 9],
+							"uvDown": [12, 15, 4, 16]
+						}
+					]
+				},
+				{
+					"id": "bone4",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"rotate": [0, 90, 0],
+					"boxes": [
+						{
+							"coordinates": [-8, 0.1, -4, 0.1, 7.9, 8],
+							"uvNorth": [4, 8, 5, 16],
+							"uvEast": [4, 8, 12, 16],
+							"uvSouth": [11, 8, 12, 16],
+							"uvWest": [4, 8, 12, 16],
+							"uvUp": [12, 8, 4, 9],
+							"uvDown": [12, 15, 4, 16]
+						},
+						{
+							"coordinates": [-8, 0.1, 4, 0.1, 3.9, 3.9],
+							"uvNorth": [12, 0, 13, 12],
+							"uvEast": [12, 12, 16, 16],
+							"uvSouth": [0, 0, 16, 12],
+							"uvWest": [12, 12, 16, 16],
+							"uvUp": [16, 12, 12, 13],
+							"uvDown": [16, 12, 12, 11]
+						},
+						{
+							"coordinates": [-8, 0.1, -8, 0.1, 3.9, 4],
+							"uvNorth": [0, 12, 1, 16],
+							"uvEast": [0, 12, 4, 16],
+							"uvSouth": [0, 12, 1, 16],
+							"uvWest": [0, 12, 4, 16],
+							"uvUp": [4, 12, 0, 13],
+							"uvDown": [4, 16, 0, 15]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -12, 0],
+			"boxes": [
+				{"coordinates": [-3, 6, -3, 6, 6, 6], "textureOffset": [0, 52]}
+			]
+		},
+		{
+			"part": "base",
+			"id": "base",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"attach": true
+		},
+		{
+			"part": "lid",
+			"id": "lid",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"attach": true
+		}
+	]
+}

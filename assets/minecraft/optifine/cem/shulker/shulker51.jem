@@ -1,0 +1,97 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "lid",
+			"id": "lid",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"boxes": [
+				{"coordinates": [-8, 4, -8, 16, 12, 16], "textureOffset": [0, 0]}
+			]
+		},
+		{
+			"part": "base",
+			"id": "base",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"boxes": [
+				{"coordinates": [-8, 0, -8, 16, 8, 16], "textureOffset": [0, 28]}
+			]
+		},
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -12, 0],
+			"boxes": [
+				{"coordinates": [-3, 6, -3, 6, 6, 6], "textureOffset": [0, 52]},
+				{
+					"coordinates": [1, 8, -3.01, 2, 1, 0],
+					"uvNorth": [8, 61, 10, 62],
+					"uvEast": [64, 64, 64, 64],
+					"uvSouth": [64, 64, 64, 64],
+					"uvWest": [64, 64, 64, 64],
+					"uvUp": [64, 64, 64, 64],
+					"uvDown": [64, 64, 64, 64]
+				},
+				{
+					"coordinates": [-3, 8, -3.01, 2, 1, 0],
+					"uvNorth": [8, 61, 10, 62],
+					"uvEast": [64, 64, 64, 64],
+					"uvSouth": [64, 64, 64, 64],
+					"uvWest": [64, 64, 64, 64],
+					"uvUp": [64, 64, 64, 64],
+					"uvDown": [64, 64, 64, 64]
+				},
+				{
+					"coordinates": [-1, 8, -3.01, 2, 1, 0],
+					"uvNorth": [8, 61, 10, 62],
+					"uvEast": [64, 64, 64, 64],
+					"uvSouth": [64, 64, 64, 64],
+					"uvWest": [64, 64, 64, 64],
+					"uvUp": [64, 64, 64, 64],
+					"uvDown": [64, 64, 64, 64]
+				},
+				{
+					"coordinates": [-3, 9, -3.01, 6, 1, 0],
+					"uvNorth": [6, 60, 12, 61],
+					"uvEast": [64, 64, 64, 64],
+					"uvSouth": [64, 64, 64, 64],
+					"uvWest": [64, 64, 64, 64],
+					"uvUp": [64, 64, 64, 64],
+					"uvDown": [64, 64, 64, 64]
+				},
+				{
+					"coordinates": [-3, 6, -3.01, 6, 1, 0],
+					"uvNorth": [6, 63, 12, 64],
+					"uvEast": [64, 64, 64, 64],
+					"uvSouth": [64, 64, 64, 64],
+					"uvWest": [64, 64, 64, 64],
+					"uvUp": [64, 64, 64, 64],
+					"uvDown": [64, 64, 64, 64]
+				}
+			],
+			"submodels": [
+				{
+					"id": "face",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"texture": "minecraft:optifine/cem/shulker/shulker_face.png",
+					"boxes": [
+						{
+							"coordinates": [-4, 4.5, -3.25, 8, 7.5, 0],
+							"uvNorth": [0, 0, 64, 64],
+							"uvEast": [64, 64, 64, 64],
+							"uvSouth": [64, 64, 64, 64],
+							"uvWest": [64, 64, 64, 63.89153],
+							"uvUp": [64, 64, 64, 64],
+							"uvDown": [64, 64, 64, 64]
+						}
+					]
+				}
+			]
+		}
+	]
+}
