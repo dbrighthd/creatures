@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textureSize": [64, 32],
+	"shadowSize": 0.5,
 	"models": [
 		{
 			"part": "head",
@@ -126,7 +127,8 @@
 					"CHtail.ry": "tail.ry",
 					"CHtail.rz": "tail.rz",
 					"CHbody.tz": "if(is_sitting, -3, -7)",
-					"CHbody.ty": "if(is_sitting, 2, -2)"
+					"CHbody.ty": "if(is_sitting, 2, -2)",
+					"render.shadow_size": "0.4"
 				}
 			]
 		},
