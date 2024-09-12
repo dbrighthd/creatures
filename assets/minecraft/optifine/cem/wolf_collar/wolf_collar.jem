@@ -104,8 +104,8 @@
 			"mirrorTexture": "u",
 			"translate": [-1, -10, -2],
 			"boxes": [
-				{"coordinates": [-4, 7, -1, 8, 6, 7], "textureOffset": [21, 0]},
-				{"coordinates": [-4, 7, -1, 8, 6, 7], "textureOffset": [34, 19], "sizeAdd": 0.025}
+				{"coordinates": [-4, 7, -1, 8, 6, 7], "textureOffset": [21, 0], "sizeAdd": 0.01},
+				{"coordinates": [-4, 7, -1, 8, 6, 7], "textureOffset": [34, 19], "sizeAdd": 0.01}
 			]
 		},
 		{
