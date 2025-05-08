@@ -6,28 +6,31 @@
 			"part": "body",
 			"id": "body",
 			"invertAxis": "xy",
-			"mirrorTexture": "u",
 			"translate": [0, -19, -2],
-			"boxes": [
-				{"coordinates": [-4, 13, -5, 8, 16, 6], "textureOffset": [22, 10]}
+			"submodels": [
+				{
+					"id": "rotation",
+					"invertAxis": "xy",
+					"translate": [0, 19, 2],
+					"rotate": [-90, 0, 0],
+					"boxes": [
+						{"coordinates": [-4, -6, -7, 8, 16, 6], "textureOffset": [28, 8], "sizeAdd": 1.75}
+					]
+				}
+			],
+			"animations": [
+				{
+					"rotation.rx": 0
+				}
 			]
 		},
 		{
 			"part": "head",
 			"id": "head",
 			"invertAxis": "xy",
-			"mirrorTexture": "u",
 			"translate": [0, -18, 8],
 			"boxes": [
-				{"coordinates": [-3, 16, -14, 6, 6, 8], "textureOffset": [0, 0]}
-			],
-			"submodels": [
-				{
-					"id": "bone",
-					"invertAxis": "xy",
-					"translate": [-2, 26.1, -9.5],
-					"rotate": [0, 0, 90]
-				}
+				{"coordinates": [-3, 16, -12, 6, 6, 6], "textureOffset": [0, 0], "sizeAdd": 0.6}
 			]
 		},
 		{
@@ -36,7 +39,7 @@
 			"invertAxis": "xy",
 			"translate": [-3, -12, -7],
 			"boxes": [
-				{"coordinates": [1, 0, 5, 4, 12, 4], "textureOffset": [0, 16]}
+				{"coordinates": [1, 6, 5, 4, 6, 4], "textureOffset": [0, 16], "sizeAdd": 0.5}
 			]
 		},
 		{
@@ -45,7 +48,7 @@
 			"invertAxis": "xy",
 			"translate": [3, -12, -7],
 			"boxes": [
-				{"coordinates": [-5, 0, 5, 4, 12, 4], "textureOffset": [0, 16]}
+				{"coordinates": [-5, 6, 5, 4, 6, 4], "textureOffset": [0, 16], "sizeAdd": 0.5}
 			]
 		},
 		{
@@ -54,7 +57,7 @@
 			"invertAxis": "xy",
 			"translate": [-3, -12, 5],
 			"boxes": [
-				{"coordinates": [1, 0, -7, 4, 12, 4], "textureOffset": [0, 16]}
+				{"coordinates": [1, 6, -7, 4, 6, 4], "textureOffset": [0, 16], "sizeAdd": 0.5}
 			]
 		},
 		{
@@ -63,7 +66,7 @@
 			"invertAxis": "xy",
 			"translate": [3, -12, 5],
 			"boxes": [
-				{"coordinates": [-5, 0, -7, 4, 12, 4], "textureOffset": [0, 16]}
+				{"coordinates": [-5, 6, -7, 4, 6, 4], "textureOffset": [0, 16], "sizeAdd": 0.5}
 			]
 		}
 	]
