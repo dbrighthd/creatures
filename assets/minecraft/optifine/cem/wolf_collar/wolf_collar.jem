@@ -10,10 +10,8 @@
 			"translate": [-1, -10.5, 7],
 			"boxes": [
 				{"coordinates": [-3, 7.5, -9, 6, 6, 4], "textureOffset": [0, 0], "sizeAdd": 0.05},
-				{"coordinates": [3.05, 10.5, -9.05, 1, 2, 0], "textureOffset": [0, 18]},
-				{"coordinates": [-4.05, 10.5, -9.05, 1, 2, 0], "textureOffset": [0, 18]},
-				{"coordinates": [-4.05, 10.534, -9.05, 1, 2, 0], "textureOffset": [0, 18]},
-				{"coordinates": [3.05, 10.534, -9.05, 1, 2, 0], "textureOffset": [0, 18]},
+				{"coordinates": [-4.05, 10.534, -9.05, 1, 2, 0], "textureOffset": [1, 18]},
+				{"coordinates": [3.05, 10.534, -9.05, 1, 2, 0], "textureOffset": [1, 18]},
 				{"coordinates": [-3, 13.5, -7, 2, 2, 1], "textureOffset": [16, 14]},
 				{"coordinates": [1, 13.5, -7, 2, 2, 1], "textureOffset": [16, 14]}
 			],

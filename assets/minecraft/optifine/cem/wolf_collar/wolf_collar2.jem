@@ -6,7 +6,27 @@
 			"part": "head",
 			"id": "head",
 			"invertAxis": "xy",
-			"translate": [-1, -10.5, 7]
+			"translate": [-1, -10.5, 7],
+			"animations": [
+				{
+					"body_rotation.rx": 0,
+					"CHbody.rz": "if(anger_time > 0, 0.5*sin(2.5*time), 0.05*sin(2*time))",
+					"CHhead.rx": "if(is_sitting, head.rx + torad(25),head.rx)",
+					"CHhead.rz": "-head.ry",
+					"CHleg1.rx": "if(is_sitting, torad(-45),leg1.rx)",
+					"CHleg2.rx": "if(is_sitting, torad(-45),leg2.rx)",
+					"CHleg3.rx": "if(is_sitting, torad(40),leg3.rx)",
+					"CHleg3.ty": "if(is_sitting, -1, -2)",
+					"CHleg4.rx": "if(is_sitting, torad(40),leg4.rx)",
+					"CHleg4.ty": "if(is_sitting, -1, -2)",
+					"CHtail.rx": "tail.rx + torad(45)",
+					"CHtail.ry": "tail.ry",
+					"CHtail.rz": "tail.rz",
+					"CHbody.tz": "if(is_sitting, -3, -7)",
+					"CHbody.ty": "if(is_sitting, 2, -2)",
+					"render.shadow_size": "0.4"
+				}
+			]
 		},
 		{
 			"part": "body",
@@ -154,8 +174,7 @@
 					"body_rotation.rx": 0,
 					"CHbody.rz": "if(anger_time > 0, 0.5*sin(2.5*time), 0.05*sin(2*time))",
 					"CHhead.rx": "if(is_sitting, head.rx + torad(25),head.rx)",
-					"CHhead.ry": "head.ry",
-					"CHhead.rz": "head.rz",
+					"CHhead.rz": "-head.ry",
 					"CHleg1.rx": "if(is_sitting, torad(-45),leg1.rx)",
 					"CHleg2.rx": "if(is_sitting, torad(-45),leg2.rx)",
 					"CHleg3.rx": "if(is_sitting, torad(40),leg3.rx)",
@@ -166,7 +185,8 @@
 					"CHtail.ry": "tail.ry",
 					"CHtail.rz": "tail.rz",
 					"CHbody.tz": "if(is_sitting, -3, -7)",
-					"CHbody.ty": "if(is_sitting, 2, -2)"
+					"CHbody.ty": "if(is_sitting, 2, -2)",
+					"render.shadow_size": "0.4"
 				}
 			]
 		},

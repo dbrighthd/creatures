@@ -39,7 +39,7 @@
 											"invertAxis": "xy",
 											"translate": [0, 2, 1],
 											"boxes": [
-												{"coordinates": [-1.5, -0.5, 0, 3, 2, 2], "textureOffset": [10, 0]},
+												{"coordinates": [-1.5, -0.5, 0, 3, 2, 2], "textureOffset": [0, 7]},
 												{
 													"coordinates": [-2.5, 0, 1, 2, 0, 3],
 													"uvNorth": [22, 11, 24, 11],
@@ -56,8 +56,8 @@
 													"uvEast": [13, 11, 16, 11],
 													"uvSouth": [21, 11, 23, 11],
 													"uvWest": [18, 11, 21, 11],
-													"uvUp": [12, 9, 10, 6],
-													"uvDown": [14, 6, 12, 9],
+													"uvUp": [19, 9, 17, 6],
+													"uvDown": [17, 6, 15, 9],
 													"sizeAdd": 0.01
 												},
 												{"coordinates": [-0.5, 1.5, 0, 1, 1, 1], "textureOffset": [13, 4]}
@@ -76,7 +76,7 @@
 											"invertAxis": "xy",
 											"translate": [1, -2, -1],
 											"boxes": [
-												{"coordinates": [-0.5, -0.5, -2, 1, 1, 2], "textureOffset": [6, 7]}
+												{"coordinates": [-0.5, -0.5, -2, 1, 1, 2], "textureOffset": [0, 11]}
 											]
 										},
 										{
@@ -84,7 +84,7 @@
 											"invertAxis": "xy",
 											"translate": [-1, -2, -1],
 											"boxes": [
-												{"coordinates": [-0.5, -0.5, -2, 1, 1, 2], "textureOffset": [0, 7]}
+												{"coordinates": [-0.5, -0.5, -2, 1, 1, 2], "textureOffset": [0, 11]}
 											]
 										},
 										{
@@ -92,7 +92,7 @@
 											"invertAxis": "xy",
 											"translate": [1, 2, -1],
 											"boxes": [
-												{"coordinates": [-0.5, -0.5, -2, 1, 1, 2], "textureOffset": [6, 10]}
+												{"coordinates": [-0.5, -0.5, -2, 1, 1, 2], "textureOffset": [0, 11]}
 											]
 										},
 										{
@@ -100,7 +100,7 @@
 											"invertAxis": "xy",
 											"translate": [-1, 2, -1],
 											"boxes": [
-												{"coordinates": [-0.5, -0.5, -2, 1, 1, 2], "textureOffset": [0, 10]}
+												{"coordinates": [-0.5, -0.5, -2, 1, 1, 2], "textureOffset": [0, 11]}
 											]
 										}
 									]
@@ -115,8 +115,7 @@
 					"body_rotation.rx": 0,
 					"CHbody.rz": "if(anger_time > 0, 0.5*sin(2.5*time), 0.05*sin(2*time))",
 					"CHhead.rx": "if(is_sitting, head.rx + torad(25),head.rx)",
-					"CHhead.ry": "head.ry",
-					"CHhead.rz": "head.rz",
+					"CHhead.rz": "-head.ry",
 					"CHleg1.rx": "if(is_sitting, torad(-45),leg1.rx)",
 					"CHleg2.rx": "if(is_sitting, torad(-45),leg2.rx)",
 					"CHleg3.rx": "if(is_sitting, torad(40),leg3.rx)",
