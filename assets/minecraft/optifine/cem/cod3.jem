@@ -1,0 +1,122 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 32],
+	"models": [
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "sunfish",
+					"invertAxis": "xy",
+					"translate": [0, 1, 0],
+					"submodels": [
+						{
+							"id": "sunfish_body",
+							"invertAxis": "xy",
+							"translate": [0, 2, 6],
+							"texture": "sunfish.png",
+							"textureSize": [64, 32],
+							"boxes": [
+								{
+									"coordinates": [-2, -15, -21, 4, 28, 32],
+									"uvNorth": [0, 3, 2, 17],
+									"uvEast": [18, 3, 2, 17],
+									"uvSouth": [18, 3, 20, 17],
+									"uvWest": [2, 3, 18, 17],
+									"uvUp": [24, 2, 22, 18],
+									"uvDown": [28, 18, 26, 2]
+								}
+							],
+							"submodels": [
+								{
+									"id": "top_fin",
+									"invertAxis": "xy",
+									"translate": [0, 13, -5],
+									"boxes": [
+										{
+											"coordinates": [0, 0, 0, 0, 22, 16],
+											"uvNorth": [0, 0, 0, 0],
+											"uvEast": [8, 21, 0, 32],
+											"uvSouth": [0, 0, 0, 0],
+											"uvWest": [0, 0, 0, 0],
+											"uvUp": [0, 0, 0, 0],
+											"uvDown": [0, 0, 0, 0]
+										}
+									]
+								},
+								{
+									"id": "bottom_fin",
+									"invertAxis": "xy",
+									"translate": [0, -15, 3],
+									"boxes": [
+										{
+											"coordinates": [0, -22, -8, 0, 22, 16],
+											"uvNorth": [0, 0, 0, 0],
+											"uvEast": [16, 21, 8, 32],
+											"uvSouth": [0, 0, 0, 0],
+											"uvWest": [0, 0, 0, 0],
+											"uvUp": [0, 0, 0, 0],
+											"uvDown": [0, 0, 0, 0]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"body.ry": "-tail.ry/6",
+					"var.accurate_depth": "fluid_depth_up + (-(pos_y-floor(pos_y)))",
+					"var.sunfish_target_angle": "lerp( clamp(var.accurate_depth-1, 0, 1), pi/2, 0)",
+					"top_fin.rz": "if(limb_speed >= 0.1, torad(sin((time+(random(id)*100))*0.5))*15, 0)",
+					"top_fin.ry": "if(limb_speed >= 0.1, torad(-sin(((time+(random(id)*100))*0.5)+15)*7), 0)",
+					"bottom_fin.rz": "if(limb_speed >= 0.1, -torad(sin((time+(random(id)*100))*0.5))*15, 0)",
+					"bottom_fin.ry": "if(limb_speed >= 0.1, -torad(-sin(((time+(random(id)*100))*0.5)+15)*7), 0)",
+					"var.sunfish_real_angle": "if(((abs(var.sunfish_target_angle-var.sunfish_real_angle) < torad(170*frame_time))), var.sunfish_target_angle, if((var.sunfish_target_angle < var.sunfish_real_angle), var.sunfish_real_angle-torad(160*frame_time), var.sunfish_real_angle+torad(160*frame_time)))",
+					"sunfish_body.rz": "var.sunfish_real_angle"
+				}
+			]
+		},
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "nose",
+			"id": "nose",
+			"invertAxis": "xy",
+			"translate": [0, -2, 3]
+		},
+		{
+			"part": "fin_left",
+			"id": "fin_left",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "fin_right",
+			"id": "fin_right",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "fin_back",
+			"id": "fin_back",
+			"invertAxis": "xy",
+			"translate": [0, -4, 0]
+		},
+		{
+			"part": "tail",
+			"id": "tail",
+			"invertAxis": "xy",
+			"translate": [0, 0, -7]
+		}
+	]
+}
