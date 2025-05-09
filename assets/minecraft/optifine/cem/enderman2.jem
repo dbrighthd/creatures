@@ -1,4 +1,5 @@
 {
+	"credit": "Made with Blockbench",
 	"textureSize": [64, 32],
 	"models": [
 		{
@@ -8,6 +9,46 @@
 			"translate": [0, -39, 0],
 			"boxes": [
 				{"coordinates": [-4, 27, -2, 8, 12, 4], "textureOffset": [32, 16]}
+			],
+			"submodels": [
+				{
+					"id": "plant4",
+					"invertAxis": "xy",
+					"translate": [-1.5, 32, 2],
+					"rotate": [12.5, 0, 0],
+					"texture": "textures/block/warped_roots_pot.png",
+					"textureSize": [16, 16],
+					"boxes": [
+						{
+							"coordinates": [-4, 0, 0, 8, 8, 0],
+							"uvNorth": [0, 0, 16, 16],
+							"uvEast": [0, 0, 0, 0],
+							"uvSouth": [0, 0, 0, 0],
+							"uvWest": [0, 0, 0, 0],
+							"uvUp": [1, 0, 0, 0],
+							"uvDown": [0, 0, 0, 0]
+						}
+					]
+				},
+				{
+					"id": "plant5",
+					"invertAxis": "xy",
+					"translate": [-2.5, 28, -2],
+					"rotate": [-5, 0, 0],
+					"texture": "textures/block/warped_roots_pot.png",
+					"textureSize": [16, 16],
+					"boxes": [
+						{
+							"coordinates": [-4, 0, 0, 8, 8, 0],
+							"uvNorth": [0, 0, 16, 16],
+							"uvEast": [0, 0, 0, 0],
+							"uvSouth": [0, 0, 0, 0],
+							"uvWest": [0, 0, 0, 0],
+							"uvUp": [1, 0, 0, 0],
+							"uvDown": [0, 0, 0, 0]
+						}
+					]
+				}
 			]
 		},
 		{
@@ -17,6 +58,36 @@
 			"translate": [0, -39, 0],
 			"boxes": [
 				{"coordinates": [-4, 39, -4, 8, 8, 8], "textureOffset": [0, 0]}
+			],
+			"submodels": [
+				{
+					"id": "plant",
+					"invertAxis": "xy",
+					"translate": [-2.5, 49, 0],
+					"rotate": [0, 45, 0],
+					"texture": "textures/block/warped_fungus.png",
+					"textureSize": [16, 16],
+					"boxes": [
+						{
+							"coordinates": [0, -4, -6, 0, 12, 12],
+							"uvNorth": [0, 0, 0, 0],
+							"uvEast": [0, 0, 16, 16],
+							"uvSouth": [0, 0, 0, 0],
+							"uvWest": [0, 0, 0, 0],
+							"uvUp": [1, 0, 0, 0],
+							"uvDown": [0, 0, 0, 0]
+						},
+						{
+							"coordinates": [-6, -4, 0, 12, 12, 0],
+							"uvNorth": [0, 0, 16, 16],
+							"uvEast": [0, 0, 0, 0],
+							"uvSouth": [0, 0, 0, 0],
+							"uvWest": [0, 0, 0, 0],
+							"uvUp": [1, 0, 0, 0],
+							"uvDown": [0, 0, 0, 0]
+						}
+					]
+				}
 			]
 		},
 		{
@@ -35,14 +106,72 @@
 			"translate": [-5, -37, 0],
 			"boxes": [
 				{"coordinates": [4, 9, -1, 2, 30, 2], "textureOffset": [56, 0]}
+			],
+			"submodels": [
+				{
+					"id": "plant2",
+					"invertAxis": "xy",
+					"translate": [6, 36, 0],
+					"rotate": [0, -135, 0],
+					"texture": "textures/block/twisting_vines.png",
+					"textureSize": [16, 16],
+					"boxes": [
+						{
+							"coordinates": [0, -4, -6, 0, 12, 12],
+							"uvNorth": [0, 0, 0, 0],
+							"uvEast": [0, 0, 16, 16],
+							"uvSouth": [0, 0, 0, 0],
+							"uvWest": [0, 0, 0, 0],
+							"uvUp": [1, 0, 0, 0],
+							"uvDown": [0, 0, 0, 0]
+						},
+						{
+							"coordinates": [-6, -4, 0, 12, 12, 0],
+							"uvNorth": [0, 0, 16, 16],
+							"uvEast": [0, 0, 0, 0],
+							"uvSouth": [0, 0, 0, 0],
+							"uvWest": [0, 0, 0, 0],
+							"uvUp": [1, 0, 0, 0],
+							"uvDown": [0, 0, 0, 0]
+						}
+					]
+				},
+				{
+					"id": "plant3",
+					"invertAxis": "xy",
+					"translate": [6, 24, 0],
+					"rotate": [0, -135, 0],
+					"texture": "textures/block/twisting_vines_plant.png",
+					"textureSize": [16, 16],
+					"boxes": [
+						{
+							"coordinates": [0, -4, -6, 0, 12, 12],
+							"uvNorth": [0, 0, 0, 0],
+							"uvEast": [0, 0, 16, 16],
+							"uvSouth": [0, 0, 0, 0],
+							"uvWest": [0, 0, 0, 0],
+							"uvUp": [1, 0, 0, 0],
+							"uvDown": [0, 0, 0, 0]
+						},
+						{
+							"coordinates": [-6, -4, 0, 12, 12, 0],
+							"uvNorth": [0, 0, 16, 16],
+							"uvEast": [0, 0, 0, 0],
+							"uvSouth": [0, 0, 0, 0],
+							"uvWest": [0, 0, 0, 0],
+							"uvUp": [1, 0, 0, 0],
+							"uvDown": [0, 0, 0, 0]
+						}
+					]
+				}
 			]
 		},
 		{
 			"part": "left_arm",
 			"id": "left_arm",
 			"invertAxis": "xy",
-			"translate": [5, -37, 0],
 			"mirrorTexture": "u",
+			"translate": [5, -37, 0],
 			"boxes": [
 				{"coordinates": [-6, 9, -1, 2, 30, 2], "textureOffset": [56, 0]}
 			]
@@ -60,8 +189,8 @@
 			"part": "left_leg",
 			"id": "left_leg",
 			"invertAxis": "xy",
-			"translate": [2, -30, 0],
 			"mirrorTexture": "u",
+			"translate": [2, -30, 0],
 			"boxes": [
 				{"coordinates": [1, 0, -1, 2, 30, 2], "textureOffset": [56, 0]}
 			]
