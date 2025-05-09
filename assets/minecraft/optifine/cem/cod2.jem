@@ -1,0 +1,144 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 32],
+	"texture": "angler.png",
+	"models": [
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "angler",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"submodels": [
+						{
+							"id": "angler_body",
+							"invertAxis": "xy",
+							"translate": [0, 2, 6],
+							"boxes": [
+								{"coordinates": [-4, -5, -10, 8, 9, 10], "textureOffset": [0, 0]},
+								{"coordinates": [-4, -3, -12, 8, 6, 2], "textureOffset": [44, 9]}
+							],
+							"submodels": [
+								{
+									"id": "angler_light",
+									"invertAxis": "xy",
+									"translate": [0, 3.75, -6.5],
+									"boxes": [
+										{"coordinates": [0, -2.75, -9.5, 0, 8, 10], "textureOffset": [26, -10]},
+										{"coordinates": [-1, -2.75, -9, 2, 3, 2], "textureOffset": [0, 0]}
+									]
+								},
+								{
+									"id": "angler_tail1",
+									"invertAxis": "xy",
+									"translate": [0, 0, 0],
+									"boxes": [
+										{"coordinates": [-2, -2, -1, 4, 5, 6], "textureOffset": [30, 13]}
+									],
+									"submodels": [
+										{
+											"id": "angler_tail2",
+											"invertAxis": "xy",
+											"translate": [0, 0.5, 5],
+											"boxes": [
+												{"coordinates": [0, -4.5, -1, 0, 9, 6], "textureOffset": [52, -6]}
+											]
+										}
+									]
+								},
+								{
+									"id": "angler_jaw",
+									"invertAxis": "xy",
+									"translate": [0, -5, -10],
+									"boxes": [
+										{"coordinates": [-4.5, 0, -5, 9, 2, 5], "textureOffset": [0, 20]},
+										{"coordinates": [-4.5, 2, -5, 9, 2, 5], "textureOffset": [24, 25]}
+									]
+								},
+								{
+									"id": "angler_right_fin",
+									"invertAxis": "xy",
+									"translate": [4, 2, -5],
+									"rotate": [0, 5, 0],
+									"boxes": [
+										{
+											"coordinates": [0, -3, 0, 0, 4, 6],
+											"uvNorth": [6, 28, 6, 32],
+											"uvEast": [0, 28, 6, 32],
+											"uvSouth": [12, 28, 12, 32],
+											"uvWest": [6, 28, 12, 32],
+											"uvUp": [6, 28, 6, 28],
+											"uvDown": [6, 28, 6, 28]
+										}
+									]
+								},
+								{
+									"id": "angler_left_fin",
+									"invertAxis": "xy",
+									"translate": [-4, 2, -5],
+									"rotate": [0, -5, 0],
+									"boxes": [
+										{"coordinates": [0, -3, 0, 0, 4, 6], "textureOffset": [52, 22]}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"body.ry": "-tail.ry/6",
+					"angler_body.ry": "torad(sin(time*if(is_in_water, 0.15, 0.75))*if(is_in_water, 2, 5))",
+					"angler_tail1.ry": "-angler_body.ry*2",
+					"angler_tail2.ry": "angler_tail1.ry*3",
+					"angler_light.ry": "if(is_in_water, torad(sin(time*0.1)*15), torad(-25))",
+					"angler_light.rz": "if(is_in_water, torad(-sin((time+15)*0.1)*15), 0)",
+					"angler_jaw.rx": "torad(sin(time*0.1)*5)-torad(if(is_in_water, 15, 5))",
+					"angler_right_fin.ry": "(-angler_body.ry*2)-torad(15)",
+					"angler_left_fin.ry": "angler_right_fin.ry+torad(30)"
+				}
+			]
+		},
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "nose",
+			"id": "nose",
+			"invertAxis": "xy",
+			"translate": [0, -2, 3]
+		},
+		{
+			"part": "fin_left",
+			"id": "fin_left",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "fin_right",
+			"id": "fin_right",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "fin_back",
+			"id": "fin_back",
+			"invertAxis": "xy",
+			"translate": [0, -4, 0]
+		},
+		{
+			"part": "tail",
+			"id": "tail",
+			"invertAxis": "xy",
+			"translate": [0, 0, -7]
+		}
+	]
+}
