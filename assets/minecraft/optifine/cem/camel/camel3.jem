@@ -1,0 +1,236 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [256, 256],
+	"texture": "elephant.png",
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -23, 9]
+		},
+		{
+			"part": "left_ear",
+			"id": "left_ear",
+			"invertAxis": "xy",
+			"translate": [3, -44, 18.5],
+			"rotate": [0, 0, -45],
+			"animations": [
+				{
+					"this.rz": 0
+				}
+			]
+		},
+		{
+			"part": "right_ear",
+			"id": "right_ear",
+			"invertAxis": "xy",
+			"translate": [-3, -44, 18.5],
+			"rotate": [0, 0, 45]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -20, -10.5],
+			"submodels": [
+				{
+					"id": "elephant",
+					"invertAxis": "xy",
+					"translate": [0, 20, 10.5],
+					"boxes": [
+						{"coordinates": [-11.5, 0, -28.5, 23, 24, 36], "textureOffset": [0, 0]}
+					],
+					"submodels": [
+						{
+							"id": "elephanthead",
+							"invertAxis": "xy",
+							"translate": [0, 0, 22],
+							"boxes": [
+								{"coordinates": [-8, 6, -68.5, 16, 20, 18], "textureOffset": [0, 60]},
+								{"coordinates": [5, 5, -81.5, 4, 4, 16], "textureOffset": [40, 98]},
+								{"coordinates": [-9, 5, -81.5, 4, 4, 16], "textureOffset": [106, 14]}
+							],
+							"submodels": [
+								{
+									"id": "r_ear",
+									"invertAxis": "xy",
+									"translate": [8, 19, -42.5],
+									"rotate": [0, 30, 0],
+									"boxes": [
+										{"coordinates": [9, -15, -15.58846, 0, 24, 16], "textureOffset": [68, 44]}
+									]
+								},
+								{
+									"id": "l_ear",
+									"invertAxis": "xy",
+									"translate": [-8, 19, -42.5],
+									"rotate": [0, -30, 0],
+									"boxes": [
+										{"coordinates": [-9, -15, -15.58846, 0, 24, 16], "textureOffset": [68, 68]}
+									]
+								},
+								{
+									"id": "trunk_1",
+									"invertAxis": "xy",
+									"translate": [0, 11, -68.5],
+									"boxes": [
+										{"coordinates": [-4, -11, -4, 8, 14, 8], "textureOffset": [0, 0]}
+									],
+									"submodels": [
+										{
+											"id": "trunk_2",
+											"invertAxis": "xy",
+											"translate": [0, -9, 0],
+											"boxes": [
+												{"coordinates": [-3, -11, -3, 6, 12, 6], "textureOffset": [119, 35]}
+											],
+											"submodels": [
+												{
+													"id": "trunk_3",
+													"invertAxis": "xy",
+													"translate": [0.5, -9, 0.5],
+													"boxes": [
+														{"coordinates": [-3, -11, -3, 5, 12, 5], "textureOffset": [120, 90]}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "elephant_tail",
+							"invertAxis": "xy",
+							"translate": [0, 17, 7.5],
+							"rotate": [-5, 0, 0],
+							"boxes": [
+								{"coordinates": [-1.5, -13, 0, 3, 14, 0], "textureOffset": [0, 60]}
+							]
+						},
+						{
+							"id": "elephant_front_right_leg",
+							"invertAxis": "xy",
+							"translate": [6.5, 0, -23.5],
+							"boxes": [
+								{"coordinates": [-5, -20, -5, 10, 20, 10], "textureOffset": [90, 98]}
+							]
+						},
+						{
+							"id": "elephant_front_left_leg",
+							"invertAxis": "xy",
+							"translate": [0, 0, -23.5],
+							"boxes": [
+								{"coordinates": [-11.5, -20, -5, 10, 20, 10], "textureOffset": [100, 60]}
+							]
+						},
+						{
+							"id": "elephant_back_right_leg",
+							"invertAxis": "xy",
+							"translate": [6.5, 0, 2.75],
+							"boxes": [
+								{"coordinates": [-5, -20, -5.25, 10, 20, 10], "textureOffset": [82, 0]}
+							]
+						},
+						{
+							"id": "elephant_back_left_leg",
+							"invertAxis": "xy",
+							"translate": [-6.5, 0, 2.5],
+							"boxes": [
+								{"coordinates": [-5, -20, -5, 10, 20, 10], "textureOffset": [0, 98]}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"elephant.ty": "if(is_in_water, -body.ty+12,-body.ty-16)",
+					"elephant.tz": "-body.tz+21",
+					"elephant.rx": "-body.rx",
+					"elephant_front_right_leg.rx": "if(front_left_leg.rx==-1.5707964 || body.rx!=0, 0, front_right_leg.rx)",
+					"elephant_front_left_leg.rx": "if(front_left_leg.rx==-1.5707964 || body.rx!=0, 0, front_left_leg.rx)",
+					"elephant_back_right_leg.rx": "if(front_left_leg.rx==-1.5707964 || body.rx!=0, 0, front_left_leg.rx)",
+					"elephant_back_left_leg.rx": "if(front_left_leg.rx==-1.5707964 || body.rx!=0, 0, front_right_leg.rx)",
+					"elephant_tail.rx": "tail.rx*0.5",
+					"elephant_tail.ry": "tail.ry*0.5",
+					"elephant_tail.rz": "tail.rz*0.5",
+					"trunk_1.rx": "if(is_in_water,torad(-140),torad(0))",
+					"trunk_2.rx": "if(is_in_water,torad(-27.5),torad(0))",
+					"trunk_3.rx": "if(is_in_water,torad(50),torad(35))",
+					"var.test": "print(TEST, 60, front_left_leg.rx)"
+				}
+			]
+		},
+		{
+			"part": "hump",
+			"id": "hump",
+			"invertAxis": "xy",
+			"translate": [0, -32, -0.5]
+		},
+		{
+			"part": "front_left_leg",
+			"id": "front_left_leg",
+			"invertAxis": "xy",
+			"translate": [4.9, -23, 10]
+		},
+		{
+			"part": "front_right_leg",
+			"id": "front_right_leg",
+			"invertAxis": "xy",
+			"translate": [-4.9, -23, 9.5]
+		},
+		{
+			"part": "back_left_leg",
+			"id": "back_left_leg",
+			"invertAxis": "xy",
+			"translate": [4.9, -23, -10.5]
+		},
+		{
+			"part": "back_right_leg",
+			"id": "back_right_leg",
+			"invertAxis": "xy",
+			"translate": [-4.9, -23, -10.5]
+		},
+		{
+			"part": "tail",
+			"id": "tail",
+			"invertAxis": "xy",
+			"translate": [0, -29, -14],
+			"rotate": [-5, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		},
+		{
+			"part": "saddle",
+			"id": "saddle",
+			"invertAxis": "xy",
+			"translate": [0, -20, -10.5]
+		},
+		{
+			"part": "bridle",
+			"id": "bridle",
+			"invertAxis": "xy",
+			"translate": [0, -23, 9],
+			"submodels": [
+				{
+					"id": "mirror",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"part": "reins",
+			"id": "reins",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [0, -23, 9]
+		}
+	]
+}
