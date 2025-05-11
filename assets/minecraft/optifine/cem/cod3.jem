@@ -32,6 +32,54 @@
 							],
 							"submodels": [
 								{
+									"id": "right_fin",
+									"invertAxis": "xy",
+									"translate": [2, -3, -13],
+									"rotate": [0, 1, 0],
+									"submodels": [
+										{
+											"id": "right_fin_g",
+											"invertAxis": "xy",
+											"translate": [0, 0, 0],
+											"boxes": [
+												{
+													"coordinates": [0, -4, 0, 0, 8, 8],
+													"uvNorth": [0, 0, 0, 0],
+													"uvEast": [20, 28, 16, 32],
+													"uvSouth": [0, 0, 0, 0],
+													"uvWest": [0, 0, 0, 0],
+													"uvUp": [0, 0, 0, 0],
+													"uvDown": [0, 0, 0, 0]
+												}
+											]
+										}
+									]
+								},
+								{
+									"id": "left_fin",
+									"invertAxis": "xy",
+									"translate": [-2, -3, -13],
+									"rotate": [0, -1, 0],
+									"submodels": [
+										{
+											"id": "left_fin_g",
+											"invertAxis": "xy",
+											"translate": [0, 0, 0],
+											"boxes": [
+												{
+													"coordinates": [0, -4, 0, 0, 8, 8],
+													"uvNorth": [0, 0, 0, 0],
+													"uvEast": [20, 28, 24, 32],
+													"uvSouth": [0, 0, 0, 0],
+													"uvWest": [0, 0, 0, 0],
+													"uvUp": [0, 0, 0, 0],
+													"uvDown": [0, 0, 0, 0]
+												}
+											]
+										}
+									]
+								},
+								{
 									"id": "top_fin",
 									"invertAxis": "xy",
 									"translate": [0, 13, -5],
@@ -78,7 +126,11 @@
 					"bottom_fin.rz": "if(limb_speed >= 0.1, -torad(sin((time+(random(id)*100))*0.5))*15, 0)",
 					"bottom_fin.ry": "if(limb_speed >= 0.1, -torad(-sin(((time+(random(id)*100))*0.5)+15)*7), 0)",
 					"var.sunfish_real_angle": "if(((abs(var.sunfish_target_angle-var.sunfish_real_angle) < torad(170*frame_time))), var.sunfish_target_angle, if((var.sunfish_target_angle < var.sunfish_real_angle), var.sunfish_real_angle-torad(160*frame_time), var.sunfish_real_angle+torad(160*frame_time)))",
-					"sunfish_body.rz": "var.sunfish_real_angle"
+					"sunfish_body.rz": "var.sunfish_real_angle",
+					"right_fin.ry": "if(limb_speed >= 0.01, clamp(-(torad((sin(time/25)*500)-450)), torad(-50), torad(-1)), torad(-1))",
+					"right_fin_g.rz": "if(right_fin.ry <= torad(-15), -(torad(sin((time-((25*pi)/2))/25)*45)), 0)",
+					"left_fin.ry": "-right_fin.ry",
+					"left_fin_g.rz": "-right_fin_g.rz"
 				}
 			]
 		},
