@@ -81,7 +81,6 @@
 					"var.blink_cycle": "max((floor((var.blink_length*time)+(random(id)*100))% 2)-(floor((var.blink_length*time)+(random(id)*100))% (floor((var.blink_length*time)+(random(id)*100))% 5)), 0)",
 					"blink.visible": "if(var.blink_cycle > 0.5, true, false)",
 					"angy.visible": "if(anger_time > 0, true, false)",
-					"var.test": "print(test, 20, var.blink_cycle)",
 					"pumpkin.visible": "if(nbt(Pumpkin,raw:1b), true, false)"
 				}
 			]
