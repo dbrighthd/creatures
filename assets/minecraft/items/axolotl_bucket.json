@@ -1,0 +1,217 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": [
+          "Otter",
+          "iregex:.*Otter.*"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "item/axolotl_bucket_otter"
+        }
+      },
+      {
+        "when": "jeb_",
+        "model": {
+          "type": "minecraft:model",
+          "model": "item/axolotl_bucket_jeb"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:axolotl/variant",
+      "cases": [
+        {
+          "when": "lucy",
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:component",
+            "component": "minecraft:custom_name",
+            "cases": [
+              {
+                "when": [
+                  "Albino Chimera",
+                  "iregex:.*Albino.*Chimera.*"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "minecraft:item/axolotl_bucket_albino_chimera"
+                }
+              },
+              {
+                "when": [
+                  "Albino",
+                  "iregex:.*Albino.*"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "minecraft:item/axolotl_bucket_albino"
+                }
+              },
+              {
+                "when": [
+                  "Chimera",
+                  "iregex:.*Chimera.*"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "minecraft:item/axolotl_bucket_lucy_chimera"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/axolotl_bucket"
+            }
+          }
+        },
+        {
+          "when": "wild",
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:component",
+            "component": "minecraft:custom_name",
+            "cases": [
+              {
+                "when": [
+                  "Black",
+                  "iregex:.*Black.*"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "minecraft:item/axolotl_bucket_black"
+                }
+              },
+              {
+                "when": [
+                  "Chimera",
+                  "iregex:.*Chimera.*"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "minecraft:item/axolotl_bucket_brown_chimera"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/axolotl_bucket_brown"
+            }
+          }
+        },
+        {
+          "when": "gold",
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:component",
+            "component": "minecraft:custom_name",
+            "cases": [
+              {
+                "when": [
+                  "Green Chimera",
+                  "iregex:.*Green.*Chimera.*"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "minecraft:item/axolotl_bucket_green_chimera"
+                }
+              },
+              {
+                "when": [
+                  "Green",
+                  "iregex:.*Green.*"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "minecraft:item/axolotl_bucket_green"
+                }
+              },
+              {
+                "when": [
+                  "Chimera",
+                  "iregex:.*Chimera.*"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "minecraft:item/axolotl_bucket_yellow_chimera"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/axolotl_bucket_yellow"
+            }
+          }
+        },
+        {
+          "when": "cyan",
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:component",
+            "component": "minecraft:custom_name",
+            "cases": [
+              {
+                "when": [
+                  "Chimera",
+                  "iregex:.*Chimera.*"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "minecraft:item/axolotl_bucket_cyan_chimera"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/axolotl_bucket_cyan"
+            }
+          }
+        },
+        {
+          "when": "blue",
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:component",
+            "component": "minecraft:custom_name",
+            "cases": [
+              {
+                "when": [
+                  "AxolotlTheStrange",
+                  "iregex:.*AxolotlTheStrange.*"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "minecraft:item/axolotl_bucket_strange"
+                }
+              },
+              {
+                "when": [
+                  "Chimera",
+                  "iregex:.*Chimera.*"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "minecraft:item/axolotl_bucket_blue_chimera"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/axolotl_bucket_blue"
+            }
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "item/axolotl_bucket"
+      }
+    }
+  }
+}
