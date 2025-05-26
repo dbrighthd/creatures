@@ -6,6 +6,7 @@
     "cases": [
       {
         "when": [
+          "Bucket of Otter",
           "Otter",
           "iregex:.*Otter.*"
         ],
@@ -36,7 +37,10 @@
             "cases": [
               {
                 "when": [
+                  "Bucket of Albino Chimera",
                   "Albino Chimera",
+                  "Bucket of Albino Chimera",
+                  "Albino Chimera Axolotl",
                   "iregex:.*Albino.*Chimera.*"
                 ],
                 "model": {
@@ -46,7 +50,10 @@
               },
               {
                 "when": [
+                  "Bucket of Albino",
                   "Albino",
+                  "Bucket of Albino Axolotl",
+                  "Albino Axolotl",
                   "iregex:.*Albino.*"
                 ],
                 "model": {
@@ -56,7 +63,10 @@
               },
               {
                 "when": [
+                  "Bucket of Chimera",
                   "Chimera",
+                  "Bucket of Chimera Axolotl",
+                  "Chimera Axolotl",
                   "iregex:.*Chimera.*"
                 ],
                 "model": {
@@ -80,7 +90,10 @@
             "cases": [
               {
                 "when": [
+                  "Bucket of Black",
                   "Black",
+                  "Bucket of Black Axolotl",
+                  "Black Axolotl",
                   "iregex:.*Black.*"
                 ],
                 "model": {
@@ -90,7 +103,10 @@
               },
               {
                 "when": [
+                  "Bucket of Chimera",
                   "Chimera",
+                  "Bucket of Chimera Axolotl",
+                  "Chimera Axolotl",
                   "iregex:.*Chimera.*"
                 ],
                 "model": {
@@ -114,7 +130,10 @@
             "cases": [
               {
                 "when": [
+                  "Bucket of Green Chimera",
                   "Green Chimera",
+                  "Bucket of Green Chimera Axolotl",
+                  "Green Chimera Axolotl",
                   "iregex:.*Green.*Chimera.*"
                 ],
                 "model": {
@@ -124,7 +143,10 @@
               },
               {
                 "when": [
+                  "Bucket of Green",
                   "Green",
+                  "Bucket of Green Axolotl",
+                  "Green Axolotl",
                   "iregex:.*Green.*"
                 ],
                 "model": {
@@ -134,7 +156,10 @@
               },
               {
                 "when": [
+                  "Bucket of Chimera",
                   "Chimera",
+                  "Bucket of Chimera Axolotl",
+                  "Chimera Axolotl",
                   "iregex:.*Chimera.*"
                 ],
                 "model": {
@@ -158,7 +183,10 @@
             "cases": [
               {
                 "when": [
+                  "Bucket of Chimera",
                   "Chimera",
+                  "Bucket of Chimera Axolotl",
+                  "Chimera Axolotl",
                   "iregex:.*Chimera.*"
                 ],
                 "model": {
@@ -182,6 +210,7 @@
             "cases": [
               {
                 "when": [
+                  "Bucket of AxolotlTheStrange",
                   "AxolotlTheStrange",
                   "iregex:.*AxolotlTheStrange.*"
                 ],
@@ -192,7 +221,10 @@
               },
               {
                 "when": [
+                  "Bucket of Chimera",
                   "Chimera",
+                  "Bucket of Chimera Axolotl",
+                  "Chimera Axolotl",
                   "iregex:.*Chimera.*"
                 ],
                 "model": {

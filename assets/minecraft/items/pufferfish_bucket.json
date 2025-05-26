@@ -6,6 +6,7 @@
     "cases": [
       {
         "when": [
+          "Bucket of Electric Eel",
           "Electric Eel",
           "iregex:.*Electric.*"
         ],

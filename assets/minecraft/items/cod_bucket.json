@@ -6,6 +6,7 @@
     "cases": [
       {
         "when": [
+          "Bucket of Angler",
           "Angler",
           "iregex:.*Angler.*"
         ],
@@ -16,6 +17,18 @@
       },
       {
         "when": [
+          "Bucket of Brown Sunfish",
+          "Brown Sunfish",
+          "iregex:.*Brown.*Sunfish.*"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "item/cod_bucket_sunfish_brown"
+        }
+      },
+      {
+        "when": [
+          "Bucket of Sunfish",
           "Sunfish",
           "iregex:.*Sunfish.*"
         ],
