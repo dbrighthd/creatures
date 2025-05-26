@@ -1,7 +1,6 @@
 {
 	"credit": "Made with Blockbench",
 	"textureSize": [64, 64],
-	"texture": "textures/entity/pig/cold_pig.png",
 	"models": [
 		{
 			"part": "body",
@@ -30,11 +29,11 @@
 				{
 					"coordinates": [0, 17, -11, 4, 6, 0],
 					"uvNorth": [16, 20, 20, 26],
-					"uvEast": [16, 20, 16, 26],
+					"uvEast": [0, 0, 1, 1],
 					"uvSouth": [20, 20, 16, 26],
-					"uvWest": [20, 20, 20, 26],
-					"uvUp": [20, 20, 16, 20],
-					"uvDown": [24, 20, 20, 20],
+					"uvWest": [0, 0, 1, 1],
+					"uvUp": [0, 0, 1, 1],
+					"uvDown": [0, 0, 1, 1],
 					"sizeAdd": 0.01
 				},
 				{"coordinates": [-1, 16, -13, 4, 1, 4], "textureOffset": [0, 26]}
