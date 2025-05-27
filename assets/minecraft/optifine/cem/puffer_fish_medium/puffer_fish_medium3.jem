@@ -1,923 +1,258 @@
 {
-  "texture": "",
-  "textureSize": [
-    32,
-    32
-  ],
-  "shadow_size": 1.0,
-  "models": [
-    {
-      "texture": "",
-      "textureSize": [
-        32,
-        32
-      ],
-      "invertAxis": "xy",
-      "translate": [
-        0.0,
-        -2.0,
-        0.0
-      ],
-      "rotate": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "mirrorTexture": "",
-      "boxes": [
-        {
-          "textureOffset": [
-            12,
-            22
-          ],
-          "uvDown": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvUp": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvFront": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvBack": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvLeft": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvRight": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "coordinates": [
-            -2.5,
-            2.0,
-            -2.5,
-            5.0,
-            5.0,
-            5.0
-          ],
-          "sizeAdd": 0.0,
-          "sizeAddX": 0.0,
-          "sizeAddY": 0.0,
-          "sizeAddZ": 0.0
-        }
-      ],
-      "submodels": [],
-      "baseId": "",
-      "model": "",
-      "id": "body",
-      "part": "body",
-      "attach": false,
-      "scale": 1.0,
-      "animations": []
-    },
-    {
-      "texture": "",
-      "textureSize": [
-        32,
-        32
-      ],
-      "invertAxis": "xy",
-      "translate": [
-        2.5,
-        -2.0,
-        2.5
-      ],
-      "rotate": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "mirrorTexture": "",
-      "boxes": [
-        {
-          "textureOffset": [
-            1,
-            17
-          ],
-          "uvDown": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvUp": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvFront": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvBack": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvLeft": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvRight": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "coordinates": [
-            -3.5,
-            2.0,
-            -2.5,
-            1.0,
-            5.0,
-            0.0
-          ],
-          "sizeAdd": 0.0,
-          "sizeAddX": 0.0,
-          "sizeAddY": 0.0,
-          "sizeAddZ": 0.0
-        }
-      ],
-      "submodels": [],
-      "baseId": "",
-      "model": "",
-      "id": "spikes_front_left",
-      "part": "spikes_front_left",
-      "attach": false,
-      "scale": 1.0,
-      "animations": []
-    },
-    {
-      "texture": "",
-      "textureSize": [
-        32,
-        32
-      ],
-      "invertAxis": "xy",
-      "translate": [
-        2.5,
-        -2.0,
-        -2.5
-      ],
-      "rotate": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "mirrorTexture": "",
-      "boxes": [
-        {
-          "textureOffset": [
-            1,
-            17
-          ],
-          "uvDown": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvUp": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvFront": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvBack": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvLeft": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvRight": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "coordinates": [
-            -3.5,
-            2.0,
-            2.5,
-            1.0,
-            5.0,
-            0.0
-          ],
-          "sizeAdd": 0.0,
-          "sizeAddX": 0.0,
-          "sizeAddY": 0.0,
-          "sizeAddZ": 0.0
-        }
-      ],
-      "submodels": [],
-      "baseId": "",
-      "model": "",
-      "id": "spikes_back_left",
-      "part": "spikes_back_left",
-      "attach": false,
-      "scale": 1.0,
-      "animations": []
-    },
-    {
-      "texture": "",
-      "textureSize": [
-        32,
-        32
-      ],
-      "invertAxis": "xy",
-      "translate": [
-        -2.5,
-        -2.0,
-        -2.5
-      ],
-      "rotate": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "mirrorTexture": "",
-      "boxes": [
-        {
-          "textureOffset": [
-            18,
-            20
-          ],
-          "uvDown": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvUp": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvFront": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvBack": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvLeft": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvRight": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "coordinates": [
-            -2.5,
-            1.0,
-            2.5,
-            5.0,
-            1.0,
-            0.0
-          ],
-          "sizeAdd": 0.0,
-          "sizeAddX": 0.0,
-          "sizeAddY": 0.0,
-          "sizeAddZ": 0.0
-        }
-      ],
-      "submodels": [],
-      "baseId": "",
-      "model": "",
-      "id": "spikes_back_bottom",
-      "part": "spikes_back_bottom",
-      "attach": false,
-      "scale": 1.0,
-      "animations": []
-    },
-    {
-      "texture": "",
-      "textureSize": [
-        32,
-        32
-      ],
-      "invertAxis": "xy",
-      "translate": [
-        2.5,
-        -6.0,
-        1.5
-      ],
-      "rotate": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "mirrorTexture": "",
-      "boxes": [
-        {
-          "textureOffset": [
-            24,
-            3
-          ],
-          "uvDown": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvUp": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvFront": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvBack": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvLeft": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvRight": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "coordinates": [
-            -4.5,
-            6.0,
-            -1.5,
-            2.0,
-            0.0,
-            2.0
-          ],
-          "sizeAdd": 0.0,
-          "sizeAddX": 0.0,
-          "sizeAddY": 0.0,
-          "sizeAddZ": 0.0
-        }
-      ],
-      "submodels": [],
-      "baseId": "",
-      "model": "",
-      "id": "fin_left",
-      "part": "fin_left",
-      "attach": false,
-      "scale": 1.0,
-      "animations": []
-    },
-    {
-      "texture": "",
-      "textureSize": [
-        32,
-        32
-      ],
-      "invertAxis": "xy",
-      "translate": [
-        -2.5,
-        -6.0,
-        1.5
-      ],
-      "rotate": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "mirrorTexture": "",
-      "boxes": [
-        {
-          "textureOffset": [
-            24,
-            0
-          ],
-          "uvDown": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvUp": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvFront": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvBack": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvLeft": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvRight": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "coordinates": [
-            2.5,
-            6.0,
-            -1.5,
-            2.0,
-            0.0,
-            2.0
-          ],
-          "sizeAdd": 0.0,
-          "sizeAddX": 0.0,
-          "sizeAddY": 0.0,
-          "sizeAddZ": 0.0
-        }
-      ],
-      "submodels": [],
-      "baseId": "",
-      "model": "",
-      "id": "fin_right",
-      "part": "fin_right",
-      "attach": false,
-      "scale": 1.0,
-      "animations": []
-    },
-    {
-      "texture": "",
-      "textureSize": [
-        32,
-        32
-      ],
-      "invertAxis": "xy",
-      "translate": [
-        0.0,
-        -7.0,
-        2.5
-      ],
-      "rotate": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "mirrorTexture": "",
-      "boxes": [
-        {
-          "textureOffset": [
-            19,
-            17
-          ],
-          "uvDown": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvUp": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvFront": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvBack": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvLeft": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvRight": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "coordinates": [
-            -2.5,
-            7.0,
-            -2.5,
-            5.0,
-            1.0,
-            0.0
-          ],
-          "sizeAdd": 0.0,
-          "sizeAddX": 0.0,
-          "sizeAddY": 0.0,
-          "sizeAddZ": 0.0
-        }
-      ],
-      "submodels": [],
-      "baseId": "",
-      "model": "",
-      "id": "spikes_front_top",
-      "part": "spikes_front_top",
-      "attach": false,
-      "scale": 1.0,
-      "animations": []
-    },
-    {
-      "texture": "",
-      "textureSize": [
-        32,
-        32
-      ],
-      "invertAxis": "xy",
-      "translate": [
-        -2.5,
-        -2.0,
-        2.5
-      ],
-      "rotate": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "mirrorTexture": "",
-      "boxes": [
-        {
-          "textureOffset": [
-            5,
-            17
-          ],
-          "uvDown": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvUp": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvFront": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvBack": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvLeft": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvRight": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "coordinates": [
-            2.5,
-            2.0,
-            -2.5,
-            1.0,
-            5.0,
-            0.0
-          ],
-          "sizeAdd": 0.0,
-          "sizeAddX": 0.0,
-          "sizeAddY": 0.0,
-          "sizeAddZ": 0.0
-        }
-      ],
-      "submodels": [],
-      "baseId": "",
-      "model": "",
-      "id": "spikes_front_right",
-      "part": "spikes_front_right",
-      "attach": false,
-      "scale": 1.0,
-      "animations": []
-    },
-    {
-      "texture": "",
-      "textureSize": [
-        32,
-        32
-      ],
-      "invertAxis": "xy",
-      "translate": [
-        0.0,
-        -7.0,
-        -2.5
-      ],
-      "rotate": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "mirrorTexture": "",
-      "boxes": [
-        {
-          "textureOffset": [
-            11,
-            17
-          ],
-          "uvDown": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvUp": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvFront": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvBack": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvLeft": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvRight": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "coordinates": [
-            -2.5,
-            7.0,
-            2.5,
-            5.0,
-            1.0,
-            0.0
-          ],
-          "sizeAdd": 0.0,
-          "sizeAddX": 0.0,
-          "sizeAddY": 0.0,
-          "sizeAddZ": 0.0
-        }
-      ],
-      "submodels": [],
-      "baseId": "",
-      "model": "",
-      "id": "spikes_back_top",
-      "part": "spikes_back_top",
-      "attach": false,
-      "scale": 1.0,
-      "animations": []
-    },
-    {
-      "texture": "",
-      "textureSize": [
-        32,
-        32
-      ],
-      "invertAxis": "xy",
-      "translate": [
-        -2.5,
-        -2.0,
-        -2.5
-      ],
-      "rotate": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "mirrorTexture": "",
-      "boxes": [
-        {
-          "textureOffset": [
-            9,
-            17
-          ],
-          "uvDown": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvUp": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvFront": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvBack": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvLeft": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvRight": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "coordinates": [
-            2.5,
-            2.0,
-            2.5,
-            1.0,
-            5.0,
-            0.0
-          ],
-          "sizeAdd": 0.0,
-          "sizeAddX": 0.0,
-          "sizeAddY": 0.0,
-          "sizeAddZ": 0.0
-        }
-      ],
-      "submodels": [],
-      "baseId": "",
-      "model": "",
-      "id": "spikes_back_right",
-      "part": "spikes_back_right",
-      "attach": false,
-      "scale": 1.0,
-      "animations": []
-    },
-    {
-      "texture": "",
-      "textureSize": [
-        32,
-        32
-      ],
-      "invertAxis": "xy",
-      "translate": [
-        0.0,
-        -2.0,
-        2.5
-      ],
-      "rotate": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "mirrorTexture": "",
-      "boxes": [
-        {
-          "textureOffset": [
-            17,
-            19
-          ],
-          "uvDown": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvUp": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvFront": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvBack": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvLeft": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "uvRight": [
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "coordinates": [
-            -2.5,
-            1.0,
-            -2.5,
-            5.0,
-            1.0,
-            1.0
-          ],
-          "sizeAdd": 0.0,
-          "sizeAddX": 0.0,
-          "sizeAddY": 0.0,
-          "sizeAddZ": 0.0
-        }
-      ],
-      "submodels": [],
-      "baseId": "",
-      "model": "",
-      "id": "spikes_front_bottom",
-      "part": "spikes_front_bottom",
-      "attach": false,
-      "scale": 1.0,
-      "animations": []
-    }
-  ]
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "lionfish",
+					"invertAxis": "xy",
+					"translate": [0, 2, 0],
+					"texture": "lionfish.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [-2.5, -3, -6.5, 5, 6, 11], "textureOffset": [0, 0]}
+					],
+					"submodels": [
+						{
+							"id": "left_dorsal_spines",
+							"invertAxis": "xy",
+							"translate": [-1, 3, -0.5],
+							"rotate": [0, 0, 10],
+							"boxes": [
+								{
+									"coordinates": [0, 0, -6, 0, 12, 12],
+									"uvNorth": [0, 0, 1, 1],
+									"uvEast": [0, 0, 1, 1],
+									"uvSouth": [0, 0, 1, 1],
+									"uvWest": [36, 18, 48, 30],
+									"uvUp": [0, 0, 1, 1],
+									"uvDown": [0, 0, 1, 1]
+								}
+							]
+						},
+						{
+							"id": "right_dorsal_spines",
+							"invertAxis": "xy",
+							"translate": [1, 3, -0.5],
+							"rotate": [0, 0, -10],
+							"boxes": [
+								{
+									"coordinates": [0, 0, -6, 0, 12, 12],
+									"uvNorth": [0, 0, 1, 1],
+									"uvEast": [0, 18, 12, 30],
+									"uvSouth": [0, 0, 1, 1],
+									"uvWest": [0, 0, 1, 1],
+									"uvUp": [0, 0, 1, 1],
+									"uvDown": [0, 0, 1, 1]
+								}
+							]
+						},
+						{
+							"id": "lion_fin_left",
+							"invertAxis": "xy",
+							"translate": [-2.5, 0, -6.5],
+							"rotate": [0, -15, 0],
+							"boxes": [
+								{
+									"coordinates": [0, -8, 0, 0, 16, 16],
+									"uvNorth": [0, 0, 1, 1],
+									"uvEast": [0, 0, 1, 1],
+									"uvSouth": [0, 0, 1, 1],
+									"uvWest": [32, 30, 48, 46],
+									"uvUp": [0, 0, 1, 1],
+									"uvDown": [0, 0, 1, 1]
+								}
+							]
+						},
+						{
+							"id": "lion_fin_right",
+							"invertAxis": "xy",
+							"translate": [2.5, 0, -6.5],
+							"rotate": [0, 15, 0],
+							"boxes": [
+								{
+									"coordinates": [0, -8, 0, 0, 16, 16],
+									"uvNorth": [0, 0, 1, 1],
+									"uvEast": [0, 30, 16, 46],
+									"uvSouth": [0, 0, 1, 1],
+									"uvWest": [0, 0, 1, 1],
+									"uvUp": [0, 0, 1, 1],
+									"uvDown": [0, 0, 1, 1]
+								}
+							]
+						},
+						{
+							"id": "lionhead",
+							"invertAxis": "xy",
+							"translate": [0, 2.125, -6.5],
+							"boxes": [
+								{"coordinates": [-2.5, -2.125, -2, 5, 2, 2], "textureOffset": [48, 40]},
+								{"coordinates": [-2.5, -5.125, -4, 5, 3, 4], "textureOffset": [1, 56]},
+								{"coordinates": [-1.5, -0.125, -4, 0, 5, 4], "textureOffset": [36, 0]},
+								{"coordinates": [1.5, -0.125, -4, 0, 5, 4], "textureOffset": [36, 9]}
+							]
+						},
+						{
+							"id": "liontail1",
+							"invertAxis": "xy",
+							"translate": [0, 0, 4.5],
+							"boxes": [
+								{"coordinates": [-1.5, -2, 0, 3, 4, 4], "textureOffset": [48, 32]},
+								{
+									"coordinates": [0, -6, 0, 0, 12, 4],
+									"uvNorth": [52, 52, 52, 64],
+									"uvEast": [48, 52, 52, 64],
+									"uvSouth": [64, 52, 64, 64],
+									"uvWest": [52, 52, 56, 64],
+									"uvUp": [52, 52, 52, 48],
+									"uvDown": [52, 48, 52, 52]
+								}
+							],
+							"submodels": [
+								{
+									"id": "liontail2",
+									"invertAxis": "xy",
+									"translate": [0, 0, 4],
+									"boxes": [
+										{
+											"coordinates": [0, -6, 0, 0, 12, 8],
+											"uvNorth": [52, 52, 52, 64],
+											"uvEast": [40, 52, 48, 64],
+											"uvSouth": [64, 52, 64, 64],
+											"uvWest": [56, 52, 64, 64],
+											"uvUp": [52, 48, 52, 40],
+											"uvDown": [52, 40, 52, 48]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"lionfish.ry": "-sin(time/4)/16",
+					"liontail1.ry": "sin(time/4)/6",
+					"liontail2.ry": "sin(time/4)/4",
+					"lionhead.ry": "-sin(time/4)/12",
+					"lion_fin_right.ry": "(sin(time/8)/4)-torad(16)",
+					"lion_fin_left.ry": "-lion_fin_right.ry"
+				}
+			]
+		},
+		{
+			"part": "fin_left",
+			"id": "fin_left",
+			"invertAxis": "xy",
+			"translate": [26.5, -5, 1.5]
+		},
+		{
+			"part": "fin_right",
+			"id": "fin_right",
+			"invertAxis": "xy",
+			"translate": [21.5, -5, 1.5]
+		},
+		{
+			"part": "spikes_front_top",
+			"id": "spikes_front_top",
+			"invertAxis": "xy",
+			"translate": [24, -6, 2.5],
+			"rotate": [-45, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		},
+		{
+			"part": "spikes_back_top",
+			"id": "spikes_back_top",
+			"invertAxis": "xy",
+			"translate": [24, -6, -2.5],
+			"rotate": [45, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		},
+		{
+			"part": "spikes_front_left",
+			"id": "spikes_front_left",
+			"invertAxis": "xy",
+			"translate": [26.5, -1, 2.5],
+			"rotate": [0, -45, 0],
+			"animations": [
+				{
+					"this.ry": 0
+				}
+			]
+		},
+		{
+			"part": "spikes_front_right",
+			"id": "spikes_front_right",
+			"invertAxis": "xy",
+			"translate": [21.5, -1, 2.5],
+			"rotate": [0, 45, 0],
+			"animations": [
+				{
+					"this.ry": 0
+				}
+			]
+		},
+		{
+			"part": "spikes_back_left",
+			"id": "spikes_back_left",
+			"invertAxis": "xy",
+			"translate": [26.5, -1, -2.5],
+			"rotate": [0, 45, 0],
+			"animations": [
+				{
+					"this.ry": 0
+				}
+			]
+		},
+		{
+			"part": "spikes_back_right",
+			"id": "spikes_back_right",
+			"invertAxis": "xy",
+			"translate": [21.5, -1, -2.5],
+			"rotate": [0, -45, 0],
+			"animations": [
+				{
+					"this.ry": 0
+				}
+			]
+		},
+		{
+			"part": "spikes_front_bottom",
+			"id": "spikes_front_bottom",
+			"invertAxis": "xy",
+			"translate": [24, -1, 2.5],
+			"rotate": [45, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		},
+		{
+			"part": "spikes_back_bottom",
+			"id": "spikes_back_bottom",
+			"invertAxis": "xy",
+			"translate": [21.5, -1, -2.5],
+			"rotate": [-45, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		}
+	]
 }
