@@ -1,0 +1,7 @@
+{
+    condition: "CreaturesPlus.gayBees.default",
+    fallbacks: [
+      "assets/minecraft/optifine/random/entity/bee/gay/bee_nectar.properties",
+      "assets/minecraft/optifine/random/entity/bee/gayless/bee_nectar.properties"
+    ]
+}

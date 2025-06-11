@@ -1,0 +1,8 @@
+{
+    id: "CreaturesPlus",
+    version: 13,
+    capabilities: ["FileFilter", "DirFilter", "DirFilterAdditive"],
+    conf: {
+            gayBees: ["default", "gay", "gayless"]
+    }
+}
