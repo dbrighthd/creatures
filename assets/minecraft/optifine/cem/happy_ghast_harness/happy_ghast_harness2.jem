@@ -1,0 +1,137 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [128, 128],
+	"models": [
+		{
+			"part": "goggles",
+			"id": "goggles",
+			"invertAxis": "xy",
+			"translate": [0, -10, 5.5],
+			"scale": 1
+		},
+		{
+			"part": "harness",
+			"id": "harness",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"scale": 1,
+			"submodels": [
+				{
+					"id": "bison",
+					"invertAxis": "xy",
+					"translate": [0, 8, 0],
+					"rotate": [0, -90, 0],
+					"boxes": [
+						{"coordinates": [-13, -8, -8, 28, 16, 16], "textureOffset": [0, 0], "sizeAdd": 0.1},
+						{"coordinates": [-11, 8, -9, 1, 2, 18], "textureOffset": [0, 32]},
+						{"coordinates": [-12, 9, -3, 1, 2, 6], "textureOffset": [0, 42]},
+						{"coordinates": [6, 10, -5, 1, 1, 10], "textureOffset": [20, 39]},
+						{"coordinates": [7, 8, -7, 5, 5, 14], "textureOffset": [88, 21]},
+						{"coordinates": [6, 8, -9, 1, 2, 18], "textureOffset": [38, 32]},
+						{"coordinates": [-10, 7, 8, 16, 2, 1], "textureOffset": [0, 52]},
+						{"coordinates": [-10, 7, -9, 16, 2, 1], "textureOffset": [34, 52]},
+						{"coordinates": [-10, 9, 8.5, 16, 2, 0], "textureOffset": [0, 58]},
+						{"coordinates": [-10, 9, -8.5, 16, 2, 0], "textureOffset": [32, 58]},
+						{"coordinates": [-8, 5, -9, 12, 2, 1], "textureOffset": [26, 55]},
+						{"coordinates": [-8, 5, 8, 12, 2, 1], "textureOffset": [0, 55]}
+					],
+					"submodels": [
+						{
+							"id": "right_reign",
+							"invertAxis": "xy",
+							"translate": [-9.5, 4.5, -1.5],
+							"boxes": [
+								{"coordinates": [-13.5, -1.5, 0, 14, 10, 0], "textureOffset": [0, 62]}
+							]
+						},
+						{
+							"id": "left_reign",
+							"invertAxis": "xy",
+							"translate": [-9.5, 4.5, 1.5],
+							"boxes": [
+								{"coordinates": [-13.5, -1.5, 0, 14, 10, 0], "textureOffset": [0, 62]}
+							]
+						},
+						{
+							"id": "tail",
+							"invertAxis": "xy",
+							"translate": [15, 8, 0],
+							"rotate": [0, 0, -32],
+							"submodels": [
+								{
+									"id": "tail2",
+									"invertAxis": "xy",
+									"translate": [16, -8, 0],
+									"rotate": [0, 0, 32]
+								}
+							]
+						},
+						{
+							"id": "leg1",
+							"invertAxis": "xy",
+							"translate": [10.5, -1, -6.5]
+						},
+						{
+							"id": "leg4",
+							"invertAxis": "xy",
+							"translate": [10.5, -1, 6.5]
+						},
+						{
+							"id": "leg2",
+							"invertAxis": "xy",
+							"translate": [1, -1, -6.5]
+						},
+						{
+							"id": "leg5",
+							"invertAxis": "xy",
+							"translate": [1, -1, 6.5]
+						},
+						{
+							"id": "leg3",
+							"invertAxis": "xy",
+							"translate": [-8.5, -1, -6.5]
+						},
+						{
+							"id": "leg6",
+							"invertAxis": "xy",
+							"translate": [-8.5, -1, 6.5]
+						},
+						{
+							"id": "head",
+							"invertAxis": "xy",
+							"translate": [-13, -2, 0],
+							"boxes": [
+								{"coordinates": [-8, 3, 7, 3, 7, 3], "textureOffset": [72, 6], "sizeAdd": 0.1},
+								{"coordinates": [-8, 3, -10, 3, 7, 3], "textureOffset": [4, 6], "sizeAdd": 0.1}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"bison.sx": "0.9375",
+					"bison.sy": "0.9375",
+					"bison.sz": "0.9375",
+					"var.limbtime": "(var.limbtime+clamp((0.05*limb_speed), 0.02, 0.1))",
+					"leg1.rz": "((sin(var.limbtime+random(id*100)))*clamp((0.05*limb_speed), 0.02, 0.1))+torad(15*limb_speed)",
+					"leg2.rz": "((sin(var.limbtime+(random(id*100)+(pi/3))))*clamp((0.05*limb_speed), 0.02, 0.1))+torad(15*limb_speed)",
+					"leg3.rz": "((sin(var.limbtime+(random(id*100)+(2*(pi/3)))))*clamp((0.05*limb_speed), 0.02, 0.1))+torad(15*limb_speed)",
+					"leg4.rz": "((sin(var.limbtime+(random(id*100)+(3*(pi/3)))))*clamp((0.05*limb_speed), 0.02, 0.1))+torad(15*limb_speed)",
+					"leg5.rz": "((sin(var.limbtime+(random(id*100)+(4*(pi/3)))))*clamp((0.05*limb_speed), 0.02, 0.1))+torad(15*limb_speed)",
+					"leg6.rz": "((sin(var.limbtime+(random(id*100)+(6*(pi/3)))))*clamp((0.05*limb_speed), 0.02, 0.1))+torad(15*limb_speed)",
+					"var.turning": "var.turning2-todeg(rot_y)",
+					"var.turning2": "todeg(rot_y)",
+					"var.turning_lerp_amount": "1",
+					"var.head_turning_snap": "if(var.turning>0.2, torad(-30), if(var.turning<-0.2, torad(30), 0))",
+					"var.prevhead": "head.ry",
+					"head.ry": "var.harnesshead",
+					"right_reign.ry": "(head.ry*0.8)+(torad(32))",
+					"right_reign.sx": "(-(head.ry)*0.25)+1",
+					"left_reign.ry": "(head.ry*0.8)-(torad(32))",
+					"left_reign.sx": "((head.ry)*0.25)+1"
+				}
+			]
+		}
+	]
+}
