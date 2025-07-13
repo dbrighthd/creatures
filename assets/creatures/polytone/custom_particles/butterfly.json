@@ -1,0 +1,17 @@
+{
+  "initializer": {
+    "lifetime": "200",
+    "size": "1",
+    "custom":"rand()"
+  },
+  "ticker":{
+    "dx":"(CUSTOM-0.5)/5",
+    "dy":"(((sin(((AGE+(CUSTOM*100))+(CUSTOM*100))))/6)+(AGE*((CUSTOM-0.5)/5000)))+((sin((AGE+(CUSTOM*100))/6)/12)+(AGE*((CUSTOM-0.5)/5000)))",
+    "dz":"(CUSTOM-0.5)/5"
+  },
+  "rotation_mode":"movement_aligned",
+  "kill_when_still": false,
+  "render_type":"translucent",
+  "model":"creatures:particle/butterfly",
+  "texture":"creatures:particle/butterfly2"
+}
