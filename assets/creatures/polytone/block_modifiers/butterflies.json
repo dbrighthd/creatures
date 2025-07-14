@@ -5,7 +5,7 @@
     "particle_emitters":[
         {
             "particle":"creatures:butterfly",
-            "chance":"0.005*(SKY_LIGHT > 0) - RAIN",
+            "chance":"0.005*(SKY_LIGHT > 14) - RAIN",
             "x":"0",
             "y":"0.5",
             "z":"0",

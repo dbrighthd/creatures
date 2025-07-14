@@ -2,16 +2,19 @@
   "initializer": {
     "lifetime": "200",
     "size": "1",
-    "custom":"rand()"
+    "custom":"rand()*(2*pi)"
   },
   "ticker":{
-    "dx":"(CUSTOM-0.5)/5",
-    "dy":"(((sin(((AGE+(CUSTOM*100))+(CUSTOM*100))))/6)+(AGE*((CUSTOM-0.5)/5000)))+((sin((AGE+(CUSTOM*100))/6)/12)+(AGE*((CUSTOM-0.5)/5000)))",
-    "dz":"(CUSTOM-0.5)/5"
+    "dx":"cos(CUSTOM)*0.2",
+    "dy":"(((sin(((AGE+(CUSTOM/(2*pi)*100))+(CUSTOM/(2*pi)*100))))/6)+(AGE*((CUSTOM/(2*pi)-0.5)/5000)))+((sin((AGE+(CUSTOM/(2*pi)*100))/6)/12)+(AGE*((CUSTOM/(2*pi)-0.5)/5000)))",
+    "dz":"sin(CUSTOM)*0.2"
   },
-  "rotation_mode":"movement_aligned",
+  "rotation_mode":{
+    "x_rot":"0",
+    "y_rot":"-(CUSTOM)+pi/2",
+    "z_rot":"0"
+  },
   "kill_when_still": false,
   "render_type":"translucent",
-  "model":"creatures:particle/butterfly",
-  "texture":"creatures:particle/butterfly2"
+  "model":"creatures:particle/butterfly"
 }
