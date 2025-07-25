@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
-	"texture": "rat_texture.png",
 	"textureSize": [64, 64],
+	"texture": "rat_texture.png",
 	"models": [
 		{
 			"part": "body1",
@@ -41,6 +41,26 @@
 							"id": "rathead",
 							"invertAxis": "xy",
 							"translate": [0, 0.1, -4.5],
+							"boxes": [
+								{
+									"coordinates": [-2, -2, -4, 4, 4, 4],
+									"uvNorth": [20, 21, 24, 25],
+									"uvEast": [16, 21, 20, 25],
+									"uvSouth": [28, 21, 32, 25],
+									"uvWest": [24, 21, 28, 25],
+									"uvUp": [24, 21, 20, 17],
+									"uvDown": [28, 17, 24, 21]
+								},
+								{
+									"coordinates": [-1, -2, -6, 2, 2, 2],
+									"uvNorth": [30, 19, 32, 21],
+									"uvEast": [28, 19, 30, 21],
+									"uvSouth": [34, 19, 36, 21],
+									"uvWest": [32, 19, 34, 21],
+									"uvUp": [32, 19, 30, 17],
+									"uvDown": [34, 17, 32, 19]
+								}
+							],
 							"submodels": [
 								{
 									"id": "nose",
@@ -89,26 +109,6 @@
 											"uvDown": [5, 17, 3, 18]
 										}
 									]
-								}
-							],
-							"boxes": [
-								{
-									"coordinates": [-2, -2, -4, 4, 4, 4],
-									"uvNorth": [20, 21, 24, 25],
-									"uvEast": [16, 21, 20, 25],
-									"uvSouth": [28, 21, 32, 25],
-									"uvWest": [24, 21, 28, 25],
-									"uvUp": [24, 21, 20, 17],
-									"uvDown": [28, 17, 24, 21]
-								},
-								{
-									"coordinates": [-1, -2, -6, 2, 2, 2],
-									"uvNorth": [30, 19, 32, 21],
-									"uvEast": [28, 19, 30, 21],
-									"uvSouth": [34, 19, 36, 21],
-									"uvWest": [32, 19, 34, 21],
-									"uvUp": [32, 19, 30, 17],
-									"uvDown": [34, 17, 32, 19]
 								}
 							]
 						},
