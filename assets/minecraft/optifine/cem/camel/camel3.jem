@@ -158,7 +158,8 @@
 					"elephant_tail.rz": "tail.rz*0.5",
 					"trunk_1.rx": "if(is_in_water,torad(-140),torad(0))",
 					"trunk_2.rx": "if(is_in_water,torad(-27.5),torad(0))",
-					"trunk_3.rx": "if(is_in_water,torad(50),torad(35))",				}
+					"trunk_3.rx": "if(is_in_water,torad(50),torad(35))"
+				}
 			]
 		},
 		{
