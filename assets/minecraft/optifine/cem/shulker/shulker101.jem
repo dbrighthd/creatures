@@ -158,9 +158,7 @@
 					"eyes.tz": "if(abs(sqrt(  (pow(player_pos_x-pos_x, 2)) + (pow(player_pos_y-pos_y, 2)) + (pow(player_pos_z-pos_z, 2))  )) < 16, if(lid.ty<24, 7, 6), 0)",
 					"eyes1.sy": "if(abs(sqrt(  (pow(player_pos_x-pos_x, 2)) + (pow(player_pos_y-pos_y, 2)) + (pow(player_pos_z-pos_z, 2))  )) < 16, clamp(-torad((lid.ty-24)*40), 0, 1), 0)",
 					"eyes2.sy": "if(abs(sqrt(  (pow(player_pos_x-pos_x, 2)) + (pow(player_pos_y-pos_y, 2)) + (pow(player_pos_z-pos_z, 2))  )) < 16, clamp(-torad((lid.ty-24)*40), 0, 1), 0)",
-					"chest.ry":"if(lid.ty<24, head.ry+torad(180), 0)",
-					"var.test":"if(is_aggressive == true, print(TEST, 60, 999), print(TEST, 60, 1))"
-					
+					"chest.ry":"if(lid.ty<24, head.ry+torad(180), 0)",					
 				}
 			]
 		},
