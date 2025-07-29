@@ -42,5 +42,6 @@
       "type": "minecraft:model",
       "model": "item/cod_bucket"
     }
-  }
+  },
+  "oversized_in_gui": true
 }

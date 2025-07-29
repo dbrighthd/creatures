@@ -20,5 +20,6 @@
       "type": "minecraft:model",
       "model": "item/pufferfish_bucket"
     }
-  }
+  },
+  "oversized_in_gui": true
 }
