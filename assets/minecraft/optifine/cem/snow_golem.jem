@@ -10,78 +10,20 @@
 			"boxes": [
 				{"coordinates": [-4, 20, -4, 8, 8, 8], "textureOffset": [0, 0], "sizeAdd": -0.5}
 			],
-			"submodels": [
-				{
-					"id": "pumpkin",
-					"invertAxis": "xy",
-					"translate": [0, 20, 0],
-					"boxes": [
-						{
-							"coordinates": [-5, 0.5, -5, 10, 10, 10],
-							"uvNorth": [0, 0, 1, 1],
-							"uvEast": [32, 0, 48, 16],
-							"uvSouth": [32, 0, 48, 16],
-							"uvWest": [32, 0, 48, 16],
-							"uvUp": [64, 31, 48, 17],
-							"uvDown": [64, 17, 48, 31],
-							"sizeAdd": 0.05
-						},
-						{
-							"coordinates": [-5, 0.5, -4.98, 10, 10, 0],
-							"uvNorth": [48, 0, 64, 16],
-							"uvEast": [47, 0, 48, 16],
-							"uvSouth": [32, 0, 48, 16],
-							"uvWest": [32, 0, 33, 16],
-							"uvUp": [64, 31, 48, 30],
-							"uvDown": [64, 30, 48, 31],
-							"sizeAdd": 0.05
-						}
-					],
-					"submodels": [
-						{
-							"id": "blink",
-							"invertAxis": "xy",
-							"translate": [0, -20, 0],
-							"boxes": [
-								{
-									"coordinates": [-5, 20.5, -4.99, 10, 10, 0],
-									"uvNorth": [48, 48, 64, 64],
-									"uvEast": [47, 0, 48, 16],
-									"uvSouth": [32, 0, 48, 16],
-									"uvWest": [32, 0, 33, 16],
-									"uvUp": [64, 31, 48, 30],
-									"uvDown": [64, 30, 48, 31],
-									"sizeAdd": 0.05
-								}
-							]
-						},
-						{
-							"id": "angy",
-							"invertAxis": "xy",
-							"translate": [0, -20, 0.025],
-							"boxes": [
-								{
-									"coordinates": [-5, 20.5, -5.025, 10, 10, 0],
-									"uvNorth": [48, 32, 64, 48],
-									"uvEast": [47, 0, 48, 16],
-									"uvSouth": [32, 0, 48, 16],
-									"uvWest": [32, 0, 33, 16],
-									"uvUp": [64, 31, 48, 30],
-									"uvDown": [64, 30, 48, 31],
-									"sizeAdd": 0.05
-								}
-							]
-						}
-					]
-				}
-			],
 			"animations": [
 				{
 					"var.blink_length": "0.2",
 					"var.blink_cycle": "max((floor((var.blink_length*time)+(random(id)*100))% 2)-(floor((var.blink_length*time)+(random(id)*100))% (floor((var.blink_length*time)+(random(id)*100))% 5)), 0)",
 					"blink.visible": "if(var.blink_cycle > 0.5, true, false)",
 					"angy.visible": "if(anger_time > 0, true, false)",
-					"pumpkin.visible": "if(nbt(Pumpkin,raw:1b), true, false)"
+					"smile.visible": "if(angy.visible>0 || blink.visible>0, false, true)",
+					"pumpkin.visible": "if(nbt(Pumpkin,raw:1b), true, false)",
+					"pumpkin.rx": "head.rx",
+					"pumpkin.ry": "head.ry",
+					"pumpkin.rz": "head.rz",
+					"head.sx": "if(pumpkin.visible == true, 0, 1)",
+					"head.sy": "if(pumpkin.visible == true, 0, 1)",
+					"head.sz": "if(pumpkin.visible == true, 0, 1)"
 				}
 			]
 		},
@@ -145,6 +87,74 @@
 			"id": "body",
 			"invertAxis": "xy",
 			"translate": [0, -11, 0],
+			"submodels": [
+				{
+					"id": "pumpkin",
+					"invertAxis": "xy",
+					"translate": [0, 20, 0],
+					"boxes": [
+						{
+							"coordinates": [-5, 0.5, -5, 10, 10, 10],
+							"uvEast": [32, 0, 48, 16],
+							"uvSouth": [32, 0, 48, 16],
+							"uvWest": [32, 0, 48, 16],
+							"uvUp": [64, 31, 48, 17],
+							"uvDown": [64, 17, 48, 31],
+							"sizeAdd": 0.05
+						}
+					],
+					"submodels": [
+						{
+							"id": "smile",
+							"invertAxis": "xy",
+							"translate": [0, -20, 0],
+							"boxes": [
+								{
+									"coordinates": [-5, 20.5, -4.98, 10, 10, 0],
+									"uvNorth": [48, 0, 64, 16],
+									"uvEast": [47, 0, 48, 16],
+									"uvWest": [32, 0, 33, 16],
+									"uvUp": [64, 31, 48, 30],
+									"uvDown": [64, 30, 48, 31],
+									"sizeAdd": 0.05
+								}
+							]
+						},
+						{
+							"id": "blink",
+							"invertAxis": "xy",
+							"translate": [0, -20, 0],
+							"boxes": [
+								{
+									"coordinates": [-5, 20.5, -4.99, 10, 10, 0],
+									"uvNorth": [48, 48, 64, 64],
+									"uvEast": [47, 0, 48, 16],
+									"uvWest": [32, 0, 33, 16],
+									"uvUp": [64, 31, 48, 30],
+									"uvDown": [64, 30, 48, 31],
+									"sizeAdd": 0.05
+								}
+							]
+						},
+						{
+							"id": "angy",
+							"invertAxis": "xy",
+							"translate": [0, -20, 0.025],
+							"boxes": [
+								{
+									"coordinates": [-5, 20.5, -5.025, 10, 10, 0],
+									"uvNorth": [48, 32, 64, 48],
+									"uvEast": [47, 0, 48, 16],
+									"uvWest": [32, 0, 33, 16],
+									"uvUp": [64, 31, 48, 30],
+									"uvDown": [64, 30, 48, 31],
+									"sizeAdd": 0.05
+								}
+							]
+						}
+					]
+				}
+			],
 			"boxes": [
 				{"coordinates": [-5, 11, -5, 10, 10, 10], "textureOffset": [0, 16], "sizeAdd": -0.5}
 			]
