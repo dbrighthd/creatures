@@ -9,12 +9,112 @@
 			"translate": [-4, -30, 0],
 			"scale": 1,
 			"boxes": [
-				{"coordinates": [1, 30, -3, 6, 10, 6], "textureOffset": [0, 0]},
+				{
+					"coordinates": [1, 30, -3, 6, 2, 6],
+					"uvNorth": [6, 14, 12, 16],
+					"uvEast": [0, 14, 6, 16],
+					"uvSouth": [18, 14, 24, 16],
+					"uvWest": [12, 14, 18, 16],
+					"uvDown": [18, 0, 12, 6]
+				},
+				{
+					"coordinates": [1, 32, -3, 2, 1, 6],
+					"uvNorth": [10, 13, 12, 14],
+					"uvSouth": [18, 13, 20, 14],
+					"uvWest": [12, 13, 18, 14]
+				},
+				{
+					"coordinates": [3, 32, -3, 3, 1, 6],
+					"uvSouth": [20, 13, 23, 14]
+				},
+				{
+					"coordinates": [6, 32, -3, 1, 1, 6],
+					"uvNorth": [6, 13, 7, 14],
+					"uvEast": [0, 13, 6, 14],
+					"uvSouth": [23, 13, 24, 14]
+				},
+				{
+					"coordinates": [1, 33, -3, 6, 2, 6],
+					"uvNorth": [6, 11, 12, 13],
+					"uvEast": [0, 11, 6, 13],
+					"uvSouth": [18, 11, 24, 13],
+					"uvWest": [12, 11, 18, 13]
+				},
+				{
+					"coordinates": [1, 35, -3, 3, 1, 6],
+					"uvSouth": [18, 10, 21, 11],
+					"uvWest": [12, 10, 18, 11]
+				},
+				{
+					"coordinates": [4, 35, -3, 3, 1, 6],
+					"uvNorth": [6, 10, 9, 11],
+					"uvEast": [0, 10, 6, 11],
+					"uvSouth": [21, 10, 24, 11]
+				},
+				{
+					"coordinates": [1, 36, -3, 6, 1, 6],
+					"uvNorth": [6, 9, 12, 10],
+					"uvEast": [0, 9, 6, 10],
+					"uvSouth": [18, 9, 24, 10],
+					"uvWest": [12, 9, 18, 10]
+				},
+				{
+					"coordinates": [1, 37, -3, 3, 1, 6],
+					"uvNorth": [9, 8, 12, 9],
+					"uvSouth": [18, 8, 21, 9],
+					"uvWest": [12, 8, 18, 9]
+				},
+				{
+					"coordinates": [4, 37, -3, 3, 1, 6],
+					"uvEast": [0, 8, 6, 9],
+					"uvSouth": [21, 8, 24, 9]
+				},
+				{
+					"coordinates": [1, 38, -3, 6, 2, 6],
+					"uvNorth": [6, 6, 12, 8],
+					"uvEast": [0, 6, 6, 8],
+					"uvSouth": [18, 6, 24, 8],
+					"uvWest": [12, 6, 18, 8],
+					"uvUp": [12, 6, 6, 0]
+				},
 				{"coordinates": [1, 40, -3, 6, 3, 6], "textureOffset": [28, 31]},
 				{"coordinates": [-8, 29, 0, 9, 14, 0], "textureOffset": [12, 40]},
 				{"coordinates": [7, 30, 0, 9, 14, 0], "textureOffset": [34, 12]}
 			],
 			"submodels": [
+				{
+					"id": "bottom_eye",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"boxes": [
+						{
+							"coordinates": [3, 32, -3, 3, 1, 0],
+							"uvNorth": [7, 13, 10, 14]
+						}
+					]
+				},
+				{
+					"id": "middle_eye",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"boxes": [
+						{
+							"coordinates": [1, 35, -3, 3, 1, 0],
+							"uvNorth": [9, 10, 12, 11]
+						}
+					]
+				},
+				{
+					"id": "top_eye",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"boxes": [
+						{
+							"coordinates": [4, 37, -3, 3, 1, 0],
+							"uvNorth": [6, 8, 9, 9]
+						}
+					]
+				},
 				{
 					"id": "bottom_eyelid",
 					"invertAxis": "xy",
@@ -47,7 +147,10 @@
 					"var.bottomblink": "(5*(sin(((time+(random(id)*100))+10)/(random(id)*85))))-4.9",
 					"top_eyelid.visible": "if(limb_speed>0.1, if(var.topblink>0, true, false), if(var.topblink>0, false, true))",
 					"middle_eyelid.visible": "if(limb_speed>0.1, if(var.middleblink>0, true, false), if(var.middleblink>0, false, true))",
-					"bottom_eyelid.visible": "if(limb_speed>0.1, if(var.bottomblink>0, true, false), if(var.bottomblink>0, false, true))"
+					"bottom_eyelid.visible": "if(limb_speed>0.1, if(var.bottomblink>0, true, false), if(var.bottomblink>0, false, true))",
+					"bottom_eye.visible": "-bottom_eyelid.visible",
+					"middle_eye.visible": "-middle_eyelid.visible",
+					"top_eye.visible": "-top_eyelid.visible"
 				}
 			]
 		},
