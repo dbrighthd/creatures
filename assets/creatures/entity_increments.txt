@@ -1,3 +1,4 @@
-ghast,11
+happy_ghast,11
+ghast,7
 camel,4
 sniffer,4
