@@ -36,6 +36,16 @@
 					"uvDown": [0, 0, 1, 1],
 					"sizeAdd": 0.01
 				}
+			],
+			"submodels": [
+				{
+					"id": "bone",
+					"invertAxis": "xy",
+					"translate": [0, 1, 0],
+					"boxes": [
+						{"coordinates": [-4, 8, -14, 8, 8, 8], "textureOffset": [0, 32], "sizeAdd": 0.2}
+					]
+				}
 			]
 		},
 		{
