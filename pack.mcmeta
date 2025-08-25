@@ -1,6 +1,10 @@
 ﻿{
   "pack": {
+    "description": "§7Textures§b+ §rDevelopment",
     "pack_format": 63,
-    "description": "§7Textures§b+ §rDevelopment"
+    "supported_formats": {
+      "min_inclusive": 55,
+      "max_inclusive": 64
+    }
   }
 }
