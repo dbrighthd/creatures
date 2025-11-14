@@ -28,7 +28,7 @@
 			"translate": [0, 0, 3],
 			"boxes": [
 				{"coordinates": [-1, 0, -13, 2, 2, 4], "textureOffset": [0, 13]},
-				{"coordinates": [-1, 0, -17, 2, 2, 10], "textureOffset": [24, 49]},
+				{"coordinates": [-1, 0, -17, 2, 2, 8], "textureOffset": [26, 51]},
 				{"coordinates": [-4, 0, -3, 8, 7, 13], "textureOffset": [22, 0]}
 			]
 		},
@@ -80,8 +80,10 @@
 			"scale": 1,
 			"submodels": [
 				{
+					"id": "tail_sub_0",
 					"invertAxis": "xy",
 					"mirrorTexture": "u",
+					"translate": [0, 0, 0],
 					"boxes": [
 						{"coordinates": [-2, 2, 6, 4, 5, 11], "textureOffset": [0, 19]},
 						{"coordinates": [-2, 7, -1, 4, 4, 12], "textureOffset": [32, 33]}
