@@ -47,11 +47,19 @@
 							"invertAxis": "xy",
 							"translate": [0, 0, 22],
 							"boxes": [
-								{"coordinates": [-8, 6, -68.5, 16, 20, 18], "textureOffset": [0, 60]},
-								{"coordinates": [5, 5, -81.5, 4, 4, 16], "textureOffset": [40, 98]},
-								{"coordinates": [-9, 5, -81.5, 4, 4, 16], "textureOffset": [106, 14]}
+								{"coordinates": [-8, 6, -68.5, 16, 20, 18], "textureOffset": [0, 60]}
 							],
 							"submodels": [
+								{
+									"id": "bone",
+									"invertAxis": "xy",
+									"translate": [0, 7, -66.5],
+									"rotate": [-45, 0, 0],
+									"boxes": [
+										{"coordinates": [5, -2, -15, 4, 4, 16], "textureOffset": [40, 98]},
+										{"coordinates": [-9, -2, -15, 4, 4, 16], "textureOffset": [106, 14]}
+									]
+								},
 								{
 									"id": "r_ear",
 									"invertAxis": "xy",
