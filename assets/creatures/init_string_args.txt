@@ -1,0 +1,6 @@
+east_block_1,yellow_concrete
+east_block_2,orange_concrete
+east_block_3,red_concrete
+west_block_1,lime_concrete
+west_block_2,blue_concrete
+west_block_3,purple_concrete

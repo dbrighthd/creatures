@@ -1,0 +1,7 @@
+x_origin,1
+y_origin,-53
+z_origin,-31
+default_increment,3
+row_size,4
+east_direction,1
+west_direction,-1
