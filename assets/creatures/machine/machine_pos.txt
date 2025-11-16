@@ -1,1 +1,3 @@
 sheep,-3,-3,-24
+pufferfish,-3,-2,-5
+villager,-3,-2,-13
