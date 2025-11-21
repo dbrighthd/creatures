@@ -1,0 +1,184 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [512, 512],
+	"texture": "sperm_whale.png",
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -4, 6],
+			"submodels": [
+				{
+					"id": "bone",
+					"invertAxis": "xy",
+					"translate": [0, 11, 0]
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [0, 0, 3],
+			"boxes": [
+				{
+					"coordinates": [-24, -23, -111, 48, 56, 140],
+					"uvNorth": [136, 254, 184, 310],
+					"uvEast": [0, 101, 140, 157],
+					"uvSouth": [184, 254, 232, 310],
+					"uvWest": [140, 101, 280, 157],
+					"uvUp": [48, 297, 0, 157],
+					"uvDown": [96, 157, 48, 297]
+				}
+			],
+			"submodels": [
+				{
+					"id": "dorsal",
+					"invertAxis": "xy",
+					"translate": [0, 33, -40],
+					"rotate": [-5, 0, 0],
+					"boxes": [
+						{"coordinates": [-9, -34, 0, 18, 34, 89], "textureOffset": [0, 389]}
+					]
+				},
+				{
+					"id": "r_fin",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [12, -8, -27],
+					"boxes": [
+						{
+							"coordinates": [-4, 0, 0, 8, 24, 32],
+							"uvNorth": [296, 112, 304, 136],
+							"uvEast": [272, 254, 312, 278],
+							"uvSouth": [296, 136, 304, 160],
+							"uvWest": [274, 206, 314, 230],
+							"uvUp": [288, 152, 280, 112],
+							"uvDown": [288, 152, 280, 192]
+						}
+					]
+				},
+				{
+					"id": "l_fin",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [-11, -8, -27],
+					"boxes": [
+						{
+							"coordinates": [-4, 0, 0, 8, 24, 32],
+							"uvNorth": [296, 160, 304, 184],
+							"uvEast": [274, 230, 314, 254],
+							"uvSouth": [0, 297, 8, 321],
+							"uvWest": [272, 278, 312, 302],
+							"uvUp": [296, 152, 288, 112],
+							"uvDown": [296, 152, 288, 192]
+						}
+					]
+				},
+				{
+					"id": "jaw",
+					"invertAxis": "xy",
+					"translate": [0, -14, -37],
+					"boxes": [
+						{"coordinates": [-10, -16, -74, 20, 7, 74], "textureOffset": [20, 20]}
+					]
+				},
+				{
+					"id": "tail1",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [0, -1, 29],
+					"boxes": [
+						{
+							"coordinates": [-20, -18, 0, 40, 40, 86],
+							"uvNorth": [232, 254, 272, 302],
+							"uvEast": [96, 206, 185, 254],
+							"uvSouth": [268, 0, 308, 48],
+							"uvWest": [185, 206, 274, 254],
+							"uvUp": [268, 89, 228, 0],
+							"uvDown": [136, 254, 96, 343]
+						}
+					],
+					"submodels": [
+						{
+							"id": "tail2",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [0, -2, 66.5],
+							"boxes": [
+								{
+									"coordinates": [-46, -8, 0.5, 92, 16, 49],
+									"uvNorth": [268, 48, 360, 64],
+									"uvEast": [268, 80, 317, 96],
+									"uvSouth": [268, 64, 360, 80],
+									"uvWest": [280, 96, 329, 112],
+									"uvUp": [188, 206, 96, 157],
+									"uvDown": [280, 157, 188, 206]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"tail1.rx": "tail.rx",
+					"tail1.ry": "tail.rz",
+					"tail2.rx": "tail_fin.rx",
+					"tail2.ry": "tail_fin.rz",
+					"r_fin.rx": "right_fin.rx",
+					"r_fin.ry": "right_fin.ry",
+					"r_fin.rz": "right_fin.rz",
+					"l_fin.rx": "left_fin.rx",
+					"l_fin.ry": "left_fin.ry",
+					"l_fin.rz": "left_fin.rz"
+				}
+			]
+		},
+		{
+			"part": "right_fin",
+			"id": "right_fin",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [-4.5, 0, 2]
+		},
+		{
+			"part": "left_fin",
+			"id": "left_fin",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [4.5, 0, 2]
+		},
+		{
+			"part": "back_fin",
+			"id": "back_fin",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [0, -11, 5]
+		},
+		{
+			"part": "tail_fin",
+			"id": "tail_fin",
+			"invertAxis": "xy",
+			"translate": [0, -4.5, -15],
+			"scale": 1
+		},
+		{
+			"part": "tail",
+			"id": "tail",
+			"invertAxis": "xy",
+			"translate": [0, -4.5, -6],
+			"scale": 1,
+			"submodels": [
+				{
+					"id": "tail_sub_0",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [0, 0, 0]
+				}
+			]
+		}
+	]
+}
