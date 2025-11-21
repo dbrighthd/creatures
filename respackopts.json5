@@ -3,6 +3,7 @@
     version: 13,
     capabilities: ["FileFilter", "DirFilter", "DirFilterAdditive"],
     conf: {
-            gayBees: ["default", "gay", "gayless"]
+            gayBees: ["default", "gay", "gayless"],
+            naturallySpawningCreakingBiomeVariants: ["off", "on"]
     }
 }
