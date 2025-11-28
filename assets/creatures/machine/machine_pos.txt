@@ -7,3 +7,4 @@ donkey,-3,-3,-13
 horse,-3,-3,-23
 bee,-3,-3,-11
 iron_golem,-3,-3,-12
+copper_golem,-3,-3,-12
