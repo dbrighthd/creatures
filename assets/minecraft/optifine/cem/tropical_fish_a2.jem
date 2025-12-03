@@ -1,0 +1,100 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [32, 32],
+	"models": [
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -1.5, 0],
+			"boxes": [
+				{"coordinates": [-1, -1, -1, 2, 4, 3], "textureOffset": [10, 0]},
+				{"coordinates": [0, -1, 1, 0, 6, 3], "textureOffset": [0, 16]}
+			],
+			"submodels": [
+				{
+					"id": "horse_head",
+					"invertAxis": "xy",
+					"translate": [0, 3, 0],
+					"boxes": [
+						{"coordinates": [0, 0, -2, 0, 5, 5], "textureOffset": [0, 0]},
+						{"coordinates": [-1.5, 0, -2, 3, 3, 3], "textureOffset": [0, 10]},
+						{"coordinates": [-0.5, 0, -4, 1, 1, 2], "textureOffset": [0, 16]}
+					]
+				},
+				{
+					"id": "horse_tail",
+					"invertAxis": "xy",
+					"translate": [0, -1, 2],
+					"boxes": [
+						{"coordinates": [-0.5, -3, -2, 1, 4, 2], "textureOffset": [12, 14], "sizeAdd": -0.05}
+					],
+					"submodels": [
+						{
+							"id": "horse_tail1",
+							"invertAxis": "xy",
+							"translate": [-1, -5, -4],
+							"boxes": [
+								{"coordinates": [1, 1, -1, 0, 4, 4], "textureOffset": [12, 6]}
+							]
+						}
+					]
+				},
+				{
+					"id": "horse_rfin",
+					"invertAxis": "xy",
+					"translate": [1, 1, 0],
+					"rotate": [0, 15, 0],
+					"boxes": [
+						{"coordinates": [0, -3, 0, 0, 5, 4], "textureOffset": [20, 1]}
+					]
+				},
+				{
+					"id": "horse_lfin",
+					"invertAxis": "xy",
+					"translate": [-1, 1, 0],
+					"rotate": [0, -15, 0],
+					"boxes": [
+						{"coordinates": [0, -3, 0, 0, 5, 4], "textureOffset": [20, -4]}
+					]
+				},
+				{
+					"id": "right_fin",
+					"invertAxis": "xy",
+					"translate": [1, 0, 0],
+					"rotate": [0, -45, 0]
+				},
+				{
+					"id": "left_fin",
+					"invertAxis": "xy",
+					"translate": [-1, 0, 0],
+					"rotate": [0, 45, 0]
+				}
+			]
+		},
+		{
+			"part": "fin_top",
+			"id": "fin_top",
+			"invertAxis": "xy",
+			"translate": [0, -3, 3]
+		},
+		{
+			"part": "tail",
+			"id": "tail",
+			"invertAxis": "xy",
+			"translate": [0, -1.5, -3]
+		},
+		{
+			"part": "fin_left",
+			"id": "fin_left",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "fin_right",
+			"id": "fin_right",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		}
+	]
+}
