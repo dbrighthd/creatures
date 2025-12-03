@@ -7,55 +7,79 @@
 			"id": "body",
 			"invertAxis": "xy",
 			"translate": [0, -1.5, 0],
-			"boxes": [
-				{"coordinates": [-1, -1, -1, 2, 4, 3], "textureOffset": [10, 0]},
-				{"coordinates": [0, -1, 1, 0, 6, 3], "textureOffset": [0, 16]}
-			],
 			"submodels": [
 				{
-					"id": "horse_head",
+					"id": "debody",
 					"invertAxis": "xy",
-					"translate": [0, 3, 0],
-					"boxes": [
-						{"coordinates": [0, 0, -2, 0, 5, 5], "textureOffset": [0, 0]},
-						{"coordinates": [-1.5, 0, -2, 3, 3, 3], "textureOffset": [0, 10]},
-						{"coordinates": [-0.5, 0, -4, 1, 1, 2], "textureOffset": [0, 16]}
-					]
-				},
-				{
-					"id": "horse_tail",
-					"invertAxis": "xy",
-					"translate": [0, -1, 2],
-					"boxes": [
-						{"coordinates": [-0.5, -3, -2, 1, 4, 2], "textureOffset": [12, 14], "sizeAdd": -0.05}
-					],
+					"translate": [0, 2.5, 0],
 					"submodels": [
 						{
-							"id": "horse_tail1",
+							"id": "seahorse",
 							"invertAxis": "xy",
-							"translate": [-1, -5, -4],
+							"translate": [0, 0, 0],
 							"boxes": [
-								{"coordinates": [1, 1, -1, 0, 4, 4], "textureOffset": [12, 6]}
+								{"coordinates": [-1, -2.5, -1, 2, 4, 3], "textureOffset": [10, 0]},
+								{"coordinates": [0, -0.5, 1, 0, 4, 5], "textureOffset": [0, 14]}
+							],
+							"submodels": [
+								{
+									"id": "horse_dorsal",
+									"invertAxis": "xy",
+									"translate": [0, -2.5, 2],
+									"boxes": [
+										{"coordinates": [0, -2, -1, 0, 4, 3], "textureOffset": [0, 20]}
+									]
+								},
+								{
+									"id": "horse_head",
+									"invertAxis": "xy",
+									"translate": [0, 1.5, 0],
+									"boxes": [
+										{"coordinates": [0, 0, -2, 0, 5, 5], "textureOffset": [0, 0]},
+										{"coordinates": [-1.5, 0, -2, 3, 3, 3], "textureOffset": [0, 10]},
+										{"coordinates": [-0.5, 0, -4, 1, 1, 2], "textureOffset": [0, 16]}
+									],
+									"submodels": [
+										{
+											"id": "horse_lear",
+											"invertAxis": "xy",
+											"translate": [-1.5, 2, 1],
+											"rotate": [0, -15, 0],
+											"boxes": [
+												{"coordinates": [0, -2, 0, 0, 4, 3], "textureOffset": [20, 1]}
+											]
+										},
+										{
+											"id": "horse_rear",
+											"invertAxis": "xy",
+											"translate": [1.5, 2, 1],
+											"rotate": [0, 15, 0],
+											"boxes": [
+												{"coordinates": [0, -2, 0, 0, 4, 3], "textureOffset": [20, -3]}
+											]
+										}
+									]
+								},
+								{
+									"id": "horse_tail",
+									"invertAxis": "xy",
+									"translate": [0, -2.5, 2],
+									"boxes": [
+										{"coordinates": [-0.5, -3, -2, 1, 4, 2], "textureOffset": [12, 14], "sizeAdd": -0.05}
+									],
+									"submodels": [
+										{
+											"id": "horse_tail1",
+											"invertAxis": "xy",
+											"translate": [0, -2.925, -2],
+											"boxes": [
+												{"coordinates": [0, -1, -3, 0, 4, 4], "textureOffset": [12, 6]}
+											]
+										}
+									]
+								}
 							]
 						}
-					]
-				},
-				{
-					"id": "horse_rfin",
-					"invertAxis": "xy",
-					"translate": [1, 1, 0],
-					"rotate": [0, 15, 0],
-					"boxes": [
-						{"coordinates": [0, -3, 0, 0, 5, 4], "textureOffset": [20, 1]}
-					]
-				},
-				{
-					"id": "horse_lfin",
-					"invertAxis": "xy",
-					"translate": [-1, 1, 0],
-					"rotate": [0, -15, 0],
-					"boxes": [
-						{"coordinates": [0, -3, 0, 0, 5, 4], "textureOffset": [20, -4]}
 					]
 				},
 				{
@@ -69,6 +93,19 @@
 					"invertAxis": "xy",
 					"translate": [-1, 0, 0],
 					"rotate": [0, 45, 0]
+				}
+			],
+			"animations": [
+				{
+					"debody.ry": "-tail.ry/4",
+					"seahorse.rx": "if(limb_speed>0.1, (sin((time+(random(id)*100))/5+(sin((time+(random(id)*100))/5)/2))/15)+torad(10), sin((time+(random(id)*100))/18)/20)",
+					"horse_dorsal.ry": "if(limb_speed>0.1, sin((time+(random(id)*100))*3)/4, 0)",
+					"horse_tail.rx": "if(limb_speed>0.1, (sin((time+(random(id)*100))/5+(sin((time+(random(id)*100))/5)/2))/15)+torad(5), sin((time+(random(id)*100))/10)/20)",
+					"horse_tail1.rx": "if(limb_speed>0.1, (sin((time+(random(id)*100))/5+(sin((time+(random(id)*100))/5)/2))/5), sin((time+(random(id)*100))/10)/20)",
+					"horse_head.ty": "if(limb_speed>0.1, -1.5, (sin((time+(random(id)*100))/10)/10)-1.4)",
+					"horse_head.rx": "if(limb_speed>0.1, -seahorse.rx/1.5, torad(5))",
+					"horse_lear.ry": "if(limb_speed>0.1, (sin((time+(random(id)*100))*2)/10)+0.5, if(sin((time+(random(id)*100))/15)>0.8, (sin((time+(random(id)*100)))/10)+0.5, sin((time+(random(id)*100))/20)/10+0.5))",
+					"horse_rear.ry": "-horse_lear.ry"
 				}
 			]
 		},
