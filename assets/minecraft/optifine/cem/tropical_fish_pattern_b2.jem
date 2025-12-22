@@ -11,7 +11,7 @@
 				{
 					"id": "debody",
 					"invertAxis": "xy",
-					"translate": [0, 2.5, 0],
+					"translate": [0, -0.5, 0],
 					"submodels": [
 						{
 							"id": "seahorse",
