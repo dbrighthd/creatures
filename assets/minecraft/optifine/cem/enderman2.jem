@@ -69,7 +69,7 @@
 					"textureSize": [16, 16],
 					"boxes": [
 						{
-							"coordinates": [0, -4, -6, 0, 12, 12],
+							"coordinates": [0, -5, -7, 0, 14, 14],
 							"uvNorth": [0, 0, 0, 0],
 							"uvEast": [0, 0, 16, 16],
 							"uvSouth": [0, 0, 0, 0],
@@ -78,7 +78,7 @@
 							"uvDown": [0, 0, 0, 0]
 						},
 						{
-							"coordinates": [-6, -4, 0, 12, 12, 0],
+							"coordinates": [-7, -5, 0, 14, 14, 0],
 							"uvNorth": [0, 0, 16, 16],
 							"uvEast": [0, 0, 0, 0],
 							"uvSouth": [0, 0, 0, 0],

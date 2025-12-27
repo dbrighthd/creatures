@@ -1,0 +1,15 @@
+armadillo_scute
+harness
+emerald
+stone
+gold
+diamond
+horse_markings
+spider_eyes
+fox_sleep
+iron_golem_crackiness
+sheep_wool
+enderman_eyes
+boat
+saddle
+baby

@@ -1,4 +1,5 @@
 {
+	"credit": "Made with Blockbench",
 	"textureSize": [64, 64],
 	"models": [
 		{
@@ -32,8 +33,8 @@
 			"part": "left_arm",
 			"id": "left_arm",
 			"invertAxis": "xy",
-			"translate": [5, -22, 0],
 			"mirrorTexture": "u",
+			"translate": [5, -22, 0],
 			"boxes": [
 				{"coordinates": [-8, 12, -2, 4, 12, 4], "textureOffset": [40, 16]},
 				{"coordinates": [-7, 12, -2, 3, 12, 4], "textureOffset": [32, 48]}
@@ -53,8 +54,8 @@
 			"part": "left_leg",
 			"id": "left_leg",
 			"invertAxis": "xy",
-			"translate": [1.9, -12, 0],
 			"mirrorTexture": "u",
+			"translate": [1.9, -12, 0],
 			"boxes": [
 				{"coordinates": [-4, 0, -2, 4, 12, 4], "textureOffset": [16, 48]}
 			]

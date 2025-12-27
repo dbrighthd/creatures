@@ -1,0 +1,25 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": [
+          "Bucket of Electric Eel",
+          "Electric Eel",
+          "iregex:.*Electric.*"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "item/pufferfish_bucket_eel"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "item/pufferfish_bucket"
+    }
+  },
+  "oversized_in_gui": true
+}

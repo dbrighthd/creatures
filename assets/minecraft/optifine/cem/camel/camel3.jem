@@ -45,35 +45,43 @@
 						{
 							"id": "elephanthead",
 							"invertAxis": "xy",
-							"translate": [0, 0, 22],
+							"translate": [0, 16, -29.5],
 							"boxes": [
-								{"coordinates": [-8, 6, -68.5, 16, 20, 18], "textureOffset": [0, 60]},
-								{"coordinates": [5, 5, -81.5, 4, 4, 16], "textureOffset": [40, 98]},
-								{"coordinates": [-9, 5, -81.5, 4, 4, 16], "textureOffset": [106, 14]}
+								{"coordinates": [-8, -10, -17, 16, 20, 18], "textureOffset": [0, 60]}
 							],
 							"submodels": [
 								{
+									"id": "bone",
+									"invertAxis": "xy",
+									"translate": [0, -9, -15],
+									"rotate": [-45, 0, 0],
+									"boxes": [
+										{"coordinates": [5, -2, -15, 4, 4, 16], "textureOffset": [40, 98]},
+										{"coordinates": [-9, -2, -15, 4, 4, 16], "textureOffset": [106, 14]}
+									]
+								},
+								{
 									"id": "r_ear",
 									"invertAxis": "xy",
-									"translate": [8, 19, -42.5],
+									"translate": [8, 2, -9],
 									"rotate": [0, 30, 0],
 									"boxes": [
-										{"coordinates": [9, -15, -15.58846, 0, 24, 16], "textureOffset": [68, 44]}
+										{"coordinates": [0, -14, 0, 0, 24, 16], "textureOffset": [68, 44]}
 									]
 								},
 								{
 									"id": "l_ear",
 									"invertAxis": "xy",
-									"translate": [-8, 19, -42.5],
+									"translate": [-8, 2, -9],
 									"rotate": [0, -30, 0],
 									"boxes": [
-										{"coordinates": [-9, -15, -15.58846, 0, 24, 16], "textureOffset": [68, 68]}
+										{"coordinates": [0, -14, 0, 0, 24, 16], "textureOffset": [68, 68]}
 									]
 								},
 								{
 									"id": "trunk_1",
 									"invertAxis": "xy",
-									"translate": [0, 11, -68.5],
+									"translate": [0, -5, -17],
 									"boxes": [
 										{"coordinates": [-4, -11, -4, 8, 14, 8], "textureOffset": [0, 0]}
 									],
@@ -159,7 +167,10 @@
 					"trunk_1.rx": "if(is_in_water,torad(-140),torad(0))",
 					"trunk_2.rx": "if(is_in_water,torad(-27.5),torad(0))",
 					"trunk_3.rx": "if(is_in_water,torad(50),torad(35))",
-					"var.test": "print(TEST, 60, front_left_leg.rx)"
+					"elephanthead.rx": "head.rx",
+					"elephanthead.ry": "head.ry",
+					"elephanthead.rz": "head.rz",
+					"l_ear.ry": "if(((sin(((time+(random(id)*100))+(2.7403))/50)*25)+9)>30, (sin((time+(random(id)*100))/3)/7)+torad(30), torad(30))"
 				}
 			]
 		},

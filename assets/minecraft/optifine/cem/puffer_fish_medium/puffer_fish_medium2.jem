@@ -1,0 +1,322 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [32, 32],
+	"texture": "electric_eel.png",
+	"models": [
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "eel_head",
+					"invertAxis": "xy",
+					"translate": [0, 1.5, 1.5],
+					"boxes": [
+						{"coordinates": [-2, -1.5, -4, 4, 3, 4], "textureOffset": [0, 15]}
+					],
+					"submodels": [
+						{
+							"id": "head_lightning",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"texture": "puffer_armor.png",
+							"textureSize": [64, 32],
+							"boxes": [
+								{
+									"coordinates": [-2, -1.5, -4, 4, 4, 4],
+									"uvNorth": [19, 20, 23, 24],
+									"uvEast": [15, 20, 19, 24],
+									"uvSouth": [60, 28, 64, 32],
+									"uvWest": [23, 20, 27, 24],
+									"uvUp": [23, 20, 19, 16],
+									"uvDown": [27, 16, 23, 20],
+									"sizeAdd": 0.5
+								}
+							]
+						},
+						{
+							"id": "eel_left_fin",
+							"invertAxis": "xy",
+							"translate": [-2, 0, -1],
+							"rotate": [0, -20, 0],
+							"boxes": [
+								{"coordinates": [0, -0.5, 0, 0, 1, 1], "textureOffset": [0, 27]}
+							]
+						},
+						{
+							"id": "eel_left_fin2",
+							"invertAxis": "xy",
+							"translate": [2, 0, -1],
+							"rotate": [0, 20, 0],
+							"boxes": [
+								{"coordinates": [0, -0.5, 0, 0, 1, 1], "textureOffset": [4, 27]}
+							]
+						}
+					]
+				},
+				{
+					"id": "body1",
+					"invertAxis": "xy",
+					"translate": [0, 1.5, 1.5],
+					"boxes": [
+						{"coordinates": [-1.5, -1.5, 0, 3, 3, 6], "textureOffset": [14, 18], "sizeAdd": 0.2},
+						{
+							"coordinates": [0, -2.5, 0, 0, 5, 6],
+							"uvNorth": [6, 5, 6, 10],
+							"uvEast": [16, 0, 10, 5],
+							"uvSouth": [12, 5, 12, 10],
+							"uvWest": [10, 0, 16, 5],
+							"uvUp": [6, 5, 6, -1],
+							"uvDown": [6, -1, 6, 5]
+						}
+					],
+					"submodels": [
+						{
+							"id": "body1_lightning",
+							"invertAxis": "xy",
+							"translate": [0, 0, -0.5],
+							"texture": "puffer_armor.png",
+							"textureSize": [64, 32],
+							"boxes": [
+								{
+									"coordinates": [-1.5, -1.5, 0.5, 3, 3, 6],
+									"uvNorth": [42, 29, 45, 32],
+									"uvEast": [15, 24, 21, 27],
+									"uvSouth": [39, 29, 42, 32],
+									"uvWest": [24, 24, 30, 27],
+									"uvUp": [24, 24, 21, 18],
+									"uvDown": [27, 18, 24, 24],
+									"sizeAdd": 0.5
+								}
+							]
+						},
+						{
+							"id": "body2",
+							"invertAxis": "xy",
+							"translate": [0, 0, 6],
+							"boxes": [
+								{"coordinates": [-1.5, -1.5, 0, 3, 3, 6], "textureOffset": [0, 23], "sizeAdd": 0.1},
+								{
+									"coordinates": [0, -2.5, 0, 0, 5, 6],
+									"uvNorth": [6, 0, 6, 5],
+									"uvEast": [22, 0, 16, 5],
+									"uvSouth": [12, 0, 12, 5],
+									"uvWest": [16, 0, 22, 5],
+									"uvUp": [6, 0, 6, -6],
+									"uvDown": [6, -6, 6, 0]
+								}
+							],
+							"submodels": [
+								{
+									"id": "body3",
+									"invertAxis": "xy",
+									"translate": [0, 0, 6],
+									"boxes": [
+										{"coordinates": [-1, -1.5, 0, 2, 3, 6], "textureOffset": [7, 5]},
+										{
+											"coordinates": [0, -2.5, 0, 0, 5, 10],
+											"uvNorth": [22, 0, 22, 5],
+											"uvEast": [32, 0, 22, 5],
+											"uvSouth": [32, 0, 32, 5],
+											"uvWest": [22, 0, 32, 5],
+											"uvUp": [22, 0, 22, -10],
+											"uvDown": [22, -10, 22, 0]
+										}
+									],
+									"submodels": [
+										{
+											"id": "body3_lightning",
+											"invertAxis": "xy",
+											"translate": [0, 0, -0.5],
+											"texture": "puffer_armor.png",
+											"textureSize": [64, 32],
+											"boxes": [
+												{
+													"coordinates": [-1.5, -1.5, 0.5, 3, 3, 6],
+													"uvNorth": [37, 17, 40, 20],
+													"uvEast": [26, 13, 32, 16],
+													"uvSouth": [41, 13, 44, 16],
+													"uvWest": [35, 13, 41, 16],
+													"uvUp": [35, 13, 32, 7],
+													"uvDown": [38, 7, 35, 13],
+													"sizeAdd": 0.5
+												}
+											]
+										}
+									]
+								},
+								{
+									"id": "body2_lightning",
+									"invertAxis": "xy",
+									"translate": [0, 0, 0],
+									"texture": "puffer_armor.png",
+									"textureSize": [64, 32],
+									"boxes": [
+										{
+											"coordinates": [-1.5, -1.5, 0, 3, 3, 6],
+											"uvNorth": [58, 29, 61, 32],
+											"uvEast": [45, 6, 51, 9],
+											"uvSouth": [61, 29, 64, 32],
+											"uvWest": [54, 6, 60, 9],
+											"uvUp": [54, 6, 51, 0],
+											"uvDown": [57, 0, 54, 6],
+											"sizeAdd": 0.5
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"var.follow": "pi/(2*(0.14+0.1))",
+					"var.body1_stationary_ry": "sin(time*(0+0.1))*((0*0.25)+0.25)",
+					"var.body1_moving_ry": "sin(-time*(0.75))*((1*0.25)+0.25)*0.5",
+					"var.body2_stationary_ry": "sin((time-var.follow)*(0+0.1))*((0*0.25)+0.25)",
+					"var.body2_moving_ry": "sin((-time-var.follow)*(0.75))*((1*0.25)+0.25)*0.5",
+					"var.body3_stationary_ry": "sin((time-(2*var.follow))*(0+0.1))*((0*0.25)+0.25)",
+					"var.body3_moving_ry": "sin((-time-(2*var.follow))*(0.75))*((1*0.25)+0.25)*0.5",
+					"var.ylerp": "if(limb_speed > 0.05, 1, 0)",
+					"head_lightning.rz": "floor((time)*0.3)%4*pi/2",
+					"body1_lightning.rz": "floor((time+5)*0.3)%4*pi/2",
+					"body2_lightning.rz": "floor((time+10)*0.3)%4*pi/2",
+					"body3_lightning.rz": "floor((time+15)*0.3)%4*pi/2",
+					"body1.ry": "lerp(var.ylerp,var.body1_stationary_ry,var.body1_moving_ry)",
+					"body2.ry": "lerp(var.ylerp,var.body2_stationary_ry,var.body2_moving_ry)",
+					"body3.ry": "lerp(var.ylerp,var.body3_stationary_ry,var.body3_moving_ry)",
+					"eel_head.ry": "body1.ry*(limb_speed/2)"
+				}
+			]
+		},
+		{
+			"part": "tail",
+			"id": "tail",
+			"invertAxis": "xy",
+			"translate": [0, -1, -1.5]
+		},
+		{
+			"part": "fin_right",
+			"id": "fin_right",
+			"invertAxis": "xy",
+			"translate": [-1.5, -1, 1.5]
+		},
+		{
+			"part": "fin_left",
+			"id": "fin_left",
+			"invertAxis": "xy",
+			"translate": [1.5, -1, 1.5]
+		},
+		{
+			"part": "eye_right",
+			"id": "eye_right",
+			"invertAxis": "xy",
+			"translate": [0, -3, 0]
+		},
+		{
+			"part": "eye_left",
+			"id": "eye_left",
+			"invertAxis": "xy",
+			"translate": [0, -3, 0]
+		},
+		{
+			"part": "spikes_front_top",
+			"id": "spikes_front_top",
+			"invertAxis": "xy",
+			"translate": [0, -6, 2.5],
+			"rotate": [-45, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		},
+		{
+			"part": "spikes_back_top",
+			"id": "spikes_back_top",
+			"invertAxis": "xy",
+			"translate": [0, -6, -2.5],
+			"rotate": [45, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		},
+		{
+			"part": "spikes_front_left",
+			"id": "spikes_front_left",
+			"invertAxis": "xy",
+			"translate": [2.5, -1, 2.5],
+			"rotate": [0, -45, 0],
+			"animations": [
+				{
+					"this.ry": 0
+				}
+			]
+		},
+		{
+			"part": "spikes_front_right",
+			"id": "spikes_front_right",
+			"invertAxis": "xy",
+			"translate": [-2.5, -1, 2.5],
+			"rotate": [0, 45, 0],
+			"animations": [
+				{
+					"this.ry": 0
+				}
+			]
+		},
+		{
+			"part": "spikes_back_left",
+			"id": "spikes_back_left",
+			"invertAxis": "xy",
+			"translate": [2.5, -1, -2.5],
+			"rotate": [0, 45, 0],
+			"animations": [
+				{
+					"this.ry": 0
+				}
+			]
+		},
+		{
+			"part": "spikes_back_right",
+			"id": "spikes_back_right",
+			"invertAxis": "xy",
+			"translate": [-2.5, -1, -2.5],
+			"rotate": [0, -45, 0],
+			"animations": [
+				{
+					"this.ry": 0
+				}
+			]
+		},
+		{
+			"part": "spikes_front_bottom",
+			"id": "spikes_front_bottom",
+			"invertAxis": "xy",
+			"translate": [0, -1, 2.5],
+			"rotate": [45, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		},
+		{
+			"part": "spikes_back_bottom",
+			"id": "spikes_back_bottom",
+			"invertAxis": "xy",
+			"translate": [-2.5, -1, -2.5],
+			"rotate": [-45, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		}
+	]
+}

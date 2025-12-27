@@ -1,0 +1,75 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [32, 32],
+	"texture": "morph.png",
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -6, 0],
+			"submodels": [
+				{
+					"id": "morphdebob",
+					"invertAxis": "xy",
+					"translate": [0, 6, 0],
+					"submodels": [
+						{
+							"id": "morph",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"boxes": [
+								{"coordinates": [-2.5, -2, -3.5, 5, 5, 5], "textureOffset": [12, 22], "sizeAdd": 0.05}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"morphdebob.ty": "right_arm.rx",
+					"var.test": "print(TEST, 20, root.ty)"
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -6, 0],
+			"animations": [
+				{
+					"var.animationspeed": "limb_speed",
+					"var.idlebobspeed": "age*9.0*(pi/180)",
+					"var.flyingfactor": "min(var.animationspeed/0.3, 1.0)",
+					"var.idlebobfactor": "1.0-var.flyingfactor",
+					"morphdebob.ty": "-(morphdebob.ty+cos(var.idlebobspeed)*0.25*var.idlebobfactor)"
+				}
+			]
+		},
+		{
+			"part": "right_arm",
+			"id": "right_arm",
+			"invertAxis": "xy",
+			"translate": [-1.75, -5.5, 0]
+		},
+		{
+			"part": "left_arm",
+			"id": "left_arm",
+			"invertAxis": "xy",
+			"translate": [1.75, -5.5, 0]
+		},
+		{
+			"part": "left_wing",
+			"id": "left_wing",
+			"invertAxis": "xy",
+			"translate": [0.5, -6, -1]
+		},
+		{
+			"part": "right_wing",
+			"id": "right_wing",
+			"invertAxis": "xy",
+			"translate": [-0.5, -6, -1]
+		}
+	]
+}

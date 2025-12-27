@@ -1,0 +1,102 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 64],
+	"texture": "acordion.png",
+	"models": [
+		{
+			"part": "segment1",
+			"id": "segment1",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 6, -4, 8, 2, 8], "textureOffset": [0, 0], "sizeAdd": 0.15},
+				{"coordinates": [-4, 8, 1, 8, 3, 3], "textureOffset": [0, 37]},
+				{"coordinates": [-3.5, 0, -3.5, 7, 8, 7], "textureOffset": [18, 40]}
+			],
+			"submodels": [
+				{
+					"id": "strap",
+					"invertAxis": "xy",
+					"translate": [0, 7.5, 2.5],
+					"rotate": [65, 0, 0],
+					"boxes": [
+						{"coordinates": [-4, -0.5, -0.5, 8, 1, 6], "textureOffset": [0, 55], "sizeAdd": 0.25}
+					]
+				}
+			]
+		},
+		{
+			"part": "segment2",
+			"id": "segment2",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 6, -4, 8, 1, 8], "textureOffset": [0, 10]}
+			]
+		},
+		{
+			"part": "segment3",
+			"id": "segment3",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 5, -4, 8, 1, 8], "textureOffset": [0, 19]}
+			]
+		},
+		{
+			"part": "segment4",
+			"id": "segment4",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 4, -4, 8, 1, 8], "textureOffset": [0, 28]}
+			]
+		},
+		{
+			"part": "segment5",
+			"id": "segment5",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 3, -4, 8, 1, 8], "textureOffset": [32, 0]}
+			]
+		},
+		{
+			"part": "segment6",
+			"id": "segment6",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 2, -4, 8, 1, 8], "textureOffset": [32, 9]}
+			]
+		},
+		{
+			"part": "segment7",
+			"id": "segment7",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 1, -4, 8, 1, 8], "textureOffset": [32, 18]}
+			]
+		},
+		{
+			"part": "segment8",
+			"id": "segment8",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 0, -4, 8, 2, 8], "textureOffset": [32, 27], "sizeAdd": 0.15},
+				{"coordinates": [-3.5, 0, -3.5, 7, 8, 7], "textureOffset": [18, 40]}
+			]
+		},
+		{
+			"part": "core",
+			"id": "core",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-3.5, 0, -3.5, 7, 8, 7], "textureOffset": [18, 40], "sizeAdd": 0.1}
+			]
+		}
+	]
+}

@@ -1,0 +1,140 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [32, 32],
+	"texture": "morph.png",
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -6, 0],
+			"submodels": [
+				{
+					"id": "morphdebob",
+					"invertAxis": "xy",
+					"translate": [0, 6, 0],
+					"submodels": [
+						{
+							"id": "morph",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"boxes": [
+								{"coordinates": [-2.5, 0, -3.5, 5, 3, 5], "textureOffset": [0, 0], "sizeAdd": 0.05}
+							],
+							"submodels": [
+								{
+									"id": "tail",
+									"invertAxis": "xy",
+									"translate": [0, 1, 1.5],
+									"boxes": [
+										{"coordinates": [-1.5, -1, 0, 3, 2, 2], "textureOffset": [0, 17]}
+									]
+								},
+								{
+									"id": "reye",
+									"invertAxis": "xy",
+									"translate": [1.5, 3, -2.5],
+									"boxes": [
+										{"coordinates": [-1, 0, -1, 2, 1, 2], "textureOffset": [1, 8]}
+									]
+								},
+								{
+									"id": "leye",
+									"invertAxis": "xy",
+									"translate": [-1.5, 3, -2.5],
+									"boxes": [
+										{"coordinates": [-1, 0, -1, 2, 1, 2], "textureOffset": [0, 11]}
+									]
+								},
+								{
+									"id": "rarmy",
+									"invertAxis": "xy",
+									"translate": [3, 0.5, -2],
+									"submodels": [
+										{
+											"id": "rarm",
+											"invertAxis": "xy",
+											"translate": [0, 0, 0],
+											"boxes": [
+												{"coordinates": [-0.5, -0.5, -2.5, 1, 1, 3], "textureOffset": [0, 18]}
+											]
+										}
+									]
+								},
+								{
+									"id": "larmy",
+									"invertAxis": "xy",
+									"translate": [-3, 0.5, -2],
+									"submodels": [
+										{
+											"id": "larm",
+											"invertAxis": "xy",
+											"translate": [0, 0, 0],
+											"boxes": [
+												{"coordinates": [-0.5, -0.5, -2.5, 1, 1, 3], "textureOffset": [0, 14]}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"morphdebob.ty": "right_arm.rx"
+				},
+				{
+					"morph.ty": "sin(time/(4+random(id)))/4-5",
+					"tail.ty": "(-cos(time/(4+random(id)))/6)-1",
+					"reye.sy": "(cos(time/(4+random(id)))/10)+0.9",
+					"leye.sy": "(cos(time/(4+random(id)))/10)+0.9",
+					"rarm.rx": "(-cos(time/(4+random(id))))/20+torad(-20)",
+					"rarmy.ry": "torad(-5)",
+					"larm.rx": "(-cos(time/(4+random(id))))/20+torad(-20)",
+					"larmy.ry": "torad(5)"
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -6, 0],
+			"animations": [
+				{
+					"var.animationspeed": "limb_speed",
+					"var.idlebobspeed": "age*9.0*(pi/180)",
+					"var.flyingfactor": "min(var.animationspeed/0.3, 1.0)",
+					"var.idlebobfactor": "1.0-var.flyingfactor",
+					"morphdebob.ty": "-(morphdebob.ty+cos(var.idlebobspeed)*0.25*var.idlebobfactor)"
+				}
+			]
+		},
+		{
+			"part": "right_arm",
+			"id": "right_arm",
+			"invertAxis": "xy",
+			"translate": [-1.75, -5.5, 0]
+		},
+		{
+			"part": "left_arm",
+			"id": "left_arm",
+			"invertAxis": "xy",
+			"translate": [1.75, -5.5, 0]
+		},
+		{
+			"part": "left_wing",
+			"id": "left_wing",
+			"invertAxis": "xy",
+			"translate": [0.5, -6, -1]
+		},
+		{
+			"part": "right_wing",
+			"id": "right_wing",
+			"invertAxis": "xy",
+			"translate": [-0.5, -6, -1]
+		}
+	]
+}

@@ -1,0 +1,13 @@
+respackopts
+overlay
+_charging
+_shooting
+equipment
+armor
+rope
+harness
+saddle
+spark
+evoker_fangs
+profession
+collar

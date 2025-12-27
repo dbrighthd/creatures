@@ -1,0 +1,6 @@
+{
+    condition: "CreaturesPlus.naturallySpawningCreakingBiomeVariants.off",
+    fallbacks: [
+      "assets/minecraft/optifine/random/entity/creaking/respackopts_biomes/biomes.properties"
+    ]
+}

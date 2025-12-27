@@ -47,9 +47,10 @@
 													"uvNorth": [0, 0, 0, 0],
 													"uvEast": [20, 28, 16, 32],
 													"uvSouth": [0, 0, 0, 0],
-													"uvWest": [0, 0, 0, 0],
+													"uvWest": [24, 28, 20, 32],
 													"uvUp": [0, 0, 0, 0],
-													"uvDown": [0, 0, 0, 0]
+													"uvDown": [0, 0, 0, 0],
+													"sizeAdd": 0.01
 												}
 											]
 										}
@@ -71,9 +72,10 @@
 													"uvNorth": [0, 0, 0, 0],
 													"uvEast": [20, 28, 24, 32],
 													"uvSouth": [0, 0, 0, 0],
-													"uvWest": [0, 0, 0, 0],
+													"uvWest": [16, 28, 20, 32],
 													"uvUp": [0, 0, 0, 0],
-													"uvDown": [0, 0, 0, 0]
+													"uvDown": [0, 0, 0, 0],
+													"sizeAdd": 0.01
 												}
 											]
 										}
@@ -120,7 +122,7 @@
 				{
 					"body.ry": "-tail.ry/6",
 					"var.accurate_depth": "fluid_depth_up + (-(pos_y-floor(pos_y)))",
-					"var.sunfish_target_angle": "lerp( clamp(var.accurate_depth-1, 0, 1), pi/2 * if((floor(random(id)*100))%2 == 0, 1, -1), 0)",
+					"var.sunfish_target_angle": "lerp( if(is_in_water, clamp(var.accurate_depth-1, 0, 1), 1), pi/2 * if((floor(random(id)*100))%2 == 0, 1, -1), 0)",
 					"top_fin.rz": "if(limb_speed >= 0.1, torad(sin((time+(random(id)*100))*0.5))*15, 0)",
 					"top_fin.ry": "if(limb_speed >= 0.1, torad(-sin(((time+(random(id)*100))*0.5)+15)*7), 0)",
 					"bottom_fin.rz": "if(limb_speed >= 0.1, -torad(sin((time+(random(id)*100))*0.5))*15, 0)",

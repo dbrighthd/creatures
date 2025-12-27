@@ -1,0 +1,144 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 32],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -9, 4],
+			"submodels": [
+				{
+					"id": "head_sub_0",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -8, 0],
+			"submodels": [
+				{
+					"id": "rotation",
+					"invertAxis": "xy",
+					"translate": [0, 5.5, -5],
+					"rotate": [-90, 0, 0],
+					"submodels": [
+						{
+							"id": "flightless",
+							"invertAxis": "xy",
+							"translate": [0, 2, -1],
+							"submodels": [
+								{
+									"id": "kiwi",
+									"invertAxis": "xy",
+									"translate": [0, 0, 0],
+									"texture": "kiwi.png",
+									"textureSize": [64, 32],
+									"submodels": [
+										{
+											"id": "kiwi_body",
+											"invertAxis": "xy",
+											"translate": [0, 0, 0],
+											"rotate": [15, 0, 0],
+											"boxes": [
+												{"coordinates": [-1.5, -1, 0, 3, 4, 3], "textureOffset": [0, 0]}
+											],
+											"submodels": [
+												{
+													"id": "kiwi_head",
+													"invertAxis": "xy",
+													"translate": [0, 3, 3],
+													"rotate": [-20, 0, 0],
+													"boxes": [
+														{"coordinates": [-1, 0, -1, 2, 2, 2], "textureOffset": [13, 0]},
+														{"coordinates": [0, 2, -1, 0, 2, 1], "textureOffset": [16, 4]}
+													]
+												}
+											]
+										},
+										{
+											"id": "right_kiwi_leg",
+											"invertAxis": "xy",
+											"translate": [1, 0, 0],
+											"boxes": [
+												{"coordinates": [-0.5, 0, -2, 1, 1, 2], "textureOffset": [0, 8]}
+											]
+										},
+										{
+											"id": "left_kiwi_leg",
+											"invertAxis": "xy",
+											"translate": [-1, 0.25, 0],
+											"boxes": [
+												{"coordinates": [-0.5, -0.25, -2, 1, 1, 2], "textureOffset": [7, 8]}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"rotation.rx": "torad(0)",
+					"right_kiwi_leg.rx": "if(limb_speed>0.1, sin((time+(random(id)*100))/2)/2, 0)",
+					"right_kiwi_leg.tz": "if(limb_speed>0.1, (-cos((time+(random(id)*100))/2)/2)+0.5, 0)",
+					"left_kiwi_leg.rx": "-right_kiwi_leg.rx",
+					"left_kiwi_leg.tz": "if(limb_speed>0.1, (cos((time+(random(id)*100))/2)/2)+0.5, 0)",
+					"kiwi_body.rx": "if(limb_speed>0.1, torad(0), torad(-15))",
+					"kiwi.tz": "if(limb_speed>0.1, abs(sin((time+(random(id)*100))/2)), 0)",
+					"flightless.tz": "if(limb_speed>0.1, -1.4, -1)",
+					"kiwi_head.rx": "if(limb_speed>0.1, torad(0), head.rx+(torad(20)))",
+					"kiwi_head.tz": "if(limb_speed>0.1, abs(sin(((time+(random(id)*100))-1)/2)/2)+2.2, 3)",
+					"kiwi_head.rz": "-head.ry",
+					"kiwi_head.sx": "if(is_child, 1.4, 1)",
+					"kiwi_head.sy": "if(is_child, 1.4, 1)",
+					"kiwi_head.sz": "if(is_child, 1.4, 1)",
+					"render.shadow_size": "0.5"
+				}
+			]
+		},
+		{
+			"part": "right_leg",
+			"id": "right_leg",
+			"invertAxis": "xy",
+			"translate": [-2, -5, -1]
+		},
+		{
+			"part": "left_leg",
+			"id": "left_leg",
+			"invertAxis": "xy",
+			"translate": [1, -5, -1]
+		},
+		{
+			"part": "right_wing",
+			"id": "right_wing",
+			"invertAxis": "xy",
+			"translate": [-4, -11, 0]
+		},
+		{
+			"part": "left_wing",
+			"id": "left_wing",
+			"invertAxis": "xy",
+			"translate": [4, -11, 0]
+		},
+		{
+			"part": "bill",
+			"id": "bill",
+			"invertAxis": "xy",
+			"translate": [0, -9, 4]
+		},
+		{
+			"part": "chin",
+			"id": "chin",
+			"invertAxis": "xy",
+			"translate": [0, -9, 4]
+		}
+	]
+}

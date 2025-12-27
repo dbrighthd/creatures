@@ -1,0 +1,10 @@
+sheep,-3,-3,-24
+pufferfish,-3,-2,-8
+villager,-3,-2,-16
+snow_golem,-3,-3,-6
+mule,-3,-3,-13
+donkey,-3,-3,-13
+horse,-3,-3,-23
+bee,-3,-3,-11
+iron_golem,-3,-3,-12
+copper_golem,-3,-3,-12

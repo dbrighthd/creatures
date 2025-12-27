@@ -1,0 +1,47 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": [
+          "Bucket of Angler",
+          "Angler",
+          "iregex:.*Angler.*"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "item/cod_bucket_angler"
+        }
+      },
+      {
+        "when": [
+          "Bucket of Brown Sunfish",
+          "Brown Sunfish",
+          "iregex:.*Brown.*Sunfish.*"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "item/cod_bucket_sunfish_brown"
+        }
+      },
+      {
+        "when": [
+          "Bucket of Sunfish",
+          "Sunfish",
+          "iregex:.*Sunfish.*"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "item/cod_bucket_sunfish"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "item/cod_bucket"
+    }
+  },
+  "oversized_in_gui": true
+}
