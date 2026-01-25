@@ -1,0 +1,8 @@
+{
+    "required_dependencies": [
+        "entity_model_features", "entity_textures_features"
+    ],
+    "optional_dependencies": [
+        "entity_sound_features", "animatica"
+    ]
+}
