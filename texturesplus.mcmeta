@@ -1,8 +1,8 @@
 {
     "required_dependencies": [
-        "entity_model_features", "entity_textures_features"
+        "entity_model_features", "entity_texture_features"
     ],
     "optional_dependencies": [
-        "entity_sound_features", "animatica"
+        "entity_sound_features", "animatica", "dbrighthd_regex_mod"
     ]
 }
