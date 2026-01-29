@@ -13,3 +13,11 @@ enderman_eyes
 boat
 saddle
 baby
+copper_golem_eyes
+exposed_copper_golem
+exposed_copper_golem_eyes
+oxidized_copper_golem
+oxidized_copper_golem_eyes
+weathered_copper_golem
+weathered_copper_golem_eyes
+drowned_outer_layer
