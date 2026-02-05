@@ -76,10 +76,22 @@
 			],
 			"animations": [
 				{
+					"var.y_diff": "-(pos_y-var.yprev)",
+					"var.x_diff": "pos_x-var.xprev",
+					"var.z_diff": "pos_z-var.zprev",
+					"var.lateral_diff": "sqrt(var.x_diff * var.x_diff + var.z_diff * var.z_diff)",
+					"var.correct_angle": "-atan2(var.lateral_diff,var.y_diff)",
+					"var.amount": "0.01",
+					"var.rot_x_target": "if(var.lateral_diff < 0.0001, 0, var.correct_angle + torad(+90))",
+					"var.rot_x_actual": "if(abs(var.rot_x_target - var.rot_x_actual) < var.amount, var.rot_x_target, var.rot_x_actual + (var.rot_x_target - var.rot_x_actual)/3)",
 					"var.rot_x": "limb_speed",
-					"bodyl.rx": "(-0.05 * cos(age*0.3))",
+					"bodyl.rx": "(-0.05 * cos(age*0.3)) + clamp(var.rot_x_actual,torad(-30),torad(30))",
 					"tail.rx": "(-0.1 * cos(age*0.3))",
-					"tail_fin.rx": "(-0.2 * cos(age*0.3))"
+					"tail_fin.rx": "(-0.2 * cos(age*0.3))",
+					"var.yprev": "if(frame_counter== var.prev_frame, var.yprev, pos_y)",
+					"var.xprev": "if(frame_counter== var.prev_frame, var.xprev, pos_x)",
+					"var.zprev": "if(frame_counter== var.prev_frame, var.zprev, pos_z)",
+					"var.prev_frame": "frame_counter"
 				}
 			]
 		},

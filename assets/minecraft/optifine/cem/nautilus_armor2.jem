@@ -75,10 +75,7 @@
 			],
 			"animations": [
 				{
-					"var.rot_x": "limb_speed",
-					"bodyl.rx": "(-0.05 * cos(age*0.3))",
-					"tail.rx": "(-0.1 * cos(age*0.3))",
-					"tail_fin.rx": "(-0.2 * cos(age*0.3))"
+					"bodyl.rx": "(-0.05 * cos(age*0.3)) + clamp(var.rot_x_actual,torad(-30),torad(30))"
 				}
 			]
 		},
