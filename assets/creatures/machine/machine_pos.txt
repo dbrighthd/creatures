@@ -4,7 +4,15 @@ villager,-3,-2,-16
 snow_golem,-3,-3,-6
 mule,-3,-3,-13
 donkey,-3,-3,-13
-horse,-3,-3,-23
+horse,-3,-3,-25
+nautilus,-3,-3,-23
+fox,-3,-3,-24
 bee,-3,-3,-11
 iron_golem,-3,-3,-12
 copper_golem,-3,-3,-12
+cow,-3,-3,-24
+chicken,-3,-3,-24
+dolphin,-3,-3,-24
+turtle,-3,-3,-24
+squid,-3,-3,-24
+glow_squid,-3,-3,-24
