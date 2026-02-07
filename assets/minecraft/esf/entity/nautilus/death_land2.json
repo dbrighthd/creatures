@@ -1,0 +1,14 @@
+{
+	"sounds": [
+		{
+			"name": "mob/dolphin/death1",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/death2",
+			"volume": 1.0,
+			"weight": 1
+		}
+	]
+}

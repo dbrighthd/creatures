@@ -1,0 +1,39 @@
+{
+	"sounds": [
+		{
+			"name": "mob/fish/swim5",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/fish/swim6",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/fish/swim7",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/swim1",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/swim2",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/swim3",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/swim4",
+			"volume": 1.0,
+			"weight": 1
+		}
+	]
+}

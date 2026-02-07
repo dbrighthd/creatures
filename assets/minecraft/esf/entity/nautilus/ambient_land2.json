@@ -1,0 +1,44 @@
+{
+	"sounds": [
+		{
+			"name": "mob/dolphin/blowhole1",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/blowhole2",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/idle1",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/idle2",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/idle3",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/idle4",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/idle5",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/idle6",
+			"volume": 1.0,
+			"weight": 1
+		}
+	]
+}

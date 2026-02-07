@@ -1,0 +1,54 @@
+{
+	"sounds": [
+		{
+			"name": "mob/dolphin/idle_water1",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/idle_water2",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/idle_water3",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/idle_water4",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/idle_water5",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/idle_water6",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/idle_water7",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/idle_water8",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/idle_water9",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/idle_water10",
+			"volume": 1.0,
+			"weight": 1
+		}
+	]
+}

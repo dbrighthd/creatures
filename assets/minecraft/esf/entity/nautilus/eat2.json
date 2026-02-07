@@ -1,0 +1,19 @@
+{
+	"sounds": [
+		{
+			"name": "mob/dolphin/eat1",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/eat2",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "mob/dolphin/eat3",
+			"volume": 1.0,
+			"weight": 1
+		}
+	]
+}
