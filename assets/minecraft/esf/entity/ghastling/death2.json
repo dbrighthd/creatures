@@ -1,0 +1,9 @@
+{
+	"sounds": [
+		{
+			"name": "entity/ghastling/sounds/death",
+			"volume": 1.0,
+			"weight": 1
+		}
+	]
+}

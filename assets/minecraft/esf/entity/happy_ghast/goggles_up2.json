@@ -1,0 +1,9 @@
+{
+	"sounds": [
+		{
+			"name": "entity/happy_ghast/sounds/goggles_up",
+			"volume": 1.0,
+			"weight": 1
+		}
+	]
+}

@@ -1,0 +1,74 @@
+{
+	"sounds": [
+		{
+			"name": "entity/ghastling/sounds/ghastling1",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/ghastling/sounds/ghastling2",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/ghastling/sounds/ghastling3",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/ghastling/sounds/ghastling4",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/ghastling/sounds/ghastling5",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/ghastling/sounds/ghastling6",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/ghastling/sounds/ghastling7",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/ghastling/sounds/ghastling8",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/ghastling/sounds/ghastling9",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/ghastling/sounds/ghastling10",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/ghastling/sounds/ghastling11",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/ghastling/sounds/ghastling12",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/ghastling/sounds/ghastling13",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/ghastling/sounds/ghastling14",
+			"volume": 1.0,
+			"weight": 1
+		}
+	]
+}

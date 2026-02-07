@@ -1,0 +1,74 @@
+{
+	"sounds": [
+		{
+			"name": "entity/happy_ghast/sounds/ambient1",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/happy_ghast/sounds/ambient2",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/happy_ghast/sounds/ambient3",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/happy_ghast/sounds/ambient4",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/happy_ghast/sounds/ambient5",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/happy_ghast/sounds/ambient6",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/happy_ghast/sounds/ambient7",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/happy_ghast/sounds/ambient8",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/happy_ghast/sounds/ambient9",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/happy_ghast/sounds/ambient10",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/happy_ghast/sounds/ambient11",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/happy_ghast/sounds/ambient12",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/happy_ghast/sounds/ambient13",
+			"volume": 1.0,
+			"weight": 1
+		},
+		{
+			"name": "entity/happy_ghast/sounds/ambient14",
+			"volume": 1.0,
+			"weight": 1
+		}
+	]
+}
