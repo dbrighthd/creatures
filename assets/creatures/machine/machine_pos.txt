@@ -4,7 +4,7 @@ villager,-3,-2,-16
 snow_golem,-3,-3,-6
 mule,-3,-3,-13
 donkey,-3,-3,-13
-horse,-3,-3,-25
+horse,-3,-3,-26
 nautilus,-3,-3,-23
 fox,-3,-3,-24
 bee,-3,-3,-11
