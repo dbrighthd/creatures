@@ -1,0 +1,143 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 64],
+	"texture": "nautilusbeluga.png",
+	"models": [
+		{
+			"part": "shell",
+			"id": "shell",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "bodyl",
+					"invertAxis": "xy",
+					"translate": [0, 3, -5.5],
+					"boxes": [
+						{"coordinates": [-3, 2, -7, 6, 6, 8], "textureOffset": [0, 35]},
+						{"coordinates": [-0.5, 2.5, -19.975, 1, 1, 14], "textureOffset": [0, 49]},
+						{"coordinates": [-1, 0, -10, 2, 2, 4], "textureOffset": [0, 13]},
+						{"coordinates": [-4, 0, 0, 8, 7, 13], "textureOffset": [22, 0]}
+					],
+					"submodels": [
+						{
+							"id": "shell_sub_1",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [0, 0, 0],
+							"boxes": [
+								{"coordinates": [-1, 0, -13.5, 2, 2, 8], "textureOffset": [26, 51]}
+							]
+						},
+						{
+							"id": "tail",
+							"invertAxis": "xy",
+							"translate": [0, 2.5, 12],
+							"boxes": [
+								{"coordinates": [-2, -2.5, -1, 4, 5, 11], "textureOffset": [0, 19]}
+							],
+							"submodels": [
+								{
+									"id": "shell_sub_3",
+									"invertAxis": "xy",
+									"mirrorTexture": "u",
+									"translate": [0, 0, 0],
+									"boxes": [
+										{"coordinates": [-2, 2.5, -8, 4, 4, 12], "textureOffset": [32, 33]}
+									]
+								},
+								{
+									"id": "tail_fin",
+									"invertAxis": "xy",
+									"translate": [0, 0, 9],
+									"boxes": [
+										{"coordinates": [-5, -0.5, -1, 10, 1, 6], "textureOffset": [19, 20]}
+									]
+								}
+							]
+						},
+						{
+							"id": "right_fin",
+							"invertAxis": "xy",
+							"translate": [2, 2.05, 3.825],
+							"rotate": [-60, 0, -120],
+							"boxes": [
+								{"coordinates": [-0.5, 0, 0, 1, 4, 7], "textureOffset": [48, 20]}
+							]
+						},
+						{
+							"id": "left_fin",
+							"invertAxis": "xy",
+							"translate": [-2, 2.05, 3.825],
+							"rotate": [120, -180, -60],
+							"boxes": [
+								{"coordinates": [-0.5, 0, 0, 1, 4, 7], "textureOffset": [48, 20]}
+							]
+						},
+						{
+							"id": "back_fin",
+							"invertAxis": "xy",
+							"translate": [0, 5.02705, 8.08823],
+							"rotate": [-60, 0, 0],
+							"boxes": [
+								{"coordinates": [-0.5, 0.21651, -0.125, 1, 4, 5], "textureOffset": [51, 0]}
+							]
+						},
+						{
+							"id": "head",
+							"invertAxis": "xy",
+							"translate": [0, 4, -3],
+							"boxes": [
+								{"coordinates": [-4, -4, -3, 8, 7, 6], "textureOffset": [0, 0]}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"var.y_diff": "-(pos_y-var.yprev)",
+					"var.x_diff": "pos_x-var.xprev",
+					"var.z_diff": "pos_z-var.zprev",
+					"var.lateral_diff": "sqrt(var.x_diff * var.x_diff + var.z_diff * var.z_diff)",
+					"var.correct_angle": "-atan2(var.lateral_diff,var.y_diff)",
+					"var.amount": "0.01",
+					"var.rot_x_target": "if(var.lateral_diff == 0 || abs(var.y_diff) == 0, 0, var.correct_angle + torad(+90))",
+					"var.rot_x_actual": "if(abs(var.rot_x_target - var.rot_x_actual) < var.amount, var.rot_x_target, var.rot_x_actual + (var.rot_x_target - var.rot_x_actual)*frame_time*4)",
+					"var.rot_x": "limb_speed",
+					"bodyl.rx": "(-0.05 * cos(age*0.3)) + clamp(var.rot_x_actual,torad(-30),torad(30))",
+					"tail.rx": "(-0.1 * cos(age*0.3))",
+					"tail_fin.rx": "(-0.2 * cos(age*0.3))",
+					"var.yprev": "if(frame_counter== var.prev_frame, var.yprev, pos_y)",
+					"var.xprev": "if(frame_counter== var.prev_frame, var.xprev, pos_x)",
+					"var.zprev": "if(frame_counter== var.prev_frame, var.zprev, pos_z)",
+					"var.prev_frame": "frame_counter"
+				}
+			]
+		},
+		{
+			"part": "upper_mouth",
+			"id": "upper_mouth",
+			"invertAxis": "xy",
+			"translate": [0, -6.01, -13.3]
+		},
+		{
+			"part": "inner_mouth",
+			"id": "inner_mouth",
+			"invertAxis": "xy",
+			"translate": [0, -4.01, -13.8]
+		},
+		{
+			"part": "lower_mouth",
+			"id": "lower_mouth",
+			"invertAxis": "xy",
+			"translate": [0, -2.01, -13.3]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -3.5, -6.3]
+		}
+	]
+}

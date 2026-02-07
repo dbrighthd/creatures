@@ -1,0 +1,59 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [128, 128],
+	"texture": "nautilusbotosaddle.png",
+	"models": [
+		{
+			"part": "shell",
+			"id": "shell",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "bodyl",
+					"invertAxis": "xy",
+					"translate": [0, 3, -1.5],
+					"submodels": [
+						{
+							"id": "bone",
+							"invertAxis": "xy",
+							"translate": [0, -3, 1.5],
+							"boxes": [
+								{"coordinates": [-4, 3, -8, 8, 7, 13], "textureOffset": [46, 0], "sizeAdd": 0.2}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"bodyl.rx": "(-0.05 * cos(age*0.3)) + clamp(var.rot_x_actual,torad(-30),torad(30))"
+				}
+			]
+		},
+		{
+			"part": "upper_mouth",
+			"id": "upper_mouth",
+			"invertAxis": "xy",
+			"translate": [0, -6.01, -13.3]
+		},
+		{
+			"part": "inner_mouth",
+			"id": "inner_mouth",
+			"invertAxis": "xy",
+			"translate": [0, -4.01, -13.8]
+		},
+		{
+			"part": "lower_mouth",
+			"id": "lower_mouth",
+			"invertAxis": "xy",
+			"translate": [0, -2.01, -13.3]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -3.5, -6.3]
+		}
+	]
+}
