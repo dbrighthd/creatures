@@ -93,7 +93,7 @@
 											]
 										},
 										{
-											"id": "Lwingtip",
+											"id": "Lwingtp",
 											"invertAxis": "xy",
 											"translate": [-8, 0, 0],
 											"boxes": [
@@ -204,7 +204,7 @@
 											]
 										},
 										{
-											"id": "Rwingtip",
+											"id": "Rwingtp",
 											"invertAxis": "xy",
 											"translate": [9, 0, 0],
 											"boxes": [
@@ -260,9 +260,9 @@
 					"Rmidwingfeathers.rx": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
 					"Rmidwingfeathers.ry": "if(is_hurt, torad(10), !is_on_ground, torad(10), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(10), torad(52.5))",
 					"Rmidwingfeathers.rz": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
-					"Rwingtip.rx": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
-					"Rwingtip.ry": "if(is_hurt, torad(10), !is_on_ground, torad(10), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(10), torad(137.5))",
-					"Rwingtip.rz": "if(is_hurt, torad(0)+0.3*sin(1.1*time-8), !is_on_ground, torad(0)+0.3*sin(0.5*time-8), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0)+0.3*sin(0.7*time-8), torad(0))",
+					"Rwingtp.rx": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
+					"Rwingtp.ry": "if(is_hurt, torad(10), !is_on_ground, torad(10), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(10), torad(137.5))",
+					"Rwingtp.rz": "if(is_hurt, torad(0)+0.3*sin(1.1*time-8), !is_on_ground, torad(0)+0.3*sin(0.5*time-8), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0)+0.3*sin(0.7*time-8), torad(0))",
 					"Lwingbase.rx": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(27.5))",
 					"Lwingbase.ry": "if(is_hurt, torad(-10), !is_on_ground, torad(-10), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(-10), torad(-75))",
 					"Lwingbase.rz": "if(is_hurt, -torad(0)+0.5*sin(1.1*time+((10*pi)/11)), !is_on_ground, -torad(0)+0.5*sin(0.5*time+((10*pi)/11)), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, -torad(0)+0.5*sin(0.7*time+((10*pi)/11)), torad(55))",
@@ -275,9 +275,9 @@
 					"Lmidwingfeathers.rx": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
 					"Lmidwingfeathers.ry": "if(is_hurt, torad(-10), !is_on_ground, torad(-10), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(-10), torad(-52.5))",
 					"Lmidwingfeathers.rz": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
-					"Lwingtip.rx": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
-					"Lwingtip.ry": "if(is_hurt, torad(-10), !is_on_ground, torad(-10), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(-10), torad(-137.5))",
-					"Lwingtip.rz": "if(is_hurt, torad(0)+0.3*sin(1.1*time+(((10*pi)/11)-8)), !is_on_ground, torad(0)+0.3*sin(0.5*time+(((10*pi)/11)-8)), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0)+0.3*sin(0.7*time+(((10*pi)/11)-8)), torad(0))"
+					"Lwingtp.rx": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
+					"Lwingtp.ry": "if(is_hurt, torad(-10), !is_on_ground, torad(-10), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(-10), torad(-137.5))",
+					"Lwingtp.rz": "if(is_hurt, torad(0)+0.3*sin(1.1*time+(((10*pi)/11)-8)), !is_on_ground, torad(0)+0.3*sin(0.5*time+(((10*pi)/11)-8)), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0)+0.3*sin(0.7*time+(((10*pi)/11)-8)), torad(0))"
 				}
 			]
 		},
