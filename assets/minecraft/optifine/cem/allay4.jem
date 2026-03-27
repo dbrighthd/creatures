@@ -27,8 +27,7 @@
 			],
 			"animations": [
 				{
-					"morphdebob.ty": "right_arm.rx",
-					"var.test": "print(TEST, 20, root.ty)"
+					"morphdebob.ty": "right_arm.rx"
 				}
 			]
 		},
