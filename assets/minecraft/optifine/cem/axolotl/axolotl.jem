@@ -1,0 +1,277 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "top_gills",
+			"id": "top_gills",
+			"invertAxis": "xy",
+			"translate": [0, -7.5, 5],
+			"submodels": [
+				{
+					"id": "top_gills_chimera",
+					"invertAxis": "xy",
+					"translate": [0, 7.5, -5],
+					"texture": "chimera.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [-4, 0, 0, 8, 3, 0], "textureOffset": [3, 37]}
+					]
+				},
+				{
+					"id": "top_gills_vanilla",
+					"invertAxis": "xy",
+					"translate": [0, 7.5, -5],
+					"boxes": [
+						{
+							"coordinates": [0, 0, 0, 4, 3, 0],
+							"uvNorth": [3, 37, 7, 40],
+							"uvEast": [3, 37, 3, 40],
+							"uvSouth": [11, 37, 15, 40],
+							"uvWest": [7, 37, 7, 40],
+							"uvUp": [7, 37, 3, 37],
+							"uvDown": [11, 37, 7, 37],
+							"sizeAdd": 0
+						}
+					],
+					"submodels": [
+						{
+							"id": "top_gills_vanilla_hide",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"boxes": [
+								{
+									"coordinates": [-4, 0, 0, 4, 3, 0],
+									"uvNorth": [7, 37, 11, 40],
+									"uvEast": [3, 37, 3, 40],
+									"uvSouth": [11, 37, 15, 40],
+									"uvWest": [7, 37, 7, 40],
+									"uvUp": [7, 37, 3, 37],
+									"uvDown": [11, 37, 7, 37],
+									"sizeAdd": 0
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -4.5, -5],
+			"boxes": [
+				{"coordinates": [-4, 2.5, -4, 8, 4, 10], "textureOffset": [0, 11]},
+				{"coordinates": [0, 2.5, -3, 0, 5, 9], "textureOffset": [2, 17]}
+			],
+			"submodels": [
+				{
+					"id": "accessories_body",
+					"invertAxis": "xy",
+					"translate": [0, 4.5, 5],
+					"texture": "axolotl_accessories.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [-4, -2, -9, 8, 4, 10], "textureOffset": [0, 11], "sizeAdd": 0.025},
+						{"coordinates": [0, -2, -8, 0, 5, 9], "textureOffset": [2, 17], "sizeAdd": 0.025}
+					]
+				},
+				{
+					"id": "extratailbody",
+					"invertAxis": "xy",
+					"translate": [0, 4.5, 5],
+					"texture": "axolotl_tail.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [-4, -2, -9, 8, 4, 10], "textureOffset": [0, 11], "sizeAdd": 0.015},
+						{"coordinates": [0, -2, -8, 0, 5, 9], "textureOffset": [2, 17], "sizeAdd": 0.011}
+					]
+				},
+				{
+					"id": "chimerabody",
+					"invertAxis": "xy",
+					"translate": [0, 4.5, 5],
+					"texture": "chimera.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [-4, -2, -9, 8, 4, 10], "textureOffset": [0, 11], "sizeAdd": 0.01},
+						{"coordinates": [0, -2, -8, 0, 5, 9], "textureOffset": [2, 17], "sizeAdd": 0.01}
+					]
+				}
+			],
+			"animations": [
+				{
+					"right_gills_vanilla.visible": "!nbt(CustomName,iregex:.*chimera.*)",
+					"top_gills_vanilla_hide.visible": "right_gills_vanilla.visible",
+					"vanilla_tail.visible": "!nbt(CustomName,iregex:.*-tailed.*)",
+					"extratail.visible": "!vanilla_tail.visible",
+					"chimeratail.visible": "vanilla_tail.visible"
+				}
+			]
+		},
+		{
+			"part": "leg1",
+			"id": "leg1",
+			"invertAxis": "xy",
+			"translate": [-3.5, -3.5, -4],
+			"boxes": [
+				{"coordinates": [2.5, -1.5, 4, 3, 5, 0], "textureOffset": [2, 13], "sizeAdd": 0.001}
+			]
+		},
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -4.5, 4],
+			"boxes": [
+				{"coordinates": [-4, 2.5, -9, 8, 5, 5], "textureOffset": [0, 1], "sizeAdd": 0.001}
+			],
+			"submodels": [
+				{
+					"id": "headchimera",
+					"invertAxis": "xy",
+					"translate": [0, 4.5, -4],
+					"texture": "chimera.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [-4, -2, -5, 8, 5, 5], "textureOffset": [0, 1], "sizeAdd": 0.018}
+					]
+				},
+				{
+					"id": "head_attachments",
+					"invertAxis": "xy",
+					"translate": [0, 4.5, -4],
+					"texture": "axolotl_accessories.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [-4, -2, -5, 8, 5, 5], "textureOffset": [0, 1], "sizeAdd": 0.025}
+					]
+				}
+			]
+		},
+		{
+			"part": "leg2",
+			"id": "leg2",
+			"invertAxis": "xy",
+			"translate": [3.5, -3.5, -4],
+			"boxes": [
+				{"coordinates": [-5.5, -1.5, 4, 3, 5, 0], "textureOffset": [2, 13], "sizeAdd": 0.001}
+			],
+			"submodels": [
+				{
+					"id": "leg2_chimera",
+					"invertAxis": "xy",
+					"translate": [-3.5, 3.5, 4],
+					"texture": "chimera.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [-2, -5, 0, 3, 5, 0], "textureOffset": [2, 13], "sizeAdd": 0.01}
+					]
+				}
+			]
+		},
+		{
+			"part": "leg3",
+			"id": "leg3",
+			"invertAxis": "xy",
+			"translate": [-3.5, -3.5, 3],
+			"boxes": [
+				{"coordinates": [2.5, -1.5, -3, 3, 5, 0], "textureOffset": [2, 13], "sizeAdd": 0.001}
+			]
+		},
+		{
+			"part": "leg4",
+			"id": "leg4",
+			"invertAxis": "xy",
+			"translate": [3.5, -3.5, 3],
+			"boxes": [
+				{"coordinates": [-5.5, -1.5, -3, 3, 5, 0], "textureOffset": [2, 13], "sizeAdd": 0.001}
+			],
+			"submodels": [
+				{
+					"id": "leg4_chimera",
+					"invertAxis": "xy",
+					"translate": [-3.5, 3.5, -3],
+					"texture": "chimera.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [-2, -5, 0, 3, 5, 0], "textureOffset": [2, 13], "sizeAdd": 0.01}
+					]
+				}
+			]
+		},
+		{
+			"part": "right_gills",
+			"id": "right_gills",
+			"invertAxis": "xy",
+			"translate": [4, -4.5, 5],
+			"submodels": [
+				{
+					"id": "right_gills_chimera",
+					"invertAxis": "xy",
+					"translate": [-4, 4.5, -5],
+					"texture": "chimera.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [-3, -2, 0, 3, 7, 0], "textureOffset": [11, 40]}
+					]
+				},
+				{
+					"id": "right_gills_vanilla",
+					"invertAxis": "xy",
+					"translate": [-4, 4.5, -5],
+					"boxes": [
+						{"coordinates": [-3, -2, 0, 3, 7, 0], "textureOffset": [11, 40], "sizeAdd": 0.001}
+					]
+				}
+			]
+		},
+		{
+			"part": "left_gills",
+			"id": "left_gills",
+			"invertAxis": "xy",
+			"translate": [-4, -4.5, 5],
+			"boxes": [
+				{"coordinates": [4, 2.5, -5, 3, 7, 0], "textureOffset": [0, 40], "sizeAdd": 0.001}
+			]
+		},
+		{
+			"part": "tail",
+			"id": "tail",
+			"invertAxis": "xy",
+			"translate": [0, -4.5, -6],
+			"submodels": [
+				{
+					"id": "extratail",
+					"invertAxis": "xy",
+					"translate": [0, 4.5, 6],
+					"texture": "axolotl_tail.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [0, -2, 0, 0, 5, 12], "textureOffset": [2, 19]}
+					]
+				},
+				{
+					"id": "chimeratail",
+					"invertAxis": "xy",
+					"translate": [0, 4.5, 6],
+					"texture": "chimera.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [-0.01, -2, 0, 0, 5, 12], "textureOffset": [2, 19]},
+						{"coordinates": [0.01, -2, 0, 0, 5, 12], "textureOffset": [2, 19]}
+					]
+				},
+				{
+					"id": "vanilla_tail",
+					"invertAxis": "xy",
+					"translate": [0, 4.5, 6],
+					"boxes": [
+						{"coordinates": [0, -2, 0, 0, 5, 12], "textureOffset": [2, 19]}
+					]
+				}
+			]
+		}
+	]
+}
