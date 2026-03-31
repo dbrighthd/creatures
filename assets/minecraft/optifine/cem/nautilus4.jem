@@ -15,7 +15,7 @@
 					"translate": [0, 3, -5.5],
 					"boxes": [
 						{"coordinates": [-3, 2, -7, 6, 6, 8], "textureOffset": [0, 35]},
-						{"coordinates": [-0.5, 2.5, -19.975, 1, 1, 14], "textureOffset": [0, 49]},
+						{"coordinates": [-0.5, 2, -19.975, 1, 1, 14], "textureOffset": [0, 49]},
 						{"coordinates": [-1, 0, -10, 2, 2, 4], "textureOffset": [0, 13]},
 						{"coordinates": [-4, 0, 0, 8, 7, 13], "textureOffset": [22, 0]}
 					],
