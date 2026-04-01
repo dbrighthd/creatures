@@ -151,7 +151,7 @@
 					"texture": "chimera.png",
 					"textureSize": [32, 32],
 					"boxes": [
-						{"coordinates": [-3, -1, -4, 6, 3, 4], "textureOffset": [0, 8], "sizeAdd": 0.001}
+						{"coordinates": [-3, -1, -4, 6, 3, 4], "textureOffset": [0, 8], "sizeAdd": 0.01}
 					]
 				},
 				{
@@ -182,7 +182,7 @@
 					"texture": "chimera.png",
 					"textureSize": [32, 32],
 					"boxes": [
-						{"coordinates": [-3, 0, -0.5, 3, 0, 1], "textureOffset": [20, 14], "sizeAdd": 0.01}
+						{"coordinates": [-3, 0, -0.5, 3, 0, 1], "textureOffset": [20, 14], "sizeAdd": 0.05}
 					]
 				}
 			]
