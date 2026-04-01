@@ -1,0 +1,187 @@
+{
+  "models": [
+    {
+      "invertAxis": "xy",
+      "part": "body",
+      "id": "body",
+      "attach": false,
+      "translate": [
+        0.0,
+        -1.0,
+        -2.5
+      ],
+      "boxes": [
+        {
+          "textureOffset": [
+            0,
+            24
+          ],
+          "coordinates": [
+            -2.5,
+            0.00999999,
+            1.5,
+            5.0,
+            4.0,
+            7.0
+          ]
+        },
+        {
+          "textureOffset": [
+            0,
+            35
+          ],
+          "coordinates": [
+            -2.5,
+            0.00999999,
+            6.6,
+            5.0,
+            4.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "invertAxis": "xy",
+      "part": "shell",
+      "id": "shell",
+      "attach": false,
+      "translate": [
+        2.5,
+        -4.0,
+        2.5
+      ],
+      "boxes": [
+        {
+          "textureOffset": [
+            0,
+            0
+          ],
+          "coordinates": [
+            -3.5,
+            4.0,
+            -3.5,
+            7.0,
+            4.0,
+            7.0
+          ]
+        },
+        {
+          "textureOffset": [
+            0,
+            11
+          ],
+          "coordinates": [
+            -3.5,
+            0.0,
+            -3.5,
+            7.0,
+            4.0,
+            9.0
+          ]
+        },
+        {
+          "textureOffset": [
+            23,
+            11
+          ],
+          "coordinates": [
+            -3.5,
+            0.0,
+            2.5,
+            7.0,
+            4.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "invertAxis": "xy",
+      "part": "inner_mouth",
+      "id": "inner_mouth",
+      "attach": false,
+      "translate": [
+        0.0,
+        -2.01,
+        -7.4
+      ],
+      "boxes": [
+        {
+          "textureOffset": [
+            24,
+            32
+          ],
+          "coordinates": [
+            -1.5,
+            1.01,
+            6.4,
+            3.0,
+            2.0,
+            2.0
+          ]
+        }
+      ]
+    },
+    {
+      "invertAxis": "xy",
+      "part": "upper_mouth",
+      "id": "upper_mouth",
+      "attach": false,
+      "translate": [
+        0.0,
+        -3.01,
+        -6.4
+      ],
+      "boxes": [
+        {
+          "textureOffset": [
+            24,
+            24
+          ],
+          "sizeAdd": -0.001,
+          "coordinates": [
+            -2.5,
+            2.01,
+            6.4,
+            5.0,
+            2.0,
+            2.0
+          ]
+        }
+      ]
+    },
+    {
+      "invertAxis": "xy",
+      "part": "lower_mouth",
+      "id": "lower_mouth",
+      "attach": false,
+      "translate": [
+        0.0,
+        -1.01,
+        -6.4
+      ],
+      "boxes": [
+        {
+          "textureOffset": [
+            24,
+            28
+          ],
+          "sizeAdd": -0.001,
+          "coordinates": [
+            -2.5,
+            0.00999999,
+            6.4,
+            5.0,
+            2.0,
+            2.0
+          ]
+        }
+      ]
+    }
+  ],
+  "textureSize": [
+    64,
+    64
+  ]
+}
