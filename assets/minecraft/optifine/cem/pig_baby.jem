@@ -1,0 +1,243 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [32, 32],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -5, 2],
+			"boxes": [
+				{"coordinates": [-1.5, 4.975, -8, 3, 2, 1], "textureOffset": [6, 27], "sizeAdd": 0.015},
+				{"coordinates": [-3.5, 4, -7, 7, 6, 6], "textureOffset": [0, 15], "sizeAdd": 0.025}
+			],
+			"submodels": [
+				{
+					"id": "head_mud",
+					"invertAxis": "xy",
+					"translate": [0, 4, -5],
+					"texture": "pig_mud_baby.png",
+					"textureSize": [32, 32],
+					"boxes": [
+						{
+							"coordinates": [-3.5, 0, -2, 7, 2, 6],
+							"uvNorth": [6, 25, 13, 27],
+							"uvEast": [0, 25, 6, 27],
+							"uvSouth": [19, 25, 26, 27],
+							"uvWest": [13, 25, 19, 27],
+							"uvUp": [27, 21, 20, 15],
+							"uvDown": [20, 15, 13, 21],
+							"sizeAdd": 0.1
+						}
+					]
+				},
+				{
+					"id": "head_mud_top",
+					"invertAxis": "xy",
+					"translate": [0, 10, 0],
+					"texture": "pig_mud_baby.png",
+					"textureSize": [32, 32],
+					"boxes": [
+						{
+							"coordinates": [-3.5, -2, -7, 7, 2, 6],
+							"uvNorth": [6, 21, 13, 23],
+							"uvEast": [0, 21, 6, 23],
+							"uvSouth": [19, 21, 26, 23],
+							"uvWest": [13, 21, 19, 23],
+							"uvUp": [13, 21, 6, 15],
+							"uvDown": [27, 15, 20, 21],
+							"sizeAdd": 0.1
+						}
+					]
+				},
+				{
+					"id": "flowerandmud",
+					"invertAxis": "xy",
+					"translate": [1, -6, 7],
+					"submodels": [
+						{
+							"id": "flower",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [0, 16, -11],
+							"texture": "pig_mud_baby.png",
+							"textureSize": [32, 32],
+							"boxes": [
+								{
+									"coordinates": [-4, -1, 0, 4, 6, 0],
+									"uvNorth": [31, 15, 27, 23],
+									"uvEast": [27, 15, 27, 21],
+									"uvSouth": [27, 15, 31, 23],
+									"uvWest": [23, 15, 23, 21],
+									"uvUp": [23, 15, 27, 15],
+									"uvDown": [27, 15, 31, 15]
+								},
+								{
+									"coordinates": [-4, -1, 0, 4, 6, 0],
+									"uvNorth": [31, 15, 27, 23],
+									"uvEast": [27, 15, 27, 21],
+									"uvSouth": [27, 15, 31, 23],
+									"uvWest": [23, 15, 23, 21],
+									"uvUp": [23, 15, 27, 15],
+									"uvDown": [27, 15, 31, 15]
+								}
+							]
+						},
+						{
+							"id": "flowermudpile",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [0, 16, -12],
+							"texture": "pig_mud_baby.png",
+							"textureSize": [32, 32],
+							"boxes": [
+								{"coordinates": [-3.5, 0, -1, 4, 1, 4], "textureOffset": [16, 27]}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "leg1",
+			"id": "leg1",
+			"invertAxis": "xy",
+			"translate": [-2.5, -2, -4],
+			"boxes": [
+				{"coordinates": [1.5, 0, 3, 2, 2, 2], "textureOffset": [23, 4]}
+			],
+			"submodels": [
+				{
+					"id": "leg1_mud",
+					"invertAxis": "xy",
+					"translate": [2.5, 0, 4],
+					"texture": "pig_mud_baby.png",
+					"textureSize": [32, 32],
+					"boxes": [
+						{"coordinates": [-1, 0, -1, 2, 2, 2], "textureOffset": [23, 4], "sizeAdd": 0.2}
+					]
+				}
+			]
+		},
+		{
+			"part": "leg2",
+			"id": "leg2",
+			"invertAxis": "xy",
+			"translate": [2.5, -2, -4],
+			"boxes": [
+				{"coordinates": [-3.5, 0, 3, 2, 2, 2], "textureOffset": [0, 4]}
+			],
+			"submodels": [
+				{
+					"id": "leg2_mud",
+					"invertAxis": "xy",
+					"translate": [-2.5, 0, 4],
+					"texture": "pig_mud_baby.png",
+					"textureSize": [32, 32],
+					"boxes": [
+						{"coordinates": [-1, 0, -1, 2, 2, 2], "textureOffset": [0, 4], "sizeAdd": 0.2}
+					]
+				}
+			]
+		},
+		{
+			"part": "leg3",
+			"id": "leg3",
+			"invertAxis": "xy",
+			"translate": [-2.5, -2, 3],
+			"boxes": [
+				{"coordinates": [1.5, 0, -4, 2, 2, 2], "textureOffset": [23, 0]}
+			],
+			"submodels": [
+				{
+					"id": "leg3_mud",
+					"invertAxis": "xy",
+					"translate": [2.5, 0, -3],
+					"texture": "pig_mud_baby.png",
+					"textureSize": [32, 32],
+					"boxes": [
+						{"coordinates": [-1, 0, -1, 2, 2, 2], "textureOffset": [23, 0], "sizeAdd": 0.2}
+					]
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -5, -0.5],
+			"boxes": [
+				{"coordinates": [-3.5, 2, -4, 7, 6, 9], "textureOffset": [0, 0]}
+			],
+			"submodels": [
+				{
+					"id": "body_mud",
+					"invertAxis": "xy",
+					"translate": [0, 1.75, 0],
+					"texture": "pig_mud_baby.png",
+					"textureSize": [32, 32],
+					"boxes": [
+						{"coordinates": [-3.5, 0.25, -4, 7, 6, 9], "textureOffset": [0, 0], "sizeAdd": 0.15}
+					]
+				}
+			],
+			"animations": [
+				{
+					"varb.name_mud": "nbt(CustomName,iregex:.*mud.*)",
+					"var.show_mud": "if((is_wet && !is_in_water) || varb.name_mud, 1, 0)",
+					"var.anim_time": "40",
+					"var.mud_dv": "if(var.show_mud == 1, 1, -1)",
+					"var.animrate": "if(varb.name_mud, 0.4, 0.1)",
+					"var.mud_progress": "clamp(var.mud_progress + var.mud_dv * frame_time * var.animrate, 0, 1)",
+					"var.mud_progress_first_half": "clamp(var.mud_progress*2,0,1)",
+					"var.mud_progress_second_half": "clamp((var.mud_progress-0.4)*3,0,1)",
+					"var.mud_progress_third_half": "clamp((var.mud_progress-0.66)*6,0,1)",
+					"var.mud_progress_fourth_half": "clamp((var.mud_progress-0.75)*4,0,1)",
+					"varb.mud_visible": "if(var.mud_progress < 0.01, false, true)",
+					"varb.mud_second_visible": "if(var.mud_progress_second_half < 0.01, false, true)",
+					"varb.mud_third_visible": "if(var.mud_progress_third_half < 0.01, false, true)",
+					"varb.mud_fourth_visible": "if(var.mud_progress_fourth_half < 0.01, false, true)",
+					"body_mud.visible": "varb.mud_second_visible",
+					"leg1_mud.visible": "varb.mud_visible",
+					"leg2_mud.visible": "varb.mud_visible",
+					"leg3_mud.visible": "varb.mud_visible",
+					"leg4_mud.visible": "varb.mud_visible",
+					"head_mud.visible": "varb.mud_third_visible",
+					"head_mud_top.visible": "varb.mud_fourth_visible",
+					"flowermudpile.visible": "varb.mud_fourth_visible",
+					"flower.visible": "varb.mud_fourth_visible",
+					"flower.ty": "easeoutback(var.mud_progress_fourth_half,-9,-16)",
+					"leg1_mud.sy": "var.mud_progress_first_half",
+					"leg2_mud.sy": "var.mud_progress_first_half",
+					"leg3_mud.sy": "var.mud_progress_first_half",
+					"leg4_mud.sy": "var.mud_progress_first_half",
+					"head_mud.sy": "var.mud_progress_third_half",
+					"flowermudpile.sy": "easeoutback(var.mud_progress_fourth_half,0,1)",
+					"head_mud_top.sy": "var.mud_progress_fourth_half",
+					"body_mud.sy": "var.mud_progress_second_half"
+				}
+			]
+		},
+		{
+			"part": "leg4",
+			"id": "leg4",
+			"invertAxis": "xy",
+			"translate": [2.5, -2, 3],
+			"boxes": [
+				{"coordinates": [-3.5, 0, -4, 2, 2, 2], "textureOffset": [0, 0]}
+			],
+			"submodels": [
+				{
+					"id": "leg4_mud",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"texture": "pig_mud_baby.png",
+					"textureSize": [32, 32],
+					"boxes": [
+						{"coordinates": [-3.5, 0, -4, 2, 2, 2], "textureOffset": [0, 0], "sizeAdd": 0.2}
+					]
+				}
+			]
+		}
+	]
+}
