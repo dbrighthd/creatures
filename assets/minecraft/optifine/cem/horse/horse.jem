@@ -44,10 +44,10 @@
 								{
 									"id": "Lwingbasefeathers",
 									"invertAxis": "xy",
-									"translate": [-2, 1, 1],
+									"translate": [-1, 1, 1],
 									"boxes": [
 										{
-											"coordinates": [-6, 0, 0, 8, 0, 12],
+											"coordinates": [-7, 0, 0, 8, 0, 12],
 											"uvNorth": [63, 127, 64, 128],
 											"uvEast": [63, 127, 64, 128],
 											"uvSouth": [63, 127, 64, 128],
@@ -183,10 +183,10 @@
 										{
 											"id": "Rmidwingfeathers",
 											"invertAxis": "xy",
-											"translate": [9, 0, 3],
+											"translate": [9, 0, 1],
 											"boxes": [
 												{
-													"coordinates": [-8, 0, -2, 8, 0, 12],
+													"coordinates": [-8, 0, 0, 8, 0, 12],
 													"uvNorth": [63, 127, 64, 128],
 													"uvEast": [63, 127, 64, 128],
 													"uvSouth": [63, 127, 64, 128],
@@ -580,74 +580,6 @@
 					"uvWest": [60, 38, 62, 54],
 					"uvUp": [60, 38, 58, 36],
 					"uvDown": [62, 36, 60, 38]
-				}
-			]
-		},
-		{
-			"part": "child_back_left_leg",
-			"id": "child_back_left_leg",
-			"invertAxis": "xy",
-			"translate": [4, -10, -8],
-			"boxes": [
-				{
-					"coordinates": [-5, -4, 7, 4, 15, 4],
-					"uvNorth": [56, 25, 52, 36],
-					"uvEast": [60, 25, 56, 36],
-					"uvSouth": [64, 25, 60, 36],
-					"uvWest": [52, 25, 48, 36],
-					"uvUp": [52, 25, 56, 21],
-					"uvDown": [56, 21, 60, 25]
-				}
-			]
-		},
-		{
-			"part": "child_back_right_leg",
-			"id": "child_back_right_leg",
-			"invertAxis": "xy",
-			"translate": [-4, -10, -8],
-			"boxes": [
-				{
-					"coordinates": [1, -4, 7, 4, 15, 4],
-					"uvNorth": [52, 25, 56, 36],
-					"uvEast": [48, 25, 52, 36],
-					"uvSouth": [60, 25, 64, 36],
-					"uvWest": [56, 25, 60, 36],
-					"uvUp": [56, 25, 52, 21],
-					"uvDown": [60, 21, 56, 25]
-				}
-			]
-		},
-		{
-			"part": "child_front_left_leg",
-			"id": "child_front_left_leg",
-			"invertAxis": "xy",
-			"translate": [4, -10, 9],
-			"boxes": [
-				{
-					"coordinates": [-5, -4, -11, 4, 15, 4],
-					"uvNorth": [56, 25, 52, 36],
-					"uvEast": [60, 25, 56, 36],
-					"uvSouth": [64, 25, 60, 36],
-					"uvWest": [52, 25, 48, 36],
-					"uvUp": [52, 25, 56, 21],
-					"uvDown": [56, 21, 60, 25]
-				}
-			]
-		},
-		{
-			"part": "child_front_right_leg",
-			"id": "child_front_right_leg",
-			"invertAxis": "xy",
-			"translate": [-4, -10, 9],
-			"boxes": [
-				{
-					"coordinates": [1, -4, -11, 4, 15, 4],
-					"uvNorth": [52, 25, 56, 36],
-					"uvEast": [48, 25, 52, 36],
-					"uvSouth": [60, 25, 64, 36],
-					"uvWest": [56, 25, 60, 36],
-					"uvUp": [56, 25, 52, 21],
-					"uvDown": [60, 21, 56, 25]
 				}
 			]
 		}
