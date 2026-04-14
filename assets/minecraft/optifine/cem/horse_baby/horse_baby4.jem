@@ -1,0 +1,279 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [128, 128],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -22, 9]
+		},
+		{
+			"part": "mouth",
+			"id": "mouth",
+			"invertAxis": "xy",
+			"translate": [0, -22, 9]
+		},
+		{
+			"part": "left_ear",
+			"id": "left_ear",
+			"invertAxis": "xy",
+			"translate": [0, -23, 9.01]
+		},
+		{
+			"part": "right_ear",
+			"id": "right_ear",
+			"invertAxis": "xy",
+			"translate": [0, -23, 9.01]
+		},
+		{
+			"part": "neck",
+			"id": "neck",
+			"invertAxis": "xy",
+			"translate": [0, -22, 9]
+		},
+		{
+			"part": "mane",
+			"id": "mane",
+			"invertAxis": "xy",
+			"translate": [0, -22, 9.01]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -13, -6],
+			"submodels": [
+				{
+					"id": "Ostrich",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"boxes": [
+						{"coordinates": [-5, 11, -6, 10, 10, 14], "textureOffset": [0, 0]}
+					],
+					"submodels": [
+						{
+							"id": "Lwing",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"boxes": [
+								{"coordinates": [-6, 13, -5, 1, 8, 12], "textureOffset": [40, 12]}
+							]
+						},
+						{
+							"id": "Rwing",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"boxes": [
+								{"coordinates": [5, 13, -5, 1, 8, 12], "textureOffset": [26, 30]}
+							]
+						},
+						{
+							"id": "Otail",
+							"invertAxis": "xy",
+							"translate": [0, 19, 8],
+							"boxes": [
+								{"coordinates": [-3, -6, 0, 6, 6, 1], "textureOffset": [40, 32], "sizeAdd": 0.05}
+							]
+						},
+						{
+							"id": "Oneck",
+							"invertAxis": "xy",
+							"translate": [0, 16, -6],
+							"boxes": [
+								{"coordinates": [-2, 0, -3, 4, 6, 4], "textureOffset": [34, 0]},
+								{"coordinates": [-1, 6, -2, 2, 8, 2], "textureOffset": [0, 50]},
+								{"coordinates": [-2, 14, -2.5, 4, 3, 3], "textureOffset": [1, 43]},
+								{"coordinates": [-1, 14, -5.5, 2, 1, 3], "textureOffset": [29, 24]}
+							]
+						},
+						{
+							"id": "Lleg",
+							"invertAxis": "xy",
+							"translate": [-2, 11, 1],
+							"boxes": [
+								{"coordinates": [-1, -5, -1, 2, 6, 2], "textureOffset": [40, 52], "sizeAdd": 0.05}
+							],
+							"submodels": [
+								{
+									"id": "Lshin",
+									"invertAxis": "xy",
+									"translate": [0, -4, 1],
+									"boxes": [
+										{
+											"coordinates": [-1, -8, -2, 2, 7, 2],
+											"uvNorth": [33, 52, 35, 59],
+											"uvEast": [31, 52, 33, 59],
+											"uvSouth": [37, 52, 39, 59],
+											"uvWest": [35, 52, 37, 59],
+											"uvUp": [35, 52, 33, 50],
+											"uvDown": [37, 50, 35, 52]
+										},
+										{"coordinates": [-1, -8, -3, 2, 1, 1], "textureOffset": [47, 1]}
+									]
+								}
+							]
+						},
+						{
+							"id": "Rleg",
+							"invertAxis": "xy",
+							"translate": [2, 11, 1],
+							"boxes": [
+								{
+									"coordinates": [-1, -5, -1, 2, 5, 2],
+									"uvNorth": [24, 54, 26, 60],
+									"uvEast": [22, 54, 24, 60],
+									"uvSouth": [28, 54, 30, 60],
+									"uvWest": [26, 54, 28, 60],
+									"uvUp": [26, 54, 24, 52],
+									"uvDown": [28, 52, 26, 54],
+									"sizeAdd": 0.05
+								}
+							],
+							"submodels": [
+								{
+									"id": "Rshin",
+									"invertAxis": "xy",
+									"translate": [0, -4, 1],
+									"boxes": [
+										{
+											"coordinates": [-1, -8, -2, 2, 7, 2],
+											"uvNorth": [15, 52, 17, 59],
+											"uvEast": [13, 52, 15, 59],
+											"uvSouth": [19, 52, 21, 59],
+											"uvWest": [17, 52, 19, 59],
+											"uvUp": [17, 52, 15, 50],
+											"uvDown": [19, 50, 17, 52]
+										},
+										{"coordinates": [-1, -8, -3, 2, 1, 1], "textureOffset": [55, 1]}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"Otail.rx": "tail.ry+0.3",
+					"var.rearing": "body.rx*-1.2732394854",
+					"body.tz": "lerp(var.rearing, 5, 13)",
+					"Oneck.rx": "if(body.rx!=0, 0.3, neck.rx-0.5)",
+					"Oneck.ry": "neck.ry",
+					"Oneck.rz": "neck.rz",
+					"Lleg.rx": "sin(limb_swing)*limb_speed",
+					"Lshin.rx": "0",
+					"Rleg.rx": "-sin(limb_swing)*limb_speed",
+					"Rshin.rx": "-0",
+					"body.rx": "clamp(body.rx, -0.1, 0.1)"
+				}
+			]
+		},
+		{
+			"part": "tail",
+			"id": "tail",
+			"invertAxis": "xy",
+			"translate": [0, -21, -11]
+		},
+		{
+			"part": "front_left_leg",
+			"id": "front_left_leg",
+			"invertAxis": "xy",
+			"translate": [4, -10, 9]
+		},
+		{
+			"part": "front_right_leg",
+			"id": "front_right_leg",
+			"invertAxis": "xy",
+			"translate": [-4, -10, 9]
+		},
+		{
+			"part": "back_left_leg",
+			"id": "back_left_leg",
+			"invertAxis": "xy",
+			"translate": [4, -10, -8]
+		},
+		{
+			"part": "back_right_leg",
+			"id": "back_right_leg",
+			"invertAxis": "xy",
+			"translate": [-4, -10, -8]
+		},
+		{
+			"part": "child_front_left_leg",
+			"id": "child_front_left_leg",
+			"invertAxis": "xy",
+			"translate": [4, -10, 9]
+		},
+		{
+			"part": "child_front_right_leg",
+			"id": "child_front_right_leg",
+			"invertAxis": "xy",
+			"translate": [-4, -10, 9]
+		},
+		{
+			"part": "child_back_left_leg",
+			"id": "child_back_left_leg",
+			"invertAxis": "xy",
+			"translate": [4, -10, -8]
+		},
+		{
+			"part": "child_back_right_leg",
+			"id": "child_back_right_leg",
+			"invertAxis": "xy",
+			"translate": [-4, -10, -8]
+		},
+		{
+			"part": "headpiece",
+			"id": "headpiece",
+			"invertAxis": "xy",
+			"translate": [0, -22, 8.9]
+		},
+		{
+			"part": "noseband",
+			"id": "noseband",
+			"invertAxis": "xy",
+			"translate": [0, -22, 9]
+		},
+		{
+			"part": "left_bit",
+			"id": "left_bit",
+			"invertAxis": "xy",
+			"translate": [0, -22, 9]
+		},
+		{
+			"part": "right_bit",
+			"id": "right_bit",
+			"invertAxis": "xy",
+			"translate": [0, -22, 9]
+		},
+		{
+			"part": "left_rein",
+			"id": "left_rein",
+			"invertAxis": "xy",
+			"translate": [0, -25.5, 5.5]
+		},
+		{
+			"part": "right_rein",
+			"id": "right_rein",
+			"invertAxis": "xy",
+			"translate": [0, -25.5, 5.5]
+		},
+		{
+			"part": "saddle",
+			"id": "saddle",
+			"invertAxis": "xy",
+			"translate": [0, -13, -6],
+			"submodels": [
+				{
+					"id": "Osaddle",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"boxes": [
+						{"coordinates": [-5, 12, -3, 10, 9, 9], "textureOffset": [0, 24], "sizeAdd": -0.5}
+					]
+				}
+			]
+		}
+	]
+}
