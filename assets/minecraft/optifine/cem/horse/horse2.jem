@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textureSize": [128, 128],
+	"texture": "ostrich.png",
 	"models": [
 		{
 			"part": "head",
