@@ -44,7 +44,7 @@
 				{
 					"id": "Lwing",
 					"invertAxis": "xy",
-					"translate": [-4, 13.5, -5],
+					"translate": [-4, 13.5, -5.5],
 					"submodels": [
 						{
 							"id": "Lwingbase",
@@ -52,7 +52,7 @@
 							"translate": [0, -1, 0],
 							"boxes": [
 								{
-									"coordinates": [-6, 0, -1, 6, 1, 1],
+									"coordinates": [-6, 0, -0.5, 6, 1, 1],
 									"uvNorth": [1, 78, 7, 79],
 									"uvEast": [1, 78, 0, 79],
 									"uvSouth": [8, 78, 14, 79],
@@ -66,7 +66,7 @@
 								{
 									"id": "Lwingbasefeathers",
 									"invertAxis": "xy",
-									"translate": [0, 0.5, 0],
+									"translate": [0, 0.5, 0.5],
 									"boxes": [
 										{
 											"coordinates": [-6, 0, 0.25, 6, 0, 9],
@@ -82,7 +82,7 @@
 									"translate": [-6, 1, 0],
 									"boxes": [
 										{
-											"coordinates": [-6, -1, -1, 6, 1, 1],
+											"coordinates": [-6, -1, -0.5, 6, 1, 1],
 											"uvNorth": [15, 78, 21, 79],
 											"uvEast": [14, 78, 15, 79],
 											"uvSouth": [22, 78, 28, 79],
@@ -96,7 +96,7 @@
 										{
 											"id": "Lmidwingfeathers",
 											"invertAxis": "xy",
-											"translate": [-6, -0.5, 0],
+											"translate": [-6, -0.5, 0.5],
 											"boxes": [
 												{
 													"coordinates": [0, 0, 0.25, 6, 0, 9],
@@ -112,7 +112,7 @@
 											"translate": [-6, 0, 0],
 											"boxes": [
 												{
-													"coordinates": [-10, -1, -1, 10, 1, 1],
+													"coordinates": [-10, -1, -0.5, 10, 1, 1],
 													"uvNorth": [1, 89, 11, 90],
 													"uvEast": [0, 89, 1, 90],
 													"uvSouth": [12, 89, 22, 90],
@@ -121,7 +121,7 @@
 													"uvDown": [21, 88, 11, 89]
 												},
 												{
-													"coordinates": [-18, -0.5, -0.75, 18, 0, 9],
+													"coordinates": [-18, -0.5, -0.25, 18, 0, 9],
 													"uvUp": [30, 88, 12, 79],
 													"uvDown": [30, 99, 12, 108],
 													"sizeAdd": 0.3
@@ -137,7 +137,7 @@
 				{
 					"id": "Rwing",
 					"invertAxis": "xy",
-					"translate": [4, 13.5, -5],
+					"translate": [4, 13.5, -5.5],
 					"submodels": [
 						{
 							"id": "Rwingbase",
@@ -145,7 +145,7 @@
 							"translate": [0, -1, 0],
 							"boxes": [
 								{
-									"coordinates": [0, 0, -1, 6, 1, 1],
+									"coordinates": [0, 0, -0.5, 6, 1, 1],
 									"uvNorth": [7, 65, 1, 66],
 									"uvEast": [7, 65, 8, 66],
 									"uvSouth": [14, 65, 8, 66],
@@ -159,7 +159,7 @@
 								{
 									"id": "Rwingbasefeathers",
 									"invertAxis": "xy",
-									"translate": [0, 0.5, 0],
+									"translate": [0, 0.5, 0.5],
 									"boxes": [
 										{
 											"coordinates": [0, 0, 0.25, 6, 0, 9],
@@ -172,10 +172,10 @@
 								{
 									"id": "Rmidwing",
 									"invertAxis": "xy",
-									"translate": [5, 1, 0],
+									"translate": [6, 1, 0],
 									"boxes": [
 										{
-											"coordinates": [1, -1, -1, 6, 1, 1],
+											"coordinates": [0, -1, -0.5, 6, 1, 1],
 											"uvNorth": [21, 65, 15, 66],
 											"uvEast": [14, 65, 15, 66],
 											"uvSouth": [28, 65, 22, 66],
@@ -189,7 +189,7 @@
 										{
 											"id": "Rmidwingfeathers",
 											"invertAxis": "xy",
-											"translate": [7, -0.5, 0],
+											"translate": [6, -0.5, 0.5],
 											"boxes": [
 												{
 													"coordinates": [-6, 0, 0.25, 6, 0, 9],
@@ -202,10 +202,10 @@
 										{
 											"id": "Rwingtp",
 											"invertAxis": "xy",
-											"translate": [7, 0, 0],
+											"translate": [6, 0, 0],
 											"boxes": [
 												{
-													"coordinates": [0, -1, -1, 10, 1, 1],
+													"coordinates": [0, -1, -0.5, 10, 1, 1],
 													"uvNorth": [11, 76, 1, 77],
 													"uvEast": [12, 76, 11, 77],
 													"uvSouth": [22, 76, 12, 77],
@@ -214,7 +214,7 @@
 													"uvDown": [11, 75, 21, 76]
 												},
 												{
-													"coordinates": [0, -0.5, -0.75, 18, 0, 9],
+													"coordinates": [0, -0.5, -0.25, 18, 0, 9],
 													"uvUp": [12, 75, 30, 66],
 													"uvDown": [12, 90, 30, 99],
 													"sizeAdd": 0.3
