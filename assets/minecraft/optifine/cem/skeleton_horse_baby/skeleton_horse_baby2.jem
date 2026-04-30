@@ -1,0 +1,336 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 128],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -20.0516, 6.2951],
+			"boxes": [
+				{"coordinates": [-3, 20, -13.0001, 6, 4, 9], "textureOffset": [0, 0]}
+			],
+			"submodels": [
+				{
+					"id": "horn",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"texture": "horn.png",
+					"textureSize": [4, 5],
+					"boxes": [
+						{"coordinates": [-0.5, 24, -8.0001, 1, 4, 1], "textureOffset": [0, 0]}
+					]
+				}
+			],
+			"animations": [
+				{
+					"Rwingbase.rx": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(27.5))",
+					"Rwingbase.ry": "if(is_hurt, torad(10), !is_on_ground, torad(10), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(10), torad(75))",
+					"Rwingbase.rz": "if(is_hurt, torad(0)+0.5*sin(1.1*time), !is_on_ground, torad(0)+0.5*sin(0.5*time), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0)+0.5*sin(0.7*time), torad(-55))",
+					"Rwingbasefeathers.rx": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
+					"Rwingbasefeathers.ry": "if(is_hurt, torad(-10), !is_on_ground, torad(-10), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(-10), torad(-70))",
+					"Rwingbasefeathers.rz": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
+					"Rmidwing.rx": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
+					"Rmidwing.ry": "if(is_hurt, torad(-20), !is_on_ground, torad(-20), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(-20), torad(-115))",
+					"Rmidwing.rz": "if(is_hurt, torad(0)+0.3*sin(1.1*time-8), !is_on_ground, torad(0)+0.3*sin(0.5*time-8), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0)+0.3*sin(0.7*time-8), torad(0))",
+					"Rmidwingfeathers.rx": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
+					"Rmidwingfeathers.ry": "if(is_hurt, torad(10), !is_on_ground, torad(10), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(10), torad(52.5))",
+					"Rmidwingfeathers.rz": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
+					"Rwingtp.rx": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
+					"Rwingtp.ry": "if(is_hurt, torad(10), !is_on_ground, torad(10), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(10), torad(137.5))",
+					"Rwingtp.rz": "if(is_hurt, torad(0)+0.3*sin(1.1*time-8), !is_on_ground, torad(0)+0.3*sin(0.5*time-8), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0)+0.3*sin(0.7*time-8), torad(0))",
+					"Lwingbase.rx": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(27.5))",
+					"Lwingbase.ry": "if(is_hurt, torad(-10), !is_on_ground, torad(-10), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(-10), torad(-75))",
+					"Lwingbase.rz": "if(is_hurt, -torad(0)+0.5*sin(1.1*time+((10*pi)/11)), !is_on_ground, -torad(0)+0.5*sin(0.5*time+((10*pi)/11)), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, -torad(0)+0.5*sin(0.7*time+((10*pi)/11)), torad(55))",
+					"Lwingbasefeathers.rx": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
+					"Lwingbasefeathers.ry": "if(is_hurt, torad(10), !is_on_ground, torad(10), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(10), torad(70))",
+					"Lwingbasefeathers.rz": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
+					"Lmidwing.rx": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
+					"Lmidwing.ry": "if(is_hurt, torad(20), !is_on_ground, torad(20), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(20), torad(115))",
+					"Lmidwing.rz": "if(is_hurt, torad(0)+0.3*sin(1.1*time+(((10*pi)/11)-8)), !is_on_ground, torad(0)+0.3*sin(0.5*time+(((10*pi)/11)-8)), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0)+0.3*sin(0.7*time+(((10*pi)/11)-8)), torad(0))",
+					"Lmidwingfeathers.rx": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
+					"Lmidwingfeathers.ry": "if(is_hurt, torad(-10), !is_on_ground, torad(-10), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(-10), torad(-52.5))",
+					"Lmidwingfeathers.rz": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
+					"Lwingtp.rx": "if(is_hurt, torad(0), !is_on_ground, torad(0), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0), torad(0))",
+					"Lwingtp.ry": "if(is_hurt, torad(-10), !is_on_ground, torad(-10), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(-10), torad(-137.5))",
+					"Lwingtp.rz": "if(is_hurt, torad(0)+0.3*sin(1.1*time+(((10*pi)/11)-8)), !is_on_ground, torad(0)+0.3*sin(0.5*time+(((10*pi)/11)-8)), (200*sin(0.05238*(0.5*time+(pos_x+pos_y+pos_z+health)))-187)>0, torad(0)+0.3*sin(0.7*time+(((10*pi)/11)-8)), torad(0))"
+				}
+			]
+		},
+		{
+			"part": "right_front_leg",
+			"id": "right_front_leg",
+			"invertAxis": "xy",
+			"translate": [-2.4, -8, 5.4],
+			"boxes": [
+				{"coordinates": [0.9, 0, -6.9, 3, 9, 3], "textureOffset": [0, 34]}
+			]
+		},
+		{
+			"part": "right_hind_leg",
+			"id": "right_hind_leg",
+			"invertAxis": "xy",
+			"translate": [-2.4, -8, -5.4],
+			"boxes": [
+				{"coordinates": [0.9, 0, 3.9, 3, 9, 3], "textureOffset": [0, 46]}
+			]
+		},
+		{
+			"part": "tail",
+			"id": "tail",
+			"invertAxis": "xy",
+			"translate": [0, -12.5, -7],
+			"boxes": [
+				{"coordinates": [-1.5, 11, 6, 3, 3, 8], "textureOffset": [24, 34]}
+			]
+		},
+		{
+			"part": "root",
+			"id": "root",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0]
+		},
+		{
+			"part": "left_hind_leg",
+			"id": "left_hind_leg",
+			"invertAxis": "xy",
+			"translate": [2.4, -8, -5.4],
+			"boxes": [
+				{"coordinates": [-3.9, 0, 3.9, 3, 9, 3], "textureOffset": [12, 46]}
+			]
+		},
+		{
+			"part": "head_parts",
+			"id": "head_parts",
+			"invertAxis": "xy",
+			"translate": [0, -14, 6],
+			"boxes": [
+				{"coordinates": [-2, 12, -8, 4, 8, 4], "textureOffset": [30, 0]}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -11.5, 0],
+			"boxes": [
+				{"coordinates": [-4, 8, -7, 8, 7, 14], "textureOffset": [0, 13]}
+			],
+			"submodels": [
+				{
+					"id": "Rwing",
+					"invertAxis": "xy",
+					"translate": [4, 15.5, -5.5],
+					"submodels": [
+						{
+							"id": "Rwingbase",
+							"invertAxis": "xy",
+							"translate": [0, -1, 0],
+							"boxes": [
+								{
+									"coordinates": [0, 0, -0.5, 6, 1, 1],
+									"uvNorth": [7, 65, 1, 66],
+									"uvEast": [7, 65, 8, 66],
+									"uvSouth": [14, 65, 8, 66],
+									"uvWest": [0, 65, 1, 66],
+									"uvUp": [1, 65, 7, 64],
+									"uvDown": [7, 64, 13, 65],
+									"sizeAdd": 0.2
+								}
+							],
+							"submodels": [
+								{
+									"id": "Rwingbasefeathers",
+									"invertAxis": "xy",
+									"translate": [0, 0.5, 0.5],
+									"boxes": [
+										{
+											"coordinates": [0, 0, 0.25, 6, 0, 9],
+											"uvUp": [0, 75, 6, 66],
+											"uvDown": [0, 90, 6, 99],
+											"sizeAdd": 0.1
+										}
+									]
+								},
+								{
+									"id": "Rmidwing",
+									"invertAxis": "xy",
+									"translate": [6, 1, 0],
+									"boxes": [
+										{
+											"coordinates": [0, -1, -0.5, 6, 1, 1],
+											"uvNorth": [21, 65, 15, 66],
+											"uvEast": [14, 65, 15, 66],
+											"uvSouth": [28, 65, 22, 66],
+											"uvWest": [21, 65, 22, 66],
+											"uvUp": [21, 64, 15, 65],
+											"uvDown": [27, 65, 21, 64],
+											"sizeAdd": 0.1
+										}
+									],
+									"submodels": [
+										{
+											"id": "Rmidwingfeathers",
+											"invertAxis": "xy",
+											"translate": [6, -0.5, 0.5],
+											"boxes": [
+												{
+													"coordinates": [-6, 0, 0.25, 6, 0, 9],
+													"uvUp": [6, 75, 12, 66],
+													"uvDown": [6, 90, 12, 99],
+													"sizeAdd": 0.2
+												}
+											]
+										},
+										{
+											"id": "Rwingtp",
+											"invertAxis": "xy",
+											"translate": [6, 0, 0],
+											"boxes": [
+												{
+													"coordinates": [0, -1, -0.5, 10, 1, 1],
+													"uvNorth": [11, 76, 1, 77],
+													"uvEast": [12, 76, 11, 77],
+													"uvSouth": [22, 76, 12, 77],
+													"uvWest": [0, 76, 1, 77],
+													"uvUp": [1, 76, 11, 75],
+													"uvDown": [11, 75, 21, 76]
+												},
+												{
+													"coordinates": [0, -0.5, -0.25, 18, 0, 9],
+													"uvUp": [12, 75, 30, 66],
+													"uvDown": [12, 90, 30, 99],
+													"sizeAdd": 0.3
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "Lwing",
+					"invertAxis": "xy",
+					"translate": [-4, 15.5, -5.5],
+					"submodels": [
+						{
+							"id": "Lwingbase",
+							"invertAxis": "xy",
+							"translate": [0, -1, 0],
+							"boxes": [
+								{
+									"coordinates": [-6, 0, -0.5, 6, 1, 1],
+									"uvNorth": [1, 78, 7, 79],
+									"uvEast": [1, 78, 0, 79],
+									"uvSouth": [8, 78, 14, 79],
+									"uvWest": [7, 78, 8, 79],
+									"uvUp": [7, 78, 1, 77],
+									"uvDown": [13, 77, 7, 78],
+									"sizeAdd": 0.2
+								}
+							],
+							"submodels": [
+								{
+									"id": "Lwingbasefeathers",
+									"invertAxis": "xy",
+									"translate": [0, 0.5, 0.5],
+									"boxes": [
+										{
+											"coordinates": [-6, 0, 0.25, 6, 0, 9],
+											"uvUp": [6, 88, 0, 79],
+											"uvDown": [6, 99, 0, 108],
+											"sizeAdd": 0.1
+										}
+									]
+								},
+								{
+									"id": "Lmidwing",
+									"invertAxis": "xy",
+									"translate": [-6, 1, 0],
+									"boxes": [
+										{
+											"coordinates": [-6, -1, -0.5, 6, 1, 1],
+											"uvNorth": [15, 78, 21, 79],
+											"uvEast": [14, 78, 15, 79],
+											"uvSouth": [22, 78, 28, 79],
+											"uvWest": [21, 78, 22, 79],
+											"uvUp": [15, 77, 21, 78],
+											"uvDown": [21, 78, 27, 77],
+											"sizeAdd": 0.1
+										}
+									],
+									"submodels": [
+										{
+											"id": "Lmidwingfeathers",
+											"invertAxis": "xy",
+											"translate": [-6, -0.5, 0.5],
+											"boxes": [
+												{
+													"coordinates": [0, 0, 0.25, 6, 0, 9],
+													"uvUp": [12, 88, 6, 79],
+													"uvDown": [12, 99, 6, 108],
+													"sizeAdd": 0.2
+												}
+											]
+										},
+										{
+											"id": "Lwingtp",
+											"invertAxis": "xy",
+											"translate": [-6, 0, 0],
+											"boxes": [
+												{
+													"coordinates": [-10, -1, -0.5, 10, 1, 1],
+													"uvNorth": [1, 89, 11, 90],
+													"uvEast": [0, 89, 1, 90],
+													"uvSouth": [12, 89, 22, 90],
+													"uvWest": [11, 89, 12, 90],
+													"uvUp": [11, 89, 1, 88],
+													"uvDown": [21, 88, 11, 89]
+												},
+												{
+													"coordinates": [-18, -0.5, -0.25, 18, 0, 9],
+													"uvUp": [30, 88, 12, 79],
+													"uvDown": [30, 99, 12, 108],
+													"sizeAdd": 0.3
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "right_ear",
+			"id": "right_ear",
+			"invertAxis": "xy",
+			"translate": [-2, -24.3, 4.6501],
+			"boxes": [
+				{"coordinates": [1, 23.8, -5.1501, 2, 3, 1], "textureOffset": [0, 0]}
+			]
+		},
+		{
+			"part": "left_front_leg",
+			"id": "left_front_leg",
+			"invertAxis": "xy",
+			"translate": [2.4, -8, 5.4],
+			"boxes": [
+				{"coordinates": [-3.9, 0, -6.9, 3, 9, 3], "textureOffset": [12, 34]}
+			]
+		},
+		{
+			"part": "left_ear",
+			"id": "left_ear",
+			"invertAxis": "xy",
+			"translate": [2, -24.3, 4.35],
+			"boxes": [
+				{"coordinates": [-3, 23.8, -5.15, 2, 3, 1], "textureOffset": [0, 4]}
+			]
+		}
+	]
+}
