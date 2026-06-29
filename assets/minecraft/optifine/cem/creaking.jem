@@ -146,12 +146,12 @@
 					"var.topblink": "(5*(sin((time+(random(id)*100))/(var.blinkspeed*80))))-4.9",
 					"var.middleblink": "(5*(sin(((time+(random(id)*100))+30)/(var.blinkspeed*75))))-4.9",
 					"var.bottomblink": "(5*(sin(((time+(random(id)*100))+10)/(var.blinkspeed*85))))-4.9",
-					"top_eyelid.visible": "if(limb_speed>0.1, if(var.topblink>0, true, false), if(var.topblink>0, false, true))",
-					"middle_eyelid.visible": "if(limb_speed>0.1, if(var.middleblink>0, true, false), if(var.middleblink>0, false, true))",
-					"bottom_eyelid.visible": "if(limb_speed>0.1, if(var.bottomblink>0, true, false), if(var.bottomblink>0, false, true))",
-					"bottom_eye.visible": "-bottom_eyelid.visible",
-					"middle_eye.visible": "-middle_eyelid.visible",
-					"top_eye.visible": "-top_eyelid.visible"
+					"top_eyelid.visible": "ifb(limb_speed>0.1, ifb(var.topblink>0, true, false), ifb(var.topblink>0, false, true))",
+					"middle_eyelid.visible": "ifb(limb_speed>0.1, ifb(var.middleblink>0, true, false), ifb(var.middleblink>0, false, true))",
+					"bottom_eyelid.visible": "ifb(limb_speed>0.1, ifb(var.bottomblink>0, true, false), ifb(var.bottomblink>0, false, true))",
+					"bottom_eye.visible": "!bottom_eyelid.visible",
+					"middle_eye.visible": "!middle_eyelid.visible",
+					"top_eye.visible": "!top_eyelid.visible"
 				}
 			]
 		},
