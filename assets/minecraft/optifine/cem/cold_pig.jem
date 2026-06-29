@@ -1,42 +1,176 @@
 {
+	"credit": "Made with Blockbench",
 	"textureSize": [64, 64],
 	"models": [
 		{
 			"part": "body",
 			"id": "body",
 			"invertAxis": "xy",
-			"translate": [0, -13, -2],
 			"mirrorTexture": "u",
+			"translate": [0, -13, -2],
+			"rotate": [-90, 0, 0],
 			"boxes": [
 				{"coordinates": [-5, 7, -5, 10, 16, 8], "textureOffset": [28, 8]}
+			],
+			"submodels": [
+				{
+					"id": "body_sub_0",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [0, 0, 0],
+					"boxes": [
+						{"coordinates": [-5, 7, -5, 10, 16, 8], "textureOffset": [28, 32], "sizeAdd": 0.5}
+					]
+				},
+				{
+					"id": "body_mud",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [0, 16, -5],
+					"texture": "pig_temperate_mud.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [-5, -9, 0, 10, 16, 8], "textureOffset": [28, 8], "sizeAdd": 0.15}
+					]
+				},
+				{
+					"id": "body_mud2",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [0, 16, -5.725],
+					"boxes": [
+						{
+							"coordinates": [-5, -9, 0.725, 10, 16, 8],
+							"uvNorth": [19, 40, 9, 56],
+							"uvEast": [27, 40, 19, 56],
+							"uvSouth": [18, 60, 15, 64],
+							"uvWest": [9, 40, 1, 56],
+							"uvUp": [9, 40, 19, 32],
+							"uvDown": [19, 32, 29, 40],
+							"sizeAdd": 0.55
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"this.rx": 0,
+					"varb.name_mud": "nbt(CustomName,iregex:.*mud.*)",
+					"var.show_mud": "if((is_wet && !is_in_water) || varb.name_mud, 1, 0)",
+					"var.anim_time": "40",
+					"var.mud_dv": "if(var.show_mud == 1, 1, -1)",
+					"var.animrate": "if(varb.name_mud, 0.4, 0.1)",
+					"var.mud_progress": "clamp(var.mud_progress + var.mud_dv * frame_time * var.animrate, 0, 1)",
+					"var.mud_progress_first_half": "clamp(var.mud_progress*2,0,1)",
+					"var.mud_progress_second_half": "clamp((var.mud_progress-0.5)*3,0,1)",
+					"var.mud_progress_third_half": "clamp((var.mud_progress-0.66)*6,0,1)",
+					"var.mud_progress_fourth_half": "clamp((var.mud_progress-0.75)*4,0,1)",
+					"varb.mud_visible": "if(var.mud_progress < 0.01, false, true)",
+					"varb.mud_second_visible": "if(var.mud_progress_second_half < 0.01, false, true)",
+					"varb.mud_third_visible": "if(var.mud_progress_third_half < 0.01, false, true)",
+					"varb.mud_fourth_visible": "if(var.mud_progress_fourth_half < 0.01, false, true)",
+					"body_mud.visible": "varb.mud_second_visible",
+					"body_mud2.visible": "varb.mud_second_visible",
+					"leg1_mud.visible": "varb.mud_visible",
+					"leg2_mud.visible": "varb.mud_visible",
+					"leg3_mud.visible": "varb.mud_visible",
+					"leg4_mud.visible": "varb.mud_visible",
+					"head_mud.visible": "varb.mud_third_visible",
+					"head_mud_top.visible": "varb.mud_fourth_visible",
+					"flowermudpile.visible": "varb.mud_fourth_visible",
+					"flower.visible": "varb.mud_fourth_visible",
+					"flower.ty": "easeoutback(var.mud_progress_fourth_half,-9,-16)",
+					"leg1_mud.sy": "var.mud_progress_first_half",
+					"leg2_mud.sy": "var.mud_progress_first_half",
+					"leg3_mud.sy": "var.mud_progress_first_half",
+					"leg4_mud.sy": "var.mud_progress_first_half",
+					"head_mud.sy": "var.mud_progress_third_half",
+					"flowermudpile.sy": "easeoutback(var.mud_progress_fourth_half,0,1)",
+					"head_mud_top.sy": "var.mud_progress_fourth_half",
+					"body_mud.sz": "var.mud_progress_second_half",
+					"body_mud2.sz": "var.mud_progress_second_half"
+
+				}
 			]
 		},
 		{
 			"part": "head",
 			"id": "head",
 			"invertAxis": "xy",
-			"translate": [0, -12, 6],
 			"mirrorTexture": "u",
+			"translate": [0, -12, 6],
 			"boxes": [
 				{"coordinates": [-4, 8, -14, 8, 8, 8], "textureOffset": [0, 0]},
 				{"coordinates": [-2, 9, -15, 4, 3, 1], "textureOffset": [16, 16]}
 			],
 			"submodels": [
 				{
+					"id": "head_mud_top",
 					"invertAxis": "xy",
 					"mirrorTexture": "u",
+					"translate": [-4.15, 16.15, -14.15],
+					"texture": "pig_temperate_mud.png",
+					"textureSize": [64, 64],
 					"boxes": [
-						{"coordinates": [-4, 14, -14, 8, 3, 8], "textureOffset": [0, 32], "sizeAdd": 0.25}
+						{
+							"coordinates": [0.15, -5.15, 0.15, 8, 5, 8],
+							"uvNorth": [16, 8, 8, 13],
+							"uvEast": [24, 8, 16, 13],
+							"uvSouth": [32, 8, 24, 13],
+							"uvWest": [8, 8, 0, 13],
+							"uvUp": [8, 8, 16, 0],
+							"uvDown": [24, 0, 32, 8],
+							"sizeAdd": 0.15
+						}
 					]
 				},
 				{
-					"id": "head_sub_0",
+					"id": "head_mud",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [0, 8, -10],
+					"texture": "pig_temperate_mud.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{
+							"coordinates": [-4, 0, -4, 8, 3, 8],
+							"uvNorth": [16, 13, 8, 16],
+							"uvEast": [24, 13, 16, 16],
+							"uvSouth": [32, 13, 24, 16],
+							"uvWest": [8, 13, 0, 16],
+							"uvUp": [24, 8, 32, 0],
+							"uvDown": [16, 0, 24, 8],
+							"sizeAdd": 0.15
+						}
+					]
+				},
+				{
+					"id": "flowerandmud",
 					"invertAxis": "xy",
 					"translate": [0, 0, 0],
-					"mirrorTexture": "u",
-					"boxes": [
-						{"coordinates": [-3, 16, -13, 4, 1, 4], "textureOffset": [0, 26]},
-						{"coordinates": [-4, 17, -11, 4, 6, 0], "textureOffset": [16, 20]}
+					"submodels": [
+						{
+							"id": "flower",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [0, 16, -11],
+							"texture": "pig_temperate_mud.png",
+							"textureSize": [64, 64],
+							"boxes": [
+								{"coordinates": [-4, -1, 0, 4, 8, 0], "textureOffset": [16, 20]}
+							]
+						},
+						{
+							"id": "flowermudpile",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [0, 16, -12],
+							"texture": "pig_temperate_mud.png",
+							"textureSize": [64, 64],
+							"boxes": [
+								{"coordinates": [-3, 0, -1, 4, 1, 4], "textureOffset": [0, 26]}
+							]
+						}
 					]
 				}
 			]
@@ -45,40 +179,92 @@
 			"part": "leg1",
 			"id": "leg1",
 			"invertAxis": "xy",
-			"translate": [-3, -6, -7],
 			"mirrorTexture": "u",
+			"translate": [-3, -6, -7],
 			"boxes": [
 				{"coordinates": [-5, 0, 5, 4, 6, 4], "textureOffset": [0, 16]}
+			],
+			"submodels": [
+				{
+					"id": "leg1_mud",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [-3, 0, 7],
+					"texture": "pig_temperate_mud.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [-2, 0, -2, 4, 6, 4], "textureOffset": [0, 16], "sizeAdd": 0.15}
+					]
+				}
 			]
 		},
 		{
 			"part": "leg2",
 			"id": "leg2",
 			"invertAxis": "xy",
-			"translate": [3, -6, -7],
 			"mirrorTexture": "u",
+			"translate": [3, -6, -7],
 			"boxes": [
 				{"coordinates": [1, 0, 5, 4, 6, 4], "textureOffset": [0, 16]}
+			],
+			"submodels": [
+				{
+					"id": "leg2_mud",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [-3, 0, 7],
+					"texture": "pig_temperate_mud.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [4, 0, -2, 4, 6, 4], "textureOffset": [0, 16], "sizeAdd": 0.15}
+					]
+				}
 			]
 		},
 		{
 			"part": "leg3",
 			"id": "leg3",
 			"invertAxis": "xy",
-			"translate": [-3, -6, 5],
 			"mirrorTexture": "u",
+			"translate": [-3, -6, 5],
 			"boxes": [
 				{"coordinates": [-5, 0, -7, 4, 6, 4], "textureOffset": [0, 16]}
+			],
+			"submodels": [
+				{
+					"id": "leg3_mud",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [0, 0, 0],
+					"texture": "pig_temperate_mud.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [-5, 0, -7, 4, 6, 4], "textureOffset": [0, 16], "sizeAdd": 0.15}
+					]
+				}
 			]
 		},
 		{
 			"part": "leg4",
 			"id": "leg4",
 			"invertAxis": "xy",
-			"translate": [3, -6, 5],
 			"mirrorTexture": "u",
+			"translate": [3, -6, 5],
 			"boxes": [
 				{"coordinates": [1, 0, -7, 4, 6, 4], "textureOffset": [0, 16]}
+			],
+			"submodels": [
+				{
+					"id": "leg4_mud",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [-3, 0, -5],
+					"texture": "pig_temperate_mud.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [4, 0, -2, 4, 6, 4], "textureOffset": [0, 16], "sizeAdd": 0.15}
+					]
+				}
 			]
 		}
 	]
