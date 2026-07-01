@@ -46,12 +46,6 @@
 			]
 		},
 		{
-			"part": "tail",
-			"id": "tail",
-			"invertAxis": "xy",
-			"translate": [1, -11.5, -6.5]
-		},
-		{
 			"part": "left_hind_leg",
 			"id": "left_hind_leg",
 			"invertAxis": "xy",
@@ -297,12 +291,6 @@
 			"translate": [0, 0, 0]
 		},
 		{
-			"part": "head",
-			"id": "head",
-			"invertAxis": "xy",
-			"translate": [1, -18, 8]
-		},
-		{
 			"part": "right_hind_leg",
 			"id": "right_hind_leg",
 			"invertAxis": "xy",
@@ -318,8 +306,8 @@
 			"translate": [0, 0, 0]
 		},
 		{
-			"part": "neck_r1",
-			"id": "neck_r1",
+			"part": "neck",
+			"id": "neck",
 			"invertAxis": "xy",
 			"translate": [1, -13, 5],
 			"boxes": [
@@ -333,8 +321,8 @@
 			"translate": [0, -24, 0]
 		},
 		{
-			"part": "head_r1",
-			"id": "head_r1",
+			"part": "head",
+			"id": "head",
 			"invertAxis": "xy",
 			"translate": [1, -19, 7],
 			"boxes": [
@@ -342,8 +330,8 @@
 			]
 		},
 		{
-			"part": "tail_r1",
-			"id": "tail_r1",
+			"part": "tail",
+			"id": "tail",
 			"invertAxis": "xy",
 			"translate": [1, -11.5, -6.5],
 			"boxes": [
