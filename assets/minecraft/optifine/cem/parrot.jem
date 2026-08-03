@@ -1,4 +1,5 @@
 {
+	"credit": "Made with Blockbench",
 	"textureSize": [32, 32],
 	"models": [
 		{
@@ -42,7 +43,7 @@
 			"invertAxis": "xy",
 			"translate": [0, -2.9, -1.2],
 			"boxes": [
-				{"coordinates": [-1.5, -0.1, 0.2, 3, 4, 1], "textureOffset": [22, 1]}
+				{"coordinates": [-1.5, -0.1, 0.2, 3, 4, 1], "textureOffset": [22, 1], "sizeAdd": -0.025}
 			]
 		},
 		{
@@ -81,8 +82,8 @@
 				{
 					"id": "right_wing_sub_0",
 					"invertAxis": "xy",
-					"translate": [0, 0, 0],
 					"mirrorTexture": "u",
+					"translate": [0, 0, 0],
 					"boxes": [
 						{"coordinates": [-2, 2.1, -2.3, 1, 5, 3], "textureOffset": [19, 8]}
 					]
