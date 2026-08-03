@@ -39,6 +39,17 @@
           "type": "minecraft:model",
           "model": "item/cod_bucket_sunfish"
         }
+      },
+      {
+        "when": [
+          "Bucket of Fish",
+          "Fish",
+          "iregex:.*Fish.*"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "item/fish_bucket"
+        }
       }
     ],
     "fallback": {
