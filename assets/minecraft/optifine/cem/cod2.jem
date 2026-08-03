@@ -94,6 +94,7 @@
 				{
 					"body.ry": "-tail.ry/6",
 					"angler_body.ry": "torad(sin(time*if(is_in_water, 0.15, 0.75))*if(is_in_water, 2, 5))",
+					"angler_body.tx": "if(is_in_water, 0, -3)",
 					"angler_tail1.ry": "-angler_body.ry*2",
 					"angler_tail2.ry": "angler_tail1.ry*3",
 					"angler_light.ry": "if(is_in_water, torad(sin(time*0.1)*15), torad(-25))",

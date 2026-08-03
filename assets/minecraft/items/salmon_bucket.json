@@ -1,0 +1,69 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": [
+          "Bucket of Black Orange and White Koi",
+          "Black Orange and White Koi",
+          "iregex:.*Black.*Orange.*White.*Koi.*"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "item/black_orange_and_white_koi_bucket"
+        }
+      },
+      {
+        "when": [
+          "Bucket of Black and White Koi",
+          "Black and White Koi",
+          "iregex:.*Black.*White.*Koi.*"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "item/black_and_white_koi_bucket"
+        }
+      },
+      {
+        "when": [
+          "Bucket of Gold Black and White Koi",
+          "Gold Black and White Koi",
+          "iregex:.*Gold.*Black.*White.*Koi.*"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "item/gold_black_and_white_koi_bucket"
+        }
+      },
+      {
+        "when": [
+          "Bucket of Gold Koi",
+          "Gold Koi",
+          "iregex:.*Gold.*Koi.*"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "item/gold_koi_bucket"
+        }
+      },
+      {
+        "when": [
+          "Bucket of Koi",
+          "Koi",
+          "iregex:.*Koi.*"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "item/orange_and_black_koi_bucket"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "item/salmon_bucket"
+    }
+  },
+  "oversized_in_gui": true
+}

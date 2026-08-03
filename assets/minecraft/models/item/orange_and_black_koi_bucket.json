@@ -1,0 +1,8 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/orange_and_black_koi_bucket",
+		"particle": "item/orange_and_black_koi_bucket"
+	}
+}

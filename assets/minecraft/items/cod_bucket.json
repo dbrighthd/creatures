@@ -8,7 +8,10 @@
         "when": [
           "Bucket of Angler",
           "Angler",
-          "iregex:.*Angler.*"
+          "iregex:.*Angler.*",
+          "Bucket of Vanessa",
+          "Vanessa",
+          "iregex:.*Vanessa.*"
         ],
         "model": {
           "type": "minecraft:model",
