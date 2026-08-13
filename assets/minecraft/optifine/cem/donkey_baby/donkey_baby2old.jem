@@ -3,10 +3,28 @@
 	"textureSize": [64, 128],
 	"models": [
 		{
-			"part": "right_chest",
-			"id": "right_chest",
+			"part": "right_front_leg",
+			"id": "right_front_leg",
 			"invertAxis": "xy",
-			"translate": [0, 0, 0]
+			"translate": [-1.4, -6.5, 5.4],
+			"boxes": [
+				{"coordinates": [0.9, 0, -6.9, 3, 8, 3], "textureOffset": [0, 33]}
+			]
+		},
+		{
+			"part": "left_hind_leg",
+			"id": "left_hind_leg",
+			"invertAxis": "xy",
+			"translate": [3.25, -6.5, -5.25],
+			"boxes": [
+				{"coordinates": [-3.75, 0, 3.75, 3, 8, 3], "textureOffset": [12, 44]}
+			]
+		},
+		{
+			"part": "head_parts",
+			"id": "head_parts",
+			"invertAxis": "xy",
+			"translate": [1, -13, 5]
 		},
 		{
 			"part": "body",
@@ -17,99 +35,6 @@
 				{"coordinates": [-4, 7, -7, 8, 6, 14], "textureOffset": [0, 13]}
 			],
 			"submodels": [
-				{
-					"id": "Rwing",
-					"invertAxis": "xy",
-					"translate": [4, 13.5, -5.5],
-					"submodels": [
-						{
-							"id": "Rwingbase",
-							"invertAxis": "xy",
-							"translate": [0, -1, 0],
-							"boxes": [
-								{
-									"coordinates": [0, 0, -0.5, 6, 1, 1],
-									"uvNorth": [7, 65, 1, 66],
-									"uvEast": [7, 65, 8, 66],
-									"uvSouth": [14, 65, 8, 66],
-									"uvWest": [0, 65, 1, 66],
-									"uvUp": [1, 65, 7, 64],
-									"uvDown": [7, 64, 13, 65],
-									"sizeAdd": 0.2
-								}
-							],
-							"submodels": [
-								{
-									"id": "Rwingbasefeathers",
-									"invertAxis": "xy",
-									"translate": [0, 0.5, 0.5],
-									"boxes": [
-										{
-											"coordinates": [0, 0, 0.25, 6, 0, 9],
-											"uvUp": [0, 75, 6, 66],
-											"uvDown": [0, 90, 6, 99],
-											"sizeAdd": 0.1
-										}
-									]
-								},
-								{
-									"id": "Rmidwing",
-									"invertAxis": "xy",
-									"translate": [6, 1, 0],
-									"boxes": [
-										{
-											"coordinates": [0, -1, -0.5, 6, 1, 1],
-											"uvNorth": [21, 65, 15, 66],
-											"uvEast": [14, 65, 15, 66],
-											"uvSouth": [28, 65, 22, 66],
-											"uvWest": [21, 65, 22, 66],
-											"uvUp": [21, 64, 15, 65],
-											"uvDown": [27, 65, 21, 64],
-											"sizeAdd": 0.1
-										}
-									],
-									"submodels": [
-										{
-											"id": "Rmidwingfeathers",
-											"invertAxis": "xy",
-											"translate": [6, -0.5, 0.5],
-											"boxes": [
-												{
-													"coordinates": [-6, 0, 0.25, 6, 0, 9],
-													"uvUp": [6, 75, 12, 66],
-													"uvDown": [6, 90, 12, 99],
-													"sizeAdd": 0.2
-												}
-											]
-										},
-										{
-											"id": "Rwingtp",
-											"invertAxis": "xy",
-											"translate": [6, 0, 0],
-											"boxes": [
-												{
-													"coordinates": [0, -1, -0.5, 10, 1, 1],
-													"uvNorth": [11, 76, 1, 77],
-													"uvEast": [12, 76, 11, 77],
-													"uvSouth": [22, 76, 12, 77],
-													"uvWest": [0, 76, 1, 77],
-													"uvUp": [1, 76, 11, 75],
-													"uvDown": [11, 75, 21, 76]
-												},
-												{
-													"coordinates": [0, -0.5, -0.25, 18, 0, 9],
-													"uvUp": [12, 75, 30, 66],
-													"uvDown": [12, 90, 30, 99],
-													"sizeAdd": 0.3
-												}
-											]
-										}
-									]
-								}
-							]
-						}
-					]
-				},
 				{
 					"id": "Lwing",
 					"invertAxis": "xy",
@@ -202,6 +127,99 @@
 							]
 						}
 					]
+				},
+				{
+					"id": "Rwing",
+					"invertAxis": "xy",
+					"translate": [4, 13.5, -5.5],
+					"submodels": [
+						{
+							"id": "Rwingbase",
+							"invertAxis": "xy",
+							"translate": [0, -1, 0],
+							"boxes": [
+								{
+									"coordinates": [0, 0, -0.5, 6, 1, 1],
+									"uvNorth": [7, 65, 1, 66],
+									"uvEast": [7, 65, 8, 66],
+									"uvSouth": [14, 65, 8, 66],
+									"uvWest": [0, 65, 1, 66],
+									"uvUp": [1, 65, 7, 64],
+									"uvDown": [7, 64, 13, 65],
+									"sizeAdd": 0.2
+								}
+							],
+							"submodels": [
+								{
+									"id": "Rwingbasefeathers",
+									"invertAxis": "xy",
+									"translate": [0, 0.5, 0.5],
+									"boxes": [
+										{
+											"coordinates": [0, 0, 0.25, 6, 0, 9],
+											"uvUp": [0, 75, 6, 66],
+											"uvDown": [0, 90, 6, 99],
+											"sizeAdd": 0.1
+										}
+									]
+								},
+								{
+									"id": "Rmidwing",
+									"invertAxis": "xy",
+									"translate": [6, 1, 0],
+									"boxes": [
+										{
+											"coordinates": [0, -1, -0.5, 6, 1, 1],
+											"uvNorth": [21, 65, 15, 66],
+											"uvEast": [14, 65, 15, 66],
+											"uvSouth": [28, 65, 22, 66],
+											"uvWest": [21, 65, 22, 66],
+											"uvUp": [21, 64, 15, 65],
+											"uvDown": [27, 65, 21, 64],
+											"sizeAdd": 0.1
+										}
+									],
+									"submodels": [
+										{
+											"id": "Rmidwingfeathers",
+											"invertAxis": "xy",
+											"translate": [6, -0.5, 0.5],
+											"boxes": [
+												{
+													"coordinates": [-6, 0, 0.25, 6, 0, 9],
+													"uvUp": [6, 75, 12, 66],
+													"uvDown": [6, 90, 12, 99],
+													"sizeAdd": 0.2
+												}
+											]
+										},
+										{
+											"id": "Rwingtp",
+											"invertAxis": "xy",
+											"translate": [6, 0, 0],
+											"boxes": [
+												{
+													"coordinates": [0, -1, -0.5, 10, 1, 1],
+													"uvNorth": [11, 76, 1, 77],
+													"uvEast": [12, 76, 11, 77],
+													"uvSouth": [22, 76, 12, 77],
+													"uvWest": [0, 76, 1, 77],
+													"uvUp": [1, 76, 11, 75],
+													"uvDown": [11, 75, 21, 76]
+												},
+												{
+													"coordinates": [0, -0.5, -0.25, 18, 0, 9],
+													"uvUp": [12, 75, 30, 66],
+													"uvDown": [12, 90, 30, 99],
+													"sizeAdd": 0.3
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
 				}
 			],
 			"animations": [
@@ -249,47 +267,12 @@
 			]
 		},
 		{
-			"part": "back_right_leg",
-			"id": "back_right_leg",
-			"invertAxis": "xy",
-			"translate": [-1.4, -6.5, -5.4],
-			"boxes": [
-				{"coordinates": [0.9, 0, 3.9, 3, 8, 3], "textureOffset": [0, 44]}
-			]
-		},
-		{
-			"part": "front_left_leg",
-			"id": "front_left_leg",
+			"part": "left_front_leg",
+			"id": "left_front_leg",
 			"invertAxis": "xy",
 			"translate": [3.4, -6.5, 5.3],
 			"boxes": [
 				{"coordinates": [-3.9, 0, -6.8, 3, 8, 3], "textureOffset": [12, 33]}
-			]
-		},
-		{
-			"part": "front_right_leg",
-			"id": "front_right_leg",
-			"invertAxis": "xy",
-			"translate": [-1.4, -6.5, 5.4],
-			"boxes": [
-				{"coordinates": [0.9, 0, -6.9, 3, 8, 3], "textureOffset": [0, 33]}
-			]
-		},
-		{
-			"part": "neck",
-			"id": "neck",
-			"invertAxis": "xy",
-			"translate": [1, -13, 5],
-			"submodels": [
-				{
-					"id": "neck_r1_export_copy",
-					"invertAxis": "xy",
-					"translate": [-1, 13, -5],
-					"rotate": [-22.50005, 0, 0],
-					"boxes": [
-						{"coordinates": [-1, -2, -3, 4, 8, 4], "textureOffset": [30, 9]}
-					]
-				}
 			]
 		},
 		{
@@ -302,53 +285,31 @@
 			]
 		},
 		{
-			"part": "back_left_leg",
-			"id": "back_left_leg",
-			"invertAxis": "xy",
-			"translate": [3.25, -6.5, -5.25],
-			"boxes": [
-				{"coordinates": [-3.75, 0, 3.75, 3, 8, 3], "textureOffset": [12, 44]}
-			]
-		},
-		{
-			"part": "head",
-			"id": "head",
-			"invertAxis": "xy",
-			"translate": [1, -18, 8],
-			"submodels": [
-				{
-					"id": "head_r1_export_copy",
-					"invertAxis": "xy",
-					"translate": [-1, 19, -7],
-					"rotate": [-22.50005, 0, 0],
-					"boxes": [
-						{"coordinates": [-2, -0.4, -8.4, 6, 4, 9], "textureOffset": [0, 0]}
-					]
-				}
-			]
-		},
-		{
-			"part": "tail",
-			"id": "tail",
-			"invertAxis": "xy",
-			"translate": [1, -11.5, -6.5],
-			"submodels": [
-				{
-					"id": "tail_r1_export_copy",
-					"invertAxis": "xy",
-					"translate": [-1, 11.5, 6.5],
-					"rotate": [42.50201, 0, 0],
-					"boxes": [
-						{"coordinates": [-0.5, -2, -0.5, 3, 3, 8], "textureOffset": [24, 33]}
-					]
-				}
-			]
-		},
-		{
 			"part": "left_chest",
 			"id": "left_chest",
 			"invertAxis": "xy",
 			"translate": [0, 0, 0]
+		},
+		{
+			"part": "right_hind_leg",
+			"id": "right_hind_leg",
+			"invertAxis": "xy",
+			"translate": [-1.4, -6.5, -5.4],
+			"boxes": [
+				{"coordinates": [0.9, 0, 3.9, 3, 8, 3], "textureOffset": [0, 44]}
+			]
+		},
+		{
+			"part": "right_chest",
+			"id": "right_chest",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "root",
+			"id": "root",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0]
 		}
 	]
 }

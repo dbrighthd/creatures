@@ -1,86 +1,20 @@
 {
   "models": [
     {
-      "invertAxis": "xy",
-      "part": "right_front_leg",
-      "id": "right_front_leg",
+      "part": "right_chest",
+      "id": "right_chest",
       "attach": false,
-      "translate": [
-        -1.4000001,
-        -6.5,
-        5.4
-      ],
-      "boxes": [
-        {
-          "textureOffset": [
-            0,
-            33
-          ],
-          "coordinates": [
-            0.9000001,
-            0.0,
-            -6.9,
-            3.0,
-            8.0,
-            3.0
-          ]
-        }
+      "invertAxis": "xy",
+      "textureSize": [
+        64,
+        64
       ]
     },
     {
-      "invertAxis": "xy",
-      "part": "tail",
-      "id": "tail",
-      "attach": false,
-      "translate": [
-        1.0,
-        -11.5,
-        -6.5
-      ]
-    },
-    {
-      "invertAxis": "xy",
-      "part": "left_hind_leg",
-      "id": "left_hind_leg",
-      "attach": false,
-      "translate": [
-        3.25,
-        -6.5,
-        -5.25
-      ],
-      "boxes": [
-        {
-          "textureOffset": [
-            12,
-            44
-          ],
-          "coordinates": [
-            -3.75,
-            0.0,
-            3.75,
-            3.0,
-            8.0,
-            3.0
-          ]
-        }
-      ]
-    },
-    {
-      "invertAxis": "xy",
-      "part": "head_parts",
-      "id": "head_parts",
-      "attach": false,
-      "translate": [
-        1.0,
-        -13.0,
-        5.0
-      ]
-    },
-    {
-      "invertAxis": "xy",
       "part": "body",
       "id": "body",
       "attach": false,
+      "invertAxis": "xy",
       "translate": [
         1.0,
         -10.0,
@@ -104,10 +38,10 @@
       ]
     },
     {
-      "invertAxis": "xy",
       "part": "right_ear",
       "id": "right_ear",
       "attach": false,
+      "invertAxis": "xy",
       "translate": [
         -1.0,
         -21.5,
@@ -131,81 +65,10 @@
       ]
     },
     {
-      "invertAxis": "xy",
-      "part": "left_front_leg",
-      "id": "left_front_leg",
+      "part": "back_right_leg",
+      "id": "back_right_leg",
       "attach": false,
-      "translate": [
-        3.4,
-        -6.5,
-        5.3
-      ],
-      "boxes": [
-        {
-          "textureOffset": [
-            12,
-            33
-          ],
-          "coordinates": [
-            -3.9,
-            0.0,
-            -6.8,
-            3.0,
-            8.0,
-            3.0
-          ]
-        }
-      ]
-    },
-    {
       "invertAxis": "xy",
-      "part": "left_ear",
-      "id": "left_ear",
-      "attach": false,
-      "translate": [
-        3.0,
-        -21.5,
-        9.0
-      ],
-      "boxes": [
-        {
-          "textureOffset": [
-            0,
-            0
-          ],
-          "coordinates": [
-            -3.0,
-            21.0,
-            -9.3,
-            2.0,
-            7.0,
-            1.0
-          ]
-        }
-      ]
-    },
-    {
-      "invertAxis": "xy",
-      "part": "left_chest",
-      "id": "left_chest",
-      "attach": false
-    },
-    {
-      "invertAxis": "xy",
-      "part": "head",
-      "id": "head",
-      "attach": false,
-      "translate": [
-        1.0,
-        -18.0,
-        8.0
-      ]
-    },
-    {
-      "invertAxis": "xy",
-      "part": "right_hind_leg",
-      "id": "right_hind_leg",
-      "attach": false,
       "translate": [
         -1.4000001,
         -6.5,
@@ -229,58 +92,111 @@
       ]
     },
     {
-      "invertAxis": "xy",
-      "part": "right_chest",
-      "id": "right_chest",
-      "attach": false
-    },
-    {
-      "invertAxis": "xy",
-      "part": "neck_r1",
-      "id": "neck_r1",
+      "part": "front_left_leg",
+      "id": "front_left_leg",
       "attach": false,
+      "invertAxis": "xy",
       "translate": [
-        1.0,
-        -13.0,
-        5.0
+        3.4,
+        -6.5,
+        5.3
       ],
       "boxes": [
         {
           "textureOffset": [
-            30,
-            9
+            12,
+            33
           ],
           "coordinates": [
-            -2.0,
-            11.0,
-            -8.0,
-            4.0,
+            -3.9,
+            0.0,
+            -6.8,
+            3.0,
             8.0,
-            4.0
+            3.0
           ]
         }
       ]
     },
     {
-      "invertAxis": "xy",
-      "part": "root",
-      "id": "root",
+      "part": "front_right_leg",
+      "id": "front_right_leg",
       "attach": false,
+      "invertAxis": "xy",
       "translate": [
-        0.0,
-        -24.0,
-        0.0
+        -1.4000001,
+        -6.5,
+        5.4
+      ],
+      "boxes": [
+        {
+          "textureOffset": [
+            0,
+            33
+          ],
+          "coordinates": [
+            0.9000001,
+            0.0,
+            -6.9,
+            3.0,
+            8.0,
+            3.0
+          ]
+        }
       ]
     },
     {
-      "invertAxis": "xy",
-      "part": "head_r1",
-      "id": "head_r1",
+      "part": "neck",
+      "id": "neck",
       "attach": false,
+      "invertAxis": "xy",
       "translate": [
         1.0,
-        -19.0,
-        7.0
+        -13.0,
+        5.0
+      ],
+      "submodels": [
+        {
+          "id": "neck_r1_export_copy",
+          "invertAxis": "xy",
+          "translate": [
+            -1.0,
+            13.0,
+            -5.0
+          ],
+          "rotate": [
+            -22.500051,
+            -0.0,
+            0.0
+          ],
+          "boxes": [
+            {
+              "textureOffset": [
+                30,
+                9
+              ],
+              "coordinates": [
+                -1.0,
+                -2.0,
+                -3.0,
+                4.0,
+                8.0,
+                4.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "left_ear",
+      "id": "left_ear",
+      "attach": false,
+      "invertAxis": "xy",
+      "translate": [
+        3.0,
+        -21.5,
+        9.0
       ],
       "boxes": [
         {
@@ -290,41 +206,133 @@
           ],
           "coordinates": [
             -3.0,
-            18.6,
-            -15.4,
-            6.0,
-            4.0,
-            9.0
+            21.0,
+            -9.3,
+            2.0,
+            7.0,
+            1.0
           ]
         }
       ]
     },
     {
-      "invertAxis": "xy",
-      "part": "tail_r1",
-      "id": "tail_r1",
+      "part": "back_left_leg",
+      "id": "back_left_leg",
       "attach": false,
+      "invertAxis": "xy",
+      "translate": [
+        3.25,
+        -6.5,
+        -5.25
+      ],
+      "boxes": [
+        {
+          "textureOffset": [
+            12,
+            44
+          ],
+          "coordinates": [
+            -3.75,
+            0.0,
+            3.75,
+            3.0,
+            8.0,
+            3.0
+          ]
+        }
+      ]
+    },
+    {
+      "part": "head",
+      "id": "head",
+      "attach": false,
+      "invertAxis": "xy",
+      "translate": [
+        1.0,
+        -18.0,
+        8.0
+      ],
+      "submodels": [
+        {
+          "id": "head_r1_export_copy",
+          "invertAxis": "xy",
+          "translate": [
+            -1.0,
+            19.0,
+            -7.0
+          ],
+          "rotate": [
+            -22.500051,
+            -0.0,
+            0.0
+          ],
+          "boxes": [
+            {
+              "textureOffset": [
+                0,
+                0
+              ],
+              "coordinates": [
+                -2.0,
+                -0.4000001,
+                -8.4,
+                6.0,
+                4.0,
+                9.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "tail",
+      "id": "tail",
+      "attach": false,
+      "invertAxis": "xy",
       "translate": [
         1.0,
         -11.5,
         -6.5
       ],
-      "boxes": [
+      "submodels": [
         {
-          "textureOffset": [
-            24,
-            33
+          "id": "tail_r1_export_copy",
+          "invertAxis": "xy",
+          "translate": [
+            -1.0,
+            11.5,
+            6.5
           ],
-          "coordinates": [
-            -1.5,
-            9.5,
-            6.0,
-            3.0,
-            3.0,
-            8.0
+          "rotate": [
+            42.502007,
+            -0.0,
+            0.0
+          ],
+          "boxes": [
+            {
+              "textureOffset": [
+                24,
+                33
+              ],
+              "coordinates": [
+                -0.5,
+                -2.0,
+                -0.5,
+                3.0,
+                3.0,
+                8.0
+              ]
+            }
           ]
         }
       ]
+    },
+    {
+      "part": "left_chest",
+      "id": "left_chest",
+      "attach": false,
+      "invertAxis": "xy"
     }
   ],
   "textureSize": [

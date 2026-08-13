@@ -90,9 +90,9 @@
 					"tail.ty": "(-cos(time/(4+random(id)))/6)-1",
 					"reye.sy": "(cos(time/(4+random(id)))/10)+0.9",
 					"leye.sy": "(cos(time/(4+random(id)))/10)+0.9",
-					"rarm.rx": "(-cos(time/(4+random(id))))/20+torad(-20)",
+					"rarm.rx": "(-cos(time/(4+random(id))))/20+torad(-20)*-right_arm.rx",
 					"rarmy.ry": "torad(-5)",
-					"larm.rx": "(-cos(time/(4+random(id))))/20+torad(-20)",
+					"larm.rx": "(-cos(time/(4+random(id))))/20+torad(-20)*-left_arm.rx",
 					"larmy.ry": "torad(5)"
 				}
 			]
