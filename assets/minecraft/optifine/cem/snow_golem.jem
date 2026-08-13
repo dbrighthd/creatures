@@ -15,15 +15,15 @@
 					"var.blink_length": "0.2",
 					"var.blink_cycle": "max((floor((var.blink_length*time)+(random(id)*100))% 2)-(floor((var.blink_length*time)+(random(id)*100))% (floor((var.blink_length*time)+(random(id)*100))% 5)), 0)",
 					"blink.visible": "ifb(var.blink_cycle > 0.5, true, false)",
-					"angy.visible": "ifb(anger_time, true, false)",
+					"angy.visible": "ifb(anger_time > 0, true, false)",
 					"smile.visible": "ifb(angy.visible || blink.visible, false, true)",
 					"pumpkin.visible": "ifb(nbt(Pumpkin,raw:1b), true, false)",
 					"pumpkin.rx": "head.rx",
 					"pumpkin.ry": "head.ry",
 					"pumpkin.rz": "head.rz",
-					"head.sx": "if(pumpkin.visible == true, 0, 1)",
-					"head.sy": "if(pumpkin.visible == true, 0, 1)",
-					"head.sz": "if(pumpkin.visible == true, 0, 1)"
+					"head.sx": "if(pumpkin.visible, 0, 1)",
+					"head.sy": "if(pumpkin.visible, 0, 1)",
+					"head.sz": "if(pumpkin.visible, 0, 1)"
 				}
 			]
 		},
@@ -87,6 +87,9 @@
 			"id": "body",
 			"invertAxis": "xy",
 			"translate": [0, -11, 0],
+			"boxes": [
+				{"coordinates": [-5, 11, -5, 10, 10, 10], "textureOffset": [0, 16], "sizeAdd": -0.5}
+			],
 			"submodels": [
 				{
 					"id": "pumpkin",
@@ -154,9 +157,6 @@
 						}
 					]
 				}
-			],
-			"boxes": [
-				{"coordinates": [-5, 11, -5, 10, 10, 10], "textureOffset": [0, 16], "sizeAdd": -0.5}
 			]
 		},
 		{
