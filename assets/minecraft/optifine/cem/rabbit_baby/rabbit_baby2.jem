@@ -37,26 +37,6 @@
 			"translate": [-1.5, -0.5, -2.5]
 		},
 		{
-			"part": "frontlegs",
-			"id": "frontlegs",
-			"invertAxis": "xy",
-			"translate": [0, -3.5, 1],
-			"submodels": [
-				{
-					"id": "right_front_leg_export_copy",
-					"invertAxis": "xy",
-					"translate": [1, 2.5, -1.5],
-					"rotate": [-22.50005, 0, 0]
-				},
-				{
-					"id": "left_front_leg_export_copy",
-					"invertAxis": "xy",
-					"translate": [-1, 2.5, -1.5],
-					"rotate": [-22.50005, 0, 0]
-				}
-			]
-		},
-		{
 			"part": "left_ear",
 			"id": "left_ear",
 			"invertAxis": "xy",
