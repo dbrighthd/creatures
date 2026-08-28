@@ -49,57 +49,61 @@
 					"id": "Ostrich",
 					"invertAxis": "xy",
 					"translate": [0, 0, 0],
-					"boxes": [
-						{"coordinates": [-5, 11, -6, 10, 10, 14], "textureOffset": [0, 0]}
-					],
 					"submodels": [
 						{
-							"id": "Lwing",
+							"id": "Obody",
 							"invertAxis": "xy",
 							"translate": [0, 0, 0],
 							"boxes": [
-								{"coordinates": [-6, 13, -5, 1, 8, 12], "textureOffset": [40, 12]}
-							]
-						},
-						{
-							"id": "Rwing",
-							"invertAxis": "xy",
-							"translate": [0, 0, 0],
-							"boxes": [
-								{"coordinates": [5, 13, -5, 1, 8, 12], "textureOffset": [26, 30]}
-							]
-						},
-						{
-							"id": "Otail",
-							"invertAxis": "xy",
-							"translate": [0, 19, 8],
-							"boxes": [
-								{"coordinates": [-3, -6, 0, 6, 6, 1], "textureOffset": [40, 32], "sizeAdd": 0.05}
-							]
-						},
-						{
-							"id": "Oneck",
-							"invertAxis": "xy",
-							"translate": [0, 16, -6],
-							"boxes": [
-								{"coordinates": [-2, 0, -3, 4, 6, 4], "textureOffset": [34, 0]},
-								{"coordinates": [-1, 6, -2, 2, 8, 2], "textureOffset": [0, 50]},
-								{"coordinates": [-2, 14, -2.5, 4, 3, 3], "textureOffset": [1, 43]},
-								{"coordinates": [-1, 14, -5.5, 2, 1, 3], "textureOffset": [29, 24]}
+								{"coordinates": [-5, 11, -6, 10, 10, 14], "textureOffset": [0, 0]}
+							],
+							"submodels": [
+								{
+									"id": "Oneck",
+									"invertAxis": "xy",
+									"translate": [0, 16, -6],
+									"boxes": [
+										{"coordinates": [-2, 0, -3, 4, 6, 4], "textureOffset": [34, 0]},
+										{"coordinates": [-1, 6, -2, 2, 8, 2], "textureOffset": [0, 50]},
+										{"coordinates": [-2, 14, -3, 4, 3, 4], "textureOffset": [0, 42]},
+										{"coordinates": [-1, 14, -6, 2, 1, 3], "textureOffset": [29, 24]}
+									]
+								},
+								{
+									"id": "Otail",
+									"invertAxis": "xy",
+									"translate": [0, 19, 8],
+									"boxes": [
+										{"coordinates": [-3, -6, 0, 6, 6, 1], "textureOffset": [40, 32], "sizeAdd": 0.05}
+									]
+								},
+								{
+									"id": "Rwing",
+									"invertAxis": "xy",
+									"translate": [0, 0, 0],
+									"boxes": [
+										{"coordinates": [5, 13, -5, 1, 8, 12], "textureOffset": [26, 30]}
+									]
+								},
+								{
+									"id": "Lwing",
+									"invertAxis": "xy",
+									"translate": [0, 0, 0],
+									"boxes": [
+										{"coordinates": [-6, 13, -5, 1, 8, 12], "textureOffset": [40, 12]}
+									]
+								}
 							]
 						},
 						{
 							"id": "Lleg",
 							"invertAxis": "xy",
 							"translate": [-2, 11, 1],
-							"boxes": [
-								{"coordinates": [-1, -5, -1, 2, 6, 2], "textureOffset": [40, 52], "sizeAdd": 0.05}
-							],
 							"submodels": [
 								{
 									"id": "Lshin",
 									"invertAxis": "xy",
-									"translate": [0, -4, 1],
+									"translate": [0, -3, 1],
 									"boxes": [
 										{
 											"coordinates": [-1, -8, -2, 2, 7, 2],
@@ -110,6 +114,7 @@
 											"uvUp": [35, 52, 33, 50],
 											"uvDown": [37, 50, 35, 52]
 										},
+										{"coordinates": [-1, -1, -2, 2, 6, 2], "textureOffset": [40, 52]},
 										{"coordinates": [-1, -8, -3, 2, 1, 1], "textureOffset": [47, 1]}
 									]
 								}
@@ -119,23 +124,11 @@
 							"id": "Rleg",
 							"invertAxis": "xy",
 							"translate": [2, 11, 1],
-							"boxes": [
-								{
-									"coordinates": [-1, -5, -1, 2, 5, 2],
-									"uvNorth": [24, 54, 26, 60],
-									"uvEast": [22, 54, 24, 60],
-									"uvSouth": [28, 54, 30, 60],
-									"uvWest": [26, 54, 28, 60],
-									"uvUp": [26, 54, 24, 52],
-									"uvDown": [28, 52, 26, 54],
-									"sizeAdd": 0.05
-								}
-							],
 							"submodels": [
 								{
 									"id": "Rshin",
 									"invertAxis": "xy",
-									"translate": [0, -4, 1],
+									"translate": [0, -3, 1],
 									"boxes": [
 										{
 											"coordinates": [-1, -8, -2, 2, 7, 2],
@@ -146,6 +139,7 @@
 											"uvUp": [17, 52, 15, 50],
 											"uvDown": [19, 50, 17, 52]
 										},
+										{"coordinates": [-1, -1, -2, 2, 6, 2], "textureOffset": [22, 52]},
 										{"coordinates": [-1, -8, -3, 2, 1, 1], "textureOffset": [55, 1]}
 									]
 								}
@@ -159,13 +153,41 @@
 					"Otail.rx": "tail.ry+0.3",
 					"var.rearing": "body.rx*-1.2732394854",
 					"body.tz": "lerp(var.rearing, 5, 13)",
-					"Oneck.rx": "if(body.rx!=0, 0.3, neck.rx-0.5)",
+					"Oneck.rx": "if(is_ridden, 0,if(body.rx!=0, 0.3, neck.rx-0.5))",
 					"Oneck.ry": "neck.ry",
 					"Oneck.rz": "neck.rz",
-					"Lleg.rx": "sin(limb_swing)*limb_speed",
-					"Lshin.rx": "0",
-					"Rleg.rx": "-sin(limb_swing)*limb_speed",
-					"Rshin.rx": "-0",
+					"Rleg.tz": "if(limb_speed>0.1 && limb_speed<0.35, var.Rleg_tz_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Rleg_tz_jog, if(limb_speed>0.75, var.Rleg_tz_run, 0)))",
+					"var.Rleg_tz_run": "(sin(time/1.5)*1.5)+2",
+					"var.Rleg_tz_jog": "(sin(time/2)*1.5)+2",
+					"var.Rleg_tz_walk": "(sin(time/3)*1.5)+2",
+					"Rleg.ty": "if(limb_speed>0.1 && limb_speed<0.35, var.Rleg_ty_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Rleg_ty_jog, if(limb_speed>0.75, var.Rleg_ty_run, -11)))",
+					"var.Rleg_ty_run": "clamp(((cos(time/1.5)*4)-11), -99, -11)",
+					"var.Rleg_ty_jog": "clamp(((cos(time/2)*4)-11), -99, -11)",
+					"var.Rleg_ty_walk": "clamp(((cos(time/3)*4)-11), -99, -11)",
+					"Rleg.rx": "if(limb_speed>0.1 && limb_speed<0.35, var.Rleg_rx_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Rleg_rx_jog, if(limb_speed>0.75, var.Rleg_rx_run, 0)))",
+					"var.Rleg_rx_run": "sin(time/1.5)*1",
+					"var.Rleg_rx_jog": "sin(time/2)/3",
+					"var.Rleg_rx_walk": "sin(time/3)/7",
+					"Lleg.tz": "if(limb_speed>0.1 && limb_speed<0.35, var.Lleg_tz_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Lleg_tz_jog, if(limb_speed>0.75, var.Lleg_tz_run, 0)))",
+					"var.Lleg_tz_run": "(-sin(time/1.5)*1.5)+2",
+					"var.Lleg_tz_jog": "(-sin(time/2)*1.5)+2",
+					"var.Lleg_tz_walk": "(-sin(time/3)*1.5)+2",
+					"Lleg.ty": "if(limb_speed>0.1 && limb_speed<0.35, var.Lleg_ty_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Lleg_ty_jog, if(limb_speed>0.75, var.Lleg_ty_run, -11)))",
+					"var.Lleg_ty_run": "clamp(((-cos(time/1.5)*4)-11), -99, -11)",
+					"var.Lleg_ty_jog": "clamp(((-cos(time/2)*4)-11), -99, -11)",
+					"var.Lleg_ty_walk": "clamp(((-cos(time/3)*4)-11), -99, -11)",
+					"Lleg.rx": "if(limb_speed>0.1 && limb_speed<0.35, var.Lleg_rx_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Lleg_rx_jog, if(limb_speed>0.75, var.Lleg_rx_run, 0)))",
+					"var.Lleg_rx_run": "-sin(time/1.5)*1",
+					"var.Lleg_rx_jog": "-sin(time/2)/3",
+					"var.Lleg_rx_walk": "-sin(time/3)/7",
+					"Oneck.ty": "if(limb_speed>0.1 && limb_speed<0.35, var.Oneck_ty_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Oneck_ty_jog, if(limb_speed>0.75, var.Oneck_ty_run, -16)))",
+					"var.Oneck_ty_run": "(sin(time/(1.5/2))/3)-16",
+					"var.Oneck_ty_jog": "(sin(time/(2/2))/6)-16",
+					"var.Oneck_ty_walk": "(sin(time/(3/2))/12)-16",
+					"Obody.ty": "if(limb_speed>0.1 && limb_speed<0.35, var.Obody_ty_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Obody_ty_jog, if(limb_speed>0.75, var.Obody_ty_run, 0)))",
+					"var.Obody_ty_run": "(cos(time/(1.5/2))/2)",
+					"var.Obody_ty_jog": "(cos(time/(2/2))/4)",
+					"var.Obody_ty_walk": "(cos(time/(3/2))/8)",
 					"body.rx": "clamp(body.rx, -0.1, 0.1)"
 				}
 			]
