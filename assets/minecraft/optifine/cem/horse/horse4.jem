@@ -205,8 +205,7 @@
 					"var.standing_still": "if(limb_speed>0.1||var.is_rotating!=var.is_rotating2, 0, var.standing_still2+1)",
 					"var.standing_still2": "var.standing_still",
 					"var.is_rotating": "var.is_rotating2",
-					"var.is_rotating2": "rot_y",
-					"Otail.ty": "var.standing_still"
+					"var.is_rotating2": "rot_y"
 				}
 			]
 		},
