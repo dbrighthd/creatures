@@ -122,18 +122,20 @@
 									"id": "Lshin",
 									"invertAxis": "xy",
 									"translate": [0, -3, 1],
+									"boxes": [
+										{"coordinates": [-1, -8, -3, 2, 1, 1], "textureOffset": [48, 20]}
+									],
 									"submodels": [
 										{
+											"id": "body_sub_10",
 											"invertAxis": "xy",
 											"mirrorTexture": "u",
+											"translate": [0, 0, 0],
 											"boxes": [
 												{"coordinates": [-1, -8, -2, 2, 7, 2], "textureOffset": [24, 51]},
 												{"coordinates": [-1, -1, -2, 2, 6, 2], "textureOffset": [48, 8]}
 											]
 										}
-									],
-									"boxes": [
-										{"coordinates": [-1, -8, -3, 2, 1, 1], "textureOffset": [48, 20]}
 									]
 								}
 							]
@@ -167,23 +169,23 @@
 					"Oneck.rx": "if(var.standing_still>300, torad(157.5), if(is_ridden, 0,if(body.rx!=0, 0.3, neck.rx-0.5)))",
 					"Oneck.ry": "neck.ry",
 					"Oneck.rz": "neck.rz",
-					"Rleg.tz": "if(limb_speed>0.1 && limb_speed<0.35, var.Rleg_tz_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Rleg_tz_jog, if(limb_speed>0.75, var.Rleg_tz_run, 2)))",
+					"Rleg.tz": "if(limb_speed>0.01 && limb_speed<0.35, var.Rleg_tz_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Rleg_tz_jog, if(limb_speed>0.75, var.Rleg_tz_run, 2)))",
 					"var.Rleg_tz_run": "(sin(time/1.5)*1.5)+2",
 					"var.Rleg_tz_jog": "(sin(time/2)*1.5)+2",
 					"var.Rleg_tz_walk": "(sin(time/3)*1.5)+2",
-					"Rleg.ty": "if(limb_speed>0.1 && limb_speed<0.35, var.Rleg_ty_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Rleg_ty_jog, if(limb_speed>0.75, var.Rleg_ty_run, -11)))",
+					"Rleg.ty": "if(limb_speed>0.01 && limb_speed<0.35, var.Rleg_ty_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Rleg_ty_jog, if(limb_speed>0.75, var.Rleg_ty_run, -11)))",
 					"var.Rleg_ty_run": "clamp(((cos(time/1.5)*4)-11), -99, -11)",
 					"var.Rleg_ty_jog": "clamp(((cos(time/2)*4)-11), -99, -11)",
 					"var.Rleg_ty_walk": "clamp(((cos(time/3)*4)-11), -99, -11)",
-					"Rleg.rx": "if(limb_speed>0.1 && limb_speed<0.35, var.Rleg_rx_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Rleg_rx_jog, if(limb_speed>0.75, var.Rleg_rx_run, 0)))",
+					"Rleg.rx": "if(limb_speed>0.01 && limb_speed<0.35, var.Rleg_rx_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Rleg_rx_jog, if(limb_speed>0.75, var.Rleg_rx_run, 0)))",
 					"var.Rleg_rx_run": "sin(time/1.5)*1",
 					"var.Rleg_rx_jog": "sin(time/2)/3",
 					"var.Rleg_rx_walk": "sin(time/3)/7",
-					"Lleg.tz": "if(limb_speed>0.1 && limb_speed<0.35, var.Lleg_tz_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Lleg_tz_jog, if(limb_speed>0.75, var.Lleg_tz_run, 2)))",
+					"Lleg.tz": "if(limb_speed>0.01 && limb_speed<0.35, var.Lleg_tz_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Lleg_tz_jog, if(limb_speed>0.75, var.Lleg_tz_run, 2)))",
 					"var.Lleg_tz_run": "(-sin(time/1.5)*1.5)+2",
 					"var.Lleg_tz_jog": "(-sin(time/2)*1.5)+2",
 					"var.Lleg_tz_walk": "(-sin(time/3)*1.5)+2",
-					"Lleg.ty": "if(limb_speed>0.1 && limb_speed<0.35, var.Lleg_ty_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Lleg_ty_jog, if(limb_speed>0.75, var.Lleg_ty_run, -11)))",
+					"Lleg.ty": "if(limb_speed>0.01 && limb_speed<0.35, var.Lleg_ty_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Lleg_ty_jog, if(limb_speed>0.75, var.Lleg_ty_run, -11)))",
 					"var.Lleg_ty_run": "clamp(((-cos(time/1.5)*4)-11), -99, -11)",
 					"var.Lleg_ty_jog": "clamp(((-cos(time/2)*4)-11), -99, -11)",
 					"var.Lleg_ty_walk": "clamp(((-cos(time/3)*4)-11), -99, -11)",
@@ -191,18 +193,18 @@
 					"var.Lleg_rx_run": "-sin(time/1.5)*1",
 					"var.Lleg_rx_jog": "-sin(time/2)/3",
 					"var.Lleg_rx_walk": "-sin(time/3)/7",
-					"Oneck.ty": "if(limb_speed>0.1 && limb_speed<0.35, var.Oneck_ty_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Oneck_ty_jog, if(limb_speed>0.75, var.Oneck_ty_run, -5)))",
+					"Oneck.ty": "if(limb_speed>0.01 && limb_speed<0.35, var.Oneck_ty_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Oneck_ty_jog, if(limb_speed>0.75, var.Oneck_ty_run, -5)))",
 					"var.Oneck_ty_run": "(sin(time/(1.5/2))/3)-5",
 					"var.Oneck_ty_jog": "(sin(time/(2/2))/6)-5",
 					"var.Oneck_ty_walk": "(sin(time/(3/2))/12)-5",
-					"Obody.ty": "if(limb_speed>0.1 && limb_speed<0.35, var.Obody_ty_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Obody_ty_jog, if(limb_speed>0.75, var.Obody_ty_run, -11)))",
+					"Obody.ty": "if(limb_speed>0.01 && limb_speed<0.35, var.Obody_ty_walk, if(limb_speed>0.35 && limb_speed<0.75, var.Obody_ty_jog, if(limb_speed>0.75, var.Obody_ty_run, -11)))",
 					"var.Obody_ty_run": "(cos(time/(1.5/2))/2)-11",
 					"var.Obody_ty_jog": "(cos(time/(2/2))/4)-11",
 					"var.Obody_ty_walk": "(cos(time/(3/2))/8)-11",
-					"body.rx": "clamp(body.rx, -0.1, 0.1)",
-					"Rwing_rot.rz": "if(is_hurt, sin(time*1.25)/1.5+torad(50), 0)",
-					"Lwing_rot.rz": "if(is_hurt, -sin(time*1.25)/1.5-torad(50), 0)",
-					"var.standing_still": "if(limb_speed>0.1||var.is_rotating!=var.is_rotating2, 0, var.standing_still2+1)",
+					"body.rx": "clamp(body.rx, -0.01, 0.1)",
+					"Rwing_rot.rz": "if(is_hurt||!is_on_ground, sin((time+(random(id)*100))*1.25)/1.5+torad(50), 0)",
+					"Lwing_rot.rz": "if(is_hurt||!is_on_ground, -sin((time+(random(id)*100))*1.25)/1.5-torad(50), 0)",
+					"var.standing_still": "if(limb_speed>0.01||var.is_rotating!=var.is_rotating2, 0, var.standing_still2+1)",
 					"var.standing_still2": "var.standing_still",
 					"var.is_rotating": "var.is_rotating2",
 					"var.is_rotating2": "rot_y"
