@@ -1,0 +1,60 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [128, 64],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -17, 6]
+		},
+		{
+			"part": "leg1",
+			"id": "leg1",
+			"invertAxis": "xy",
+			"translate": [-3.5, -14, -6]
+		},
+		{
+			"part": "chest_left",
+			"id": "chest_left",
+			"invertAxis": "xy",
+			"translate": [5.5, -21, -3],
+			"boxes": [
+				{"coordinates": [-10.5, 13, 3, 8, 8, 3], "textureOffset": [45, 41], "sizeAdd": 0.5}
+			]
+		},
+		{
+			"part": "leg4",
+			"id": "leg4",
+			"invertAxis": "xy",
+			"translate": [3.5, -14, 5]
+		},
+		{
+			"part": "leg2",
+			"id": "leg2",
+			"invertAxis": "xy",
+			"translate": [3.5, -14, -6]
+		},
+		{
+			"part": "leg3",
+			"id": "leg3",
+			"invertAxis": "xy",
+			"translate": [-3.5, -14, 5]
+		},
+		{
+			"part": "chest_right",
+			"id": "chest_right",
+			"invertAxis": "xy",
+			"translate": [-8.5, -21, -3],
+			"boxes": [
+				{"coordinates": [3.5, 13, 3, 8, 8, 3], "textureOffset": [45, 28], "sizeAdd": 0.5}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -19, -2]
+		}
+	]
+}
