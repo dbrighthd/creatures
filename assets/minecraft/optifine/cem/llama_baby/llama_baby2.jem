@@ -1,0 +1,74 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 64],
+	"texture": "jolly_baby.png",
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -12, 4],
+			"boxes": [
+				{"coordinates": [-3, 10, -8, 6, 11, 4], "textureOffset": [0, 0]},
+				{"coordinates": [-1.5, 16, -11, 3, 3, 3], "textureOffset": [0, 15]},
+				{"coordinates": [-2.5, 21, -7, 2, 2, 2], "textureOffset": [20, 4]},
+				{"coordinates": [0.5, 21, -7, 2, 2, 2], "textureOffset": [20, 0]},
+				{"coordinates": [-6, 20, -6, 3, 5, 0], "textureOffset": [48, 0]},
+				{
+					"coordinates": [3, 20, -6, 3, 5, 0],
+					"uvNorth": [51, 0, 48, 5],
+					"uvEast": [48, 0, 48, 5],
+					"uvSouth": [51, 0, 54, 5],
+					"uvWest": [51, 0, 51, 5],
+					"uvUp": [51, 0, 48, 0],
+					"uvDown": [54, 0, 51, 0]
+				}
+			]
+		},
+		{
+			"part": "leg1",
+			"id": "leg1",
+			"invertAxis": "xy",
+			"translate": [-2.5, -7.5, -4.5],
+			"boxes": [
+				{"coordinates": [0.9, 0, 3, 3, 8, 3], "textureOffset": [0, 45]}
+			]
+		},
+		{
+			"part": "leg4",
+			"id": "leg4",
+			"invertAxis": "xy",
+			"translate": [2.5, -7.5, 3.5],
+			"boxes": [
+				{"coordinates": [-3.9, 0, -5, 3, 8, 3], "textureOffset": [12, 34]}
+			]
+		},
+		{
+			"part": "leg2",
+			"id": "leg2",
+			"invertAxis": "xy",
+			"translate": [2.5, -7.5, -4.5],
+			"boxes": [
+				{"coordinates": [-3.9, 0, 3, 3, 8, 3], "textureOffset": [12, 45]}
+			]
+		},
+		{
+			"part": "leg3",
+			"id": "leg3",
+			"invertAxis": "xy",
+			"translate": [-2.5, -7.5, 3.5],
+			"boxes": [
+				{"coordinates": [0.9, 0, -5, 3, 8, 3], "textureOffset": [0, 34]}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -10, -2.5],
+			"boxes": [
+				{"coordinates": [-4, 7, -6, 8, 6, 13], "textureOffset": [0, 15]}
+			]
+		}
+	]
+}

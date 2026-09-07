@@ -15,7 +15,7 @@
 				{"coordinates": [-2.5, 26.1, -15, 5, 5, 2], "textureOffset": [35, 57]},
 				{"coordinates": [-4.5, 21.1, -12.999, 9, 5, 7], "textureOffset": [57, 52]},
 				{"coordinates": [-4.5, 25.1, -12.5, 9, 7, 7], "textureOffset": [0, 50]},
-				{"coordinates": [-4, 33, -10, 3, 3, 2], "textureOffset": [17, 0]},
+				{"coordinates": [-4, 33, -10, 3, 3, 2], "textureOffset": [27, 0]},
 				{"coordinates": [1, 33, -10, 3, 3, 2], "textureOffset": [17, 0]},
 				{"coordinates": [-11, 31, -8, 7, 16, 0], "textureOffset": [73, 16]},
 				{"coordinates": [4, 31, -8, 7, 16, 0], "textureOffset": [73, 0]}
