@@ -1,0 +1,6 @@
+{
+    condition: "CreaturesPlus.villagers.villagerFacialScars.on",
+    fallbacks: [
+      "assets/minecraft/optifine/cem/villager/no_scar.properties"
+    ]
+}

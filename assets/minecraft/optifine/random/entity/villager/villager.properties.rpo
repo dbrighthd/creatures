@@ -1,0 +1,6 @@
+{
+    condition: "CreaturesPlus.villagers.villagerRaces.on",
+    fallbacks: [
+      "assets/minecraft/optifine/random/entity/villager/post_eugenics_villager.properties"
+    ]
+}

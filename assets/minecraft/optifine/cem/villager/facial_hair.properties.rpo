@@ -1,0 +1,6 @@
+{
+    condition: "CreaturesPlus.villagers.villagerFacialHair.on",
+    fallbacks: [
+      "assets/minecraft/optifine/cem/villager/no_facial_hair.properties"
+    ]
+}

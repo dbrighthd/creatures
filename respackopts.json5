@@ -4,6 +4,11 @@
     capabilities: ["FileFilter", "DirFilter", "DirFilterAdditive"],
     conf: {
             gayBees: ["default", "gay", "gayless"],
-            naturallySpawningCreakingBiomeVariants: ["off", "on"]
+            naturallySpawningCreakingBiomeVariants: ["off", "on"],
+            villagers: {
+                villagerFacialHair: ["on","off"],
+                villagerFacialScars: ["on","off"],
+                villagerRaces: ["on","off"]
+            }
     }
 }
