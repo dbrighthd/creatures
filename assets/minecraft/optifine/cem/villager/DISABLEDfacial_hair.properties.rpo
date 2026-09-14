@@ -1,5 +1,5 @@
 {
-    condition: "CreaturesPlus.villagers.villagerFacialHairPercentage.40",
+    condition: "CreaturesPlus.villagers.villagerFacialHairPercentage == 40",
     fallbacks: [
       "assets/minecraft/optifine/cem/villager/facial_hair_percentages/no_facial_hair.properties",
       "assets/minecraft/optifine/cem/villager/facial_hair_percentages/facial_hair1.properties",
@@ -100,6 +100,7 @@
       "assets/minecraft/optifine/cem/villager/facial_hair_percentages/facial_hair97.properties",
       "assets/minecraft/optifine/cem/villager/facial_hair_percentages/facial_hair98.properties",
       "assets/minecraft/optifine/cem/villager/facial_hair_percentages/facial_hair99.properties",
-      "assets/minecraft/optifine/cem/villager/facial_hair_percentages/facial_hair100.properties"
+      "assets/minecraft/optifine/cem/villager/facial_hair_percentages/facial_hair100.properties",
+      "assets/minecraft/optifine/cem/villager/facial_hair_percentages/facial_hair40.properties"
     ]
 }
