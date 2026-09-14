@@ -1,0 +1,27 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [128, 128],
+	"texture": "verity_body.png",
+	"models": [
+		{
+			"part": "cube",
+			"id": "cube",
+			"invertAxis": "xy",
+			"translate": [0, -9, 0],
+			"boxes": [
+				{"coordinates": [-9, 0, -9, 18, 18, 18], "textureOffset": [0, 0]}
+			],
+			"submodels": [
+				{
+					"id": "bone",
+					"invertAxis": "xy",
+					"translate": [0, 9, 0],
+					"texture": "verity_face.png",
+					"boxes": [
+						{"coordinates": [-9, -9, -9.325, 18, 18, 0], "textureOffset": [18, 18]}
+					]
+				}
+			]
+		}
+	]
+}
