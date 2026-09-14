@@ -1,0 +1,9 @@
+{
+    condition: "CreaturesPlus.creeperSpawningConditions.default",
+    fallbacks: [
+      "assets/minecraft/optifine/random/entity/creeper/creeper_no_vanilla.properties",
+      "assets/minecraft/optifine/random/entity/creeper/creeper_only_vanilla.properties",
+      "assets/minecraft/optifine/random/entity/creeper/creeper_dungeons_vanilla.properties",
+      "assets/minecraft/optifine/random/entity/creeper/creeper_only_dungeons.properties"
+    ]
+}

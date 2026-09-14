@@ -5,6 +5,7 @@
     conf: {
             gayBees: ["default", "gay", "gayless"],
             naturallySpawningCreakingBiomeVariants: ["off", "on"],
+            creeperSpawningConditions: ["default", "noVanilla", "onlyVanilla", "dungeonsVanilla", "onlyDungeons"],
             villagers: {
                 villagerFacialHairPercentage: {
                     type: "integer",
