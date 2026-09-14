@@ -1,0 +1,6 @@
+{
+    condition: "CreaturesPlus.villagers.villagerFacialWear.on",
+    fallbacks: [
+      "assets/minecraft/textures/entity/villager/weaponsmith_eyepatch.png"
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    condition: "CreaturesPlus.villagers.villagerFacialWear.on",
+    fallbacks: [
+      "assets/minecraft/optifine/cem/villager/no_facial_wear.properties"
+    ]
+}
