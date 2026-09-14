@@ -18,7 +18,8 @@
 					"texture": "scar.png",
 					"textureSize": [64, 64],
 					"boxes": [
-						{"coordinates": [-4, 24, -4, 8, 10, 8], "textureOffset": [0, 0], "sizeAdd": 0.01}
+						{"coordinates": [-4, 24, -4, 8, 10, 8], "textureOffset": [0, 0], "sizeAdd": 0.01},
+						{"coordinates": [-1, 23, -6, 2, 4, 2], "textureOffset": [24, 0], "sizeAdd": 0.01}
 					]
 				},
 				{
