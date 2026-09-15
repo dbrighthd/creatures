@@ -1,3 +1,3 @@
 {
-    condition: "CreaturesPlus.villagers.villagerFacialHairPercentage == 93"
+    condition: "CreaturesPlus.villagers.villagerFacialHairPercentage+0 == 93"
 }
