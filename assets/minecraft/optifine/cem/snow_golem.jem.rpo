@@ -1,0 +1,6 @@
+{
+    condition: "CreaturesPlus.snowGolemBlinking.on",
+    fallbacks: [
+      "assets/minecraft/optifine/cem/snow_golem_no_blink.jem"
+    ]
+}

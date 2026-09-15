@@ -18,6 +18,7 @@
             naturallySpawningCreakingBiomeVariants: ["off", "on"],
             creeperSpawningConditions: ["default", "noVanilla", "onlyVanilla", "dungeonsVanilla", "onlyDungeons"],
             squidTentacles: ["detailed", "vanilla"],
-            naturallySpawningAxolotlVariants: ["off", "on"]
+            naturallySpawningAxolotlVariants: ["off", "on"],
+            snowGolemBlinking: ["on","off"]
     }
 }
