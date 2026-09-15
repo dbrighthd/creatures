@@ -30,8 +30,7 @@
 							"uvSouth": [11, 37, 15, 40],
 							"uvWest": [7, 37, 7, 40],
 							"uvUp": [7, 37, 3, 37],
-							"uvDown": [11, 37, 7, 37],
-							"sizeAdd": 0
+							"uvDown": [11, 37, 7, 37]
 						}
 					],
 					"submodels": [
@@ -47,8 +46,7 @@
 									"uvSouth": [11, 37, 15, 40],
 									"uvWest": [7, 37, 7, 40],
 									"uvUp": [7, 37, 3, 37],
-									"uvDown": [11, 37, 7, 37],
-									"sizeAdd": 0
+									"uvDown": [11, 37, 7, 37]
 								}
 							]
 						}
@@ -75,17 +73,6 @@
 					"boxes": [
 						{"coordinates": [-4, -2, -9, 8, 4, 10], "textureOffset": [0, 11], "sizeAdd": 0.025},
 						{"coordinates": [0, -2, -8, 0, 5, 9], "textureOffset": [2, 17], "sizeAdd": 0.025}
-					]
-				},
-				{
-					"id": "extratailbody",
-					"invertAxis": "xy",
-					"translate": [0, 4.5, 5],
-					"texture": "axolotl_tail.png",
-					"textureSize": [64, 64],
-					"boxes": [
-						{"coordinates": [-4, -2, -9, 8, 4, 10], "textureOffset": [0, 11], "sizeAdd": 0.015},
-						{"coordinates": [0, -2, -8, 0, 5, 9], "textureOffset": [2, 17], "sizeAdd": 0.011}
 					]
 				},
 				{
@@ -242,16 +229,6 @@
 			"invertAxis": "xy",
 			"translate": [0, -4.5, -6],
 			"submodels": [
-				{
-					"id": "extratail",
-					"invertAxis": "xy",
-					"translate": [0, 4.5, 6],
-					"texture": "axolotl_tail.png",
-					"textureSize": [64, 64],
-					"boxes": [
-						{"coordinates": [0, -2, 0, 0, 5, 12], "textureOffset": [2, 19]}
-					]
-				},
 				{
 					"id": "chimeratail",
 					"invertAxis": "xy",
