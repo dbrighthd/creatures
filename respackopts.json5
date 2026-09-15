@@ -3,9 +3,6 @@
     version: 13,
     capabilities: ["FileFilter", "DirFilter", "DirFilterAdditive"],
     conf: {
-            gayBees: ["default", "gay", "gayless"],
-            naturallySpawningCreakingBiomeVariants: ["off", "on"],
-            creeperSpawningConditions: ["default", "noVanilla", "onlyVanilla", "dungeonsVanilla", "onlyDungeons"],
             villagers: {
                 villagerFacialHairPercentage: {
                     type: "integer",
@@ -16,6 +13,10 @@
                 villagerFacialScars: ["on","off"],
                 villagerFacialWear: ["on","off"],
                 villagerRaces: ["on","off"]
-            }
+            },
+            gayBees: ["default", "gay", "gayless"],
+            naturallySpawningCreakingBiomeVariants: ["off", "on"],
+            creeperSpawningConditions: ["default", "noVanilla", "onlyVanilla", "dungeonsVanilla", "onlyDungeons"],
+            squidTentacles: ["detailed", "vanilla"]
     }
 }

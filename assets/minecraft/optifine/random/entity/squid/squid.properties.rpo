@@ -1,0 +1,6 @@
+{
+    condition: "CreaturesPlus.squidTentacles.vanilla",
+    fallbacks: [
+      "assets/minecraft/optifine/random/entity/squid/squid_detailed_tentacles.properties"
+    ]
+}
