@@ -57,7 +57,22 @@
 				{"coordinates": [2.5, 10, -4, 1, 2, 2], "textureOffset": [58, 28]},
 				{"coordinates": [-3.5, 10, -4, 1, 2, 2], "textureOffset": [27, 0]},
 				{"coordinates": [-3.5, 10, -5, 1, 1, 1], "textureOffset": [42, 0]},
-				{"coordinates": [2.5, 10, -5, 1, 1, 1], "textureOffset": [41, 30]}
+				{"coordinates": [2.5, 10, -5, 1, 1, 1], "textureOffset": [41, 30]},
+				{"coordinates": [-0.5, 7, -6, 1, 1, 0], "textureOffset": [7, 10]}
+			]
+		},
+		{
+			"part": "head2",
+			"id": "head2",
+			"invertAxis": "xy",
+			"translate": [0, -8.5, 2.5],
+			"boxes": [
+				{"coordinates": [-2.5, 8, -6, 5, 5, 5], "textureOffset": [0, 0]},
+				{"coordinates": [2.5, 10, -4, 1, 2, 2], "textureOffset": [58, 28]},
+				{"coordinates": [-3.5, 10, -4, 1, 2, 2], "textureOffset": [27, 0]},
+				{"coordinates": [-3.5, 10, -5, 1, 1, 1], "textureOffset": [42, 0]},
+				{"coordinates": [2.5, 10, -5, 1, 1, 1], "textureOffset": [41, 30]},
+				{"coordinates": [-0.5, 7, -6, 1, 1, 0], "textureOffset": [7, 10]}
 			]
 		}
 	]

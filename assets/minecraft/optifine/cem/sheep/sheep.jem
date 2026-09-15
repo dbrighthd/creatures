@@ -23,6 +23,13 @@
 			],
 			"submodels": [
 				{
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"boxes": [
+						{"coordinates": [-1, 15, -14, 2, 1, 0], "textureOffset": [10, 14]}
+					]
+				},
+				{
 					"id": "bone",
 					"invertAxis": "xy",
 					"translate": [-2, 26.1, -9.5],

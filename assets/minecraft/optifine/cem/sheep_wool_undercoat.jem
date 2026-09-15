@@ -9,7 +9,15 @@
 			"translate": [0, -18, 8],
 			"scale": 1,
 			"boxes": [
-				{"coordinates": [-3, 16, -14, 6, 6, 8], "textureOffset": [0, 0]}
+				{
+					"coordinates": [-3, 16, -14, 6, 6, 8],
+					"uvNorth": [14, 8, 8, 14],
+					"uvEast": [0, 8, 8, 14],
+					"uvSouth": [22, 8, 28, 14],
+					"uvWest": [14, 8, 22, 14],
+					"uvUp": [14, 8, 8, 0],
+					"uvDown": [20, 0, 14, 8]
+				}
 			]
 		},
 		{
