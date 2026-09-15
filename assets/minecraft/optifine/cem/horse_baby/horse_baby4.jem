@@ -45,7 +45,7 @@
 			"translate": [0, -13, -6],
 			"submodels": [
 				{
-					"id": "Ostrich",
+					"id": "ostrich",
 					"invertAxis": "xy",
 					"translate": [0, 0, 0],
 					"boxes": [
