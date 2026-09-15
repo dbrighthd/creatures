@@ -3,6 +3,7 @@ Creatures+ and Textures+ Discord server: https://discord.gg/WCvwtzW
  my youtube channel:https://www.youtube.com/channel/UCROOYAHYYupGE6AJAjl9XLQ
 
 
+
  
 
 I am part of Retroboost/PewDiePack team, with some of these textures included in the PewDiePack, and many textures were made with advice from them. Join the Retroboost server at https://discord.gg/Jbc2hB2
@@ -17,6 +18,10 @@ Minecraft earth textures from  U1timateJ7 and Ewan Howell
 
 I used u/MushirMickeyJoe 's Alex husk as a base. check out their podcast Here
 
+
+
+Portal Cube textures by PhantomEye, from the Portal Mod
+
  
 
 More Creature Textures added!
@@ -25,7 +30,7 @@ More Creature Textures added!
 
 Dolphin:
 
-+ Orca
+* Orca
 +Amazon river dolphin
 +beluga whale
 +Narwhal
@@ -76,7 +81,7 @@ Wolves:
 
  + Dog Bandana (replaces collar when an exclamation point "!" is added to the name)
 
- + [MCE] Skeleton Dog (Only when named "Grim")
+ + \[MCE] Skeleton Dog (Only when named "Grim")
 
  + Soul Hound (When renamed to "Soul Hound")
 
@@ -98,31 +103,30 @@ Cats:
 
 Cows:
 
-+ [MCE] Albino Cow
-+ [MCE] Ashen Cow
-+ [MCE] Brule Cow
-+ [MCE] Wooly Cow
-+ [MCE] Cookie Cow
-+ [MCE] Dairy Cow
-+ [MCE] Sunset Cow
-+ [MCE] Wooly Cow
-+ [MCE] Pinto Cow
-
-+ [MCE] Pink Moobloom (When renamed to "Pink Moobloom", or when spawned in a flower forest)
-+ [MCE] Yellow Moobloom (When renamed to "Moobloom", or when spawned in a flower forest)
+* \[MCE] Albino Cow
+* \[MCE] Ashen Cow
+* \[MCE] Brule Cow
+* \[MCE] Wooly Cow
+* \[MCE] Cookie Cow
+* \[MCE] Dairy Cow
+* \[MCE] Sunset Cow
+* \[MCE] Wooly Cow
+* \[MCE] Pinto Cow
+* \[MCE] Pink Moobloom (When renamed to "Pink Moobloom", or when spawned in a flower forest)
+* \[MCE] Yellow Moobloom (When renamed to "Moobloom", or when spawned in a flower forest)
 
  
 
 Pigs
 
- + [MCE] Muddy Pig
- + [MCE] Dried Muddy Pig
- + [MCE] Pale Pig
- + [MCE] Piebald Pig
- + [MCE] Mottled Pig
- + [MCE] Pink Footed Pig
- + [MCE] Sooty Pig
- + [MCE] Spotted Pig
+ + \[MCE] Muddy Pig
+ + \[MCE] Dried Muddy Pig
+ + \[MCE] Pale Pig
+ + \[MCE] Piebald Pig
+ + \[MCE] Mottled Pig
+ + \[MCE] Pink Footed Pig
+ + \[MCE] Sooty Pig
+ + \[MCE] Spotted Pig
 
  + Muddy variant for every pig
 
@@ -136,32 +140,29 @@ Fox
  
 
 Bees:
-+ Trans Pride Flag Bee
-+ Gay Pride Flag Bee
-+ Bi Pride Flag Bee
-+ Lesbian Pride Flag Bee
-+ Pan Pride Flag Bee
-+ Asexual Pride Flag Bee
-+ Straight(?) Pride Flag Bee
-+ Non-binary Pride Flag Bee 
+
+* Trans Pride Flag Bee
+* Gay Pride Flag Bee
+* Bi Pride Flag Bee
+* Lesbian Pride Flag Bee
+* Pan Pride Flag Bee
+* Asexual Pride Flag Bee
+* Straight(?) Pride Flag Bee
+* Non-binary Pride Flag Bee 
 
  
 
 Other: 
 
- + [MCE] Jolly llama (Only when a llama is renamed to "Jolly")
- + [MCE] Horned Sheep
- + [MCE] Furnace Golem
+ + \[MCE] Jolly llama (Only when a llama is renamed to "Jolly")
+ + \[MCE] Horned Sheep
+ + \[MCE] Furnace Golem
 
-+ [MCE] Glowing Squid
-
-+ [MCE] Muddy Rabbit
-
-+ [MCE] Vested Rabbit
-
-+ Zombie horse (already exists in game, buit rename a horse to "Zorse" to make it a zombie horse)
-
-+ Skeleton Donkeys and Mules when renamed to "Skelly"
+* \[MCE] Glowing Squid
+* \[MCE] Muddy Rabbit
+* \[MCE] Vested Rabbit
+* Zombie horse (already exists in game, buit rename a horse to "Zorse" to make it a zombie horse)
+* Skeleton Donkeys and Mules when renamed to "Skelly"
 
 Hostile Mobs:
 
@@ -173,7 +174,7 @@ Hostile Mobs:
 
  + Alex Zombie
 
- + [MCE] Bone Spider
+ + \[MCE] Bone Spider
 
  
 
@@ -188,3 +189,4 @@ Other works of mine:
  Elytras+: https://www.curseforge.com/minecraft/texture-packs/elytras
 
  
+
