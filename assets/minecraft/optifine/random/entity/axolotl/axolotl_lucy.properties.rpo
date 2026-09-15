@@ -1,0 +1,6 @@
+{
+    condition: "CreaturesPlus.naturallySpawningAxolotlVariants.off",
+    fallbacks: [
+      "assets/minecraft/optifine/random/entity/axolotl/axolotl_lucy_spawning.properties"
+    ]
+}

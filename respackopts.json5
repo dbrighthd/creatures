@@ -17,6 +17,7 @@
             gayBees: ["default", "gay", "gayless"],
             naturallySpawningCreakingBiomeVariants: ["off", "on"],
             creeperSpawningConditions: ["default", "noVanilla", "onlyVanilla", "dungeonsVanilla", "onlyDungeons"],
-            squidTentacles: ["detailed", "vanilla"]
+            squidTentacles: ["detailed", "vanilla"],
+            naturallySpawningAxolotlVariants: ["off", "on"]
     }
 }
